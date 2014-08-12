@@ -1,7 +1,11 @@
+/*==============================================
+        	ERIC MAYER RESET END
+***********************************************/
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0b2 | 201101
    NOTE: THIS IS A BETA VERSION (see previous line)
    USE WITH CAUTION AND TEST WITH ABANDON */
+/* line 25, sass/styles.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,39 +24,217 @@ time, mark, audio, video {
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+}
 
 /* HTML5 display-role reset for older browsers */
+/* line 35, sass/styles.scss */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-  display: block; }
+  display: block;
+}
 
+/* line 38, sass/styles.scss */
 body {
-  line-height: 1; }
+  line-height: 1;
+}
 
+/* line 41, sass/styles.scss */
 ol, ul {
-  list-style: none; }
+  list-style: none;
+}
 
+/* line 44, sass/styles.scss */
 blockquote, q {
-  quotes: none; }
+  quotes: none;
+}
 
+/* line 48, sass/styles.scss */
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
-  content: none; }
+  content: none;
+}
 
+/* line 52, sass/styles.scss */
 table {
   border-collapse: collapse;
-  border-spacing: 0; }
+  border-spacing: 0;
+}
 
 /* remember to define focus styles! */
+/* line 57, sass/styles.scss */
 :focus {
-  outline: 0; }
+  outline: 0;
+}
 
 /* remember to highlight inserts somehow! */
+/* line 61, sass/styles.scss */
 ins {
-  text-decoration: none; }
+  text-decoration: none;
+}
 
-/*==============================================
-        ERIC MAYER RESET END
-==============================================*/
+/*----------------------------------------------
+        	ERIC MAYER RESET END
+===============================================================================*/
+/*===============================================================================
+        	logo begin
+----------------------------------------------*/
+/* line 77, sass/styles.scss */
+.logo-point {
+  background: #83c0d7;
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 5px;
+  position: absolute;
+  left: 50px;
+  top: 50px;
+  margin: 20px;
+  transform-origin: bottom center;
+  transform: rotate(60deg);
+}
+
+/* line 93, sass/styles.scss */
+.rotate1 {
+  -webkit-transform: rotate(6deg);
+  -moz-transform: rotate(6deg);
+  -ms-transform: rotate(6deg);
+  -o-transform: rotate(6deg);
+  transform: rotate(6deg);
+}
+
+/* line 93, sass/styles.scss */
+.rotate2 {
+  -webkit-transform: rotate(12deg);
+  -moz-transform: rotate(12deg);
+  -ms-transform: rotate(12deg);
+  -o-transform: rotate(12deg);
+  transform: rotate(12deg);
+}
+
+/* line 93, sass/styles.scss */
+.rotate3 {
+  -webkit-transform: rotate(18deg);
+  -moz-transform: rotate(18deg);
+  -ms-transform: rotate(18deg);
+  -o-transform: rotate(18deg);
+  transform: rotate(18deg);
+}
+
+/* line 93, sass/styles.scss */
+.rotate4 {
+  -webkit-transform: rotate(24deg);
+  -moz-transform: rotate(24deg);
+  -ms-transform: rotate(24deg);
+  -o-transform: rotate(24deg);
+  transform: rotate(24deg);
+}
+
+/* line 93, sass/styles.scss */
+.rotate5 {
+  -webkit-transform: rotate(30deg);
+  -moz-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  -o-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+
+/* line 93, sass/styles.scss */
+.rotate6 {
+  -webkit-transform: rotate(36deg);
+  -moz-transform: rotate(36deg);
+  -ms-transform: rotate(36deg);
+  -o-transform: rotate(36deg);
+  transform: rotate(36deg);
+}
+
+/* line 93, sass/styles.scss */
+.rotate7 {
+  -webkit-transform: rotate(42deg);
+  -moz-transform: rotate(42deg);
+  -ms-transform: rotate(42deg);
+  -o-transform: rotate(42deg);
+  transform: rotate(42deg);
+}
+
+/* line 93, sass/styles.scss */
+.rotate8 {
+  -webkit-transform: rotate(48deg);
+  -moz-transform: rotate(48deg);
+  -ms-transform: rotate(48deg);
+  -o-transform: rotate(48deg);
+  transform: rotate(48deg);
+}
+
+/* line 93, sass/styles.scss */
+.rotate9 {
+  -webkit-transform: rotate(54deg);
+  -moz-transform: rotate(54deg);
+  -ms-transform: rotate(54deg);
+  -o-transform: rotate(54deg);
+  transform: rotate(54deg);
+}
+
+/* line 93, sass/styles.scss */
+.rotate10 {
+  -webkit-transform: rotate(60deg);
+  -moz-transform: rotate(60deg);
+  -ms-transform: rotate(60deg);
+  -o-transform: rotate(60deg);
+  transform: rotate(60deg);
+}
+
+/* line 93, sass/styles.scss */
+.rotate11 {
+  -webkit-transform: rotate(66deg);
+  -moz-transform: rotate(66deg);
+  -ms-transform: rotate(66deg);
+  -o-transform: rotate(66deg);
+  transform: rotate(66deg);
+}
+
+/* line 93, sass/styles.scss */
+.rotate12 {
+  -webkit-transform: rotate(72deg);
+  -moz-transform: rotate(72deg);
+  -ms-transform: rotate(72deg);
+  -o-transform: rotate(72deg);
+  transform: rotate(72deg);
+}
+
+/*----------------------------------------------
+        	logo end
+===============================================================================*/
+/*===============================================================================
+        	_ begin
+----------------------------------------------*/
+/*----------------------------------------------
+        	_ end
+===============================================================================*/
+/*===============================================================================
+        	fonts-loading begin
+----------------------------------------------*/
+@font-face {
+  font-family: GillSansProCyrillicLight;
+  src: url("../fonts/GillSansProCyrillicLight.ttf");
+}
+
+@font-face {
+  font-family: GillSansProCyrillicMedium;
+  src: url("../fonts/GillSansProCyrillicMedium.ttf");
+}
+
+@font-face {
+  font-family: HeuristicaRegular;
+  src: url("../fonts/HeuristicaRegular.ttf");
+}
+
+@font-face {
+  font-family: HeuristicaItalic;
+  src: url("../fonts/HeuristicaItalic.ttf");
+}
+
+/*----------------------------------------------
+        	fonts-loading end
+===============================================================================*/
