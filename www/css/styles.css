@@ -1,3 +1,4 @@
+@charset "IBM866";
 /*==============================================
         	ERIC MAYER RESET END
 ***********************************************/
@@ -80,104 +81,41 @@ ins {
 /*===============================================================================
         	logo begin
 ----------------------------------------------*/
+/* line 74, sass/styles.scss */
+.logo {
+  position: relative;
+}
+
 /* line 77, sass/styles.scss */
-.logo-point {
+.logo-points-box {
+  display: inline-block;
+  position: absolute;
+  margin-left: 50px;
+}
+/* line 81, sass/styles.scss */
+.logo-points-box .logo-point {
   background: #83c0d7;
   display: inline-block;
-  width: 5px;
-  height: 5px;
-  border-radius: 5px;
-  position: absolute;
-  left: 50px;
-  top: 50px;
-  margin: 20px;
+  width: 3px;
+  height: 3px;
+  border-radius: 3px;
   transform-origin: bottom center;
-  transform: rotate(60deg);
 }
 
-/* line 93, sass/styles.scss */
-.rotate1 {
-  -webkit-transform: rotate(6deg);
-  -moz-transform: rotate(6deg);
-  -ms-transform: rotate(6deg);
-  -o-transform: rotate(6deg);
-  transform: rotate(6deg);
+/* line 106, sass/styles.scss */
+.logo-block-round10 .logo-points-box {
+  height: 10px;
+  top: 43.3px;
 }
 
-/* line 93, sass/styles.scss */
-.rotate2 {
-  -webkit-transform: rotate(12deg);
-  -moz-transform: rotate(12deg);
-  -ms-transform: rotate(12deg);
-  -o-transform: rotate(12deg);
-  transform: rotate(12deg);
+/* line 106, sass/styles.scss */
+.logo-block-round9 .logo-points-box {
+  height: 32px;
+  top: 39px;
 }
 
-/* line 93, sass/styles.scss */
-.rotate3 {
-  -webkit-transform: rotate(18deg);
-  -moz-transform: rotate(18deg);
-  -ms-transform: rotate(18deg);
-  -o-transform: rotate(18deg);
-  transform: rotate(18deg);
-}
-
-/* line 93, sass/styles.scss */
-.rotate4 {
-  -webkit-transform: rotate(24deg);
-  -moz-transform: rotate(24deg);
-  -ms-transform: rotate(24deg);
-  -o-transform: rotate(24deg);
-  transform: rotate(24deg);
-}
-
-/* line 93, sass/styles.scss */
-.rotate5 {
-  -webkit-transform: rotate(30deg);
-  -moz-transform: rotate(30deg);
-  -ms-transform: rotate(30deg);
-  -o-transform: rotate(30deg);
-  transform: rotate(30deg);
-}
-
-/* line 93, sass/styles.scss */
-.rotate6 {
-  -webkit-transform: rotate(36deg);
-  -moz-transform: rotate(36deg);
-  -ms-transform: rotate(36deg);
-  -o-transform: rotate(36deg);
-  transform: rotate(36deg);
-}
-
-/* line 93, sass/styles.scss */
-.rotate7 {
-  -webkit-transform: rotate(42deg);
-  -moz-transform: rotate(42deg);
-  -ms-transform: rotate(42deg);
-  -o-transform: rotate(42deg);
-  transform: rotate(42deg);
-}
-
-/* line 93, sass/styles.scss */
-.rotate8 {
-  -webkit-transform: rotate(48deg);
-  -moz-transform: rotate(48deg);
-  -ms-transform: rotate(48deg);
-  -o-transform: rotate(48deg);
-  transform: rotate(48deg);
-}
-
-/* line 93, sass/styles.scss */
-.rotate9 {
-  -webkit-transform: rotate(54deg);
-  -moz-transform: rotate(54deg);
-  -ms-transform: rotate(54deg);
-  -o-transform: rotate(54deg);
-  transform: rotate(54deg);
-}
-
-/* line 93, sass/styles.scss */
-.rotate10 {
+/* line 112, sass/styles.scss */
+.logo-round9.rotate1 {
   -webkit-transform: rotate(60deg);
   -moz-transform: rotate(60deg);
   -ms-transform: rotate(60deg);
@@ -185,22 +123,2487 @@ ins {
   transform: rotate(60deg);
 }
 
-/* line 93, sass/styles.scss */
-.rotate11 {
-  -webkit-transform: rotate(66deg);
-  -moz-transform: rotate(66deg);
-  -ms-transform: rotate(66deg);
-  -o-transform: rotate(66deg);
-  transform: rotate(66deg);
+/* line 112, sass/styles.scss */
+.logo-round9.rotate2 {
+  -webkit-transform: rotate(120deg);
+  -moz-transform: rotate(120deg);
+  -ms-transform: rotate(120deg);
+  -o-transform: rotate(120deg);
+  transform: rotate(120deg);
 }
 
-/* line 93, sass/styles.scss */
-.rotate12 {
+/* line 112, sass/styles.scss */
+.logo-round9.rotate3 {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round9.rotate4 {
+  -webkit-transform: rotate(240deg);
+  -moz-transform: rotate(240deg);
+  -ms-transform: rotate(240deg);
+  -o-transform: rotate(240deg);
+  transform: rotate(240deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round9.rotate5 {
+  -webkit-transform: rotate(300deg);
+  -moz-transform: rotate(300deg);
+  -ms-transform: rotate(300deg);
+  -o-transform: rotate(300deg);
+  transform: rotate(300deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round9.rotate6 {
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+/* line 106, sass/styles.scss */
+.logo-block-round8 .logo-points-box {
+  height: 40px;
+  top: 35px;
+}
+
+/* line 112, sass/styles.scss */
+.logo-round8.rotate1 {
+  -webkit-transform: rotate(30deg);
+  -moz-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  -o-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round8.rotate2 {
+  -webkit-transform: rotate(60deg);
+  -moz-transform: rotate(60deg);
+  -ms-transform: rotate(60deg);
+  -o-transform: rotate(60deg);
+  transform: rotate(60deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round8.rotate3 {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round8.rotate4 {
+  -webkit-transform: rotate(120deg);
+  -moz-transform: rotate(120deg);
+  -ms-transform: rotate(120deg);
+  -o-transform: rotate(120deg);
+  transform: rotate(120deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round8.rotate5 {
+  -webkit-transform: rotate(150deg);
+  -moz-transform: rotate(150deg);
+  -ms-transform: rotate(150deg);
+  -o-transform: rotate(150deg);
+  transform: rotate(150deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round8.rotate6 {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round8.rotate7 {
+  -webkit-transform: rotate(210deg);
+  -moz-transform: rotate(210deg);
+  -ms-transform: rotate(210deg);
+  -o-transform: rotate(210deg);
+  transform: rotate(210deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round8.rotate8 {
+  -webkit-transform: rotate(240deg);
+  -moz-transform: rotate(240deg);
+  -ms-transform: rotate(240deg);
+  -o-transform: rotate(240deg);
+  transform: rotate(240deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round8.rotate9 {
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round8.rotate10 {
+  -webkit-transform: rotate(300deg);
+  -moz-transform: rotate(300deg);
+  -ms-transform: rotate(300deg);
+  -o-transform: rotate(300deg);
+  transform: rotate(300deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round8.rotate11 {
+  -webkit-transform: rotate(330deg);
+  -moz-transform: rotate(330deg);
+  -ms-transform: rotate(330deg);
+  -o-transform: rotate(330deg);
+  transform: rotate(330deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round8.rotate12 {
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+/* line 106, sass/styles.scss */
+.logo-block-round7 .logo-points-box {
+  height: 50px;
+  top: 30px;
+}
+
+/* line 112, sass/styles.scss */
+.logo-round7.rotate1 {
+  -webkit-transform: rotate(20deg);
+  -moz-transform: rotate(20deg);
+  -ms-transform: rotate(20deg);
+  -o-transform: rotate(20deg);
+  transform: rotate(20deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round7.rotate2 {
+  -webkit-transform: rotate(40deg);
+  -moz-transform: rotate(40deg);
+  -ms-transform: rotate(40deg);
+  -o-transform: rotate(40deg);
+  transform: rotate(40deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round7.rotate3 {
+  -webkit-transform: rotate(60deg);
+  -moz-transform: rotate(60deg);
+  -ms-transform: rotate(60deg);
+  -o-transform: rotate(60deg);
+  transform: rotate(60deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round7.rotate4 {
+  -webkit-transform: rotate(80deg);
+  -moz-transform: rotate(80deg);
+  -ms-transform: rotate(80deg);
+  -o-transform: rotate(80deg);
+  transform: rotate(80deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round7.rotate5 {
+  -webkit-transform: rotate(100deg);
+  -moz-transform: rotate(100deg);
+  -ms-transform: rotate(100deg);
+  -o-transform: rotate(100deg);
+  transform: rotate(100deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round7.rotate6 {
+  -webkit-transform: rotate(120deg);
+  -moz-transform: rotate(120deg);
+  -ms-transform: rotate(120deg);
+  -o-transform: rotate(120deg);
+  transform: rotate(120deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round7.rotate7 {
+  -webkit-transform: rotate(140deg);
+  -moz-transform: rotate(140deg);
+  -ms-transform: rotate(140deg);
+  -o-transform: rotate(140deg);
+  transform: rotate(140deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round7.rotate8 {
+  -webkit-transform: rotate(160deg);
+  -moz-transform: rotate(160deg);
+  -ms-transform: rotate(160deg);
+  -o-transform: rotate(160deg);
+  transform: rotate(160deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round7.rotate9 {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round7.rotate10 {
+  -webkit-transform: rotate(200deg);
+  -moz-transform: rotate(200deg);
+  -ms-transform: rotate(200deg);
+  -o-transform: rotate(200deg);
+  transform: rotate(200deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round7.rotate11 {
+  -webkit-transform: rotate(220deg);
+  -moz-transform: rotate(220deg);
+  -ms-transform: rotate(220deg);
+  -o-transform: rotate(220deg);
+  transform: rotate(220deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round7.rotate12 {
+  -webkit-transform: rotate(240deg);
+  -moz-transform: rotate(240deg);
+  -ms-transform: rotate(240deg);
+  -o-transform: rotate(240deg);
+  transform: rotate(240deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round7.rotate13 {
+  -webkit-transform: rotate(260deg);
+  -moz-transform: rotate(260deg);
+  -ms-transform: rotate(260deg);
+  -o-transform: rotate(260deg);
+  transform: rotate(260deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round7.rotate14 {
+  -webkit-transform: rotate(280deg);
+  -moz-transform: rotate(280deg);
+  -ms-transform: rotate(280deg);
+  -o-transform: rotate(280deg);
+  transform: rotate(280deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round7.rotate15 {
+  -webkit-transform: rotate(300deg);
+  -moz-transform: rotate(300deg);
+  -ms-transform: rotate(300deg);
+  -o-transform: rotate(300deg);
+  transform: rotate(300deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round7.rotate16 {
+  -webkit-transform: rotate(320deg);
+  -moz-transform: rotate(320deg);
+  -ms-transform: rotate(320deg);
+  -o-transform: rotate(320deg);
+  transform: rotate(320deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round7.rotate17 {
+  -webkit-transform: rotate(340deg);
+  -moz-transform: rotate(340deg);
+  -ms-transform: rotate(340deg);
+  -o-transform: rotate(340deg);
+  transform: rotate(340deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round7.rotate18 {
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+/* line 106, sass/styles.scss */
+.logo-block-round6 .logo-points-box {
+  height: 60px;
+  top: 25px;
+}
+
+/* line 112, sass/styles.scss */
+.logo-round6.rotate1 {
+  -webkit-transform: rotate(15deg);
+  -moz-transform: rotate(15deg);
+  -ms-transform: rotate(15deg);
+  -o-transform: rotate(15deg);
+  transform: rotate(15deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round6.rotate2 {
+  -webkit-transform: rotate(30deg);
+  -moz-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  -o-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round6.rotate3 {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round6.rotate4 {
+  -webkit-transform: rotate(60deg);
+  -moz-transform: rotate(60deg);
+  -ms-transform: rotate(60deg);
+  -o-transform: rotate(60deg);
+  transform: rotate(60deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round6.rotate5 {
+  -webkit-transform: rotate(75deg);
+  -moz-transform: rotate(75deg);
+  -ms-transform: rotate(75deg);
+  -o-transform: rotate(75deg);
+  transform: rotate(75deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round6.rotate6 {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round6.rotate7 {
+  -webkit-transform: rotate(105deg);
+  -moz-transform: rotate(105deg);
+  -ms-transform: rotate(105deg);
+  -o-transform: rotate(105deg);
+  transform: rotate(105deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round6.rotate8 {
+  -webkit-transform: rotate(120deg);
+  -moz-transform: rotate(120deg);
+  -ms-transform: rotate(120deg);
+  -o-transform: rotate(120deg);
+  transform: rotate(120deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round6.rotate9 {
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round6.rotate10 {
+  -webkit-transform: rotate(150deg);
+  -moz-transform: rotate(150deg);
+  -ms-transform: rotate(150deg);
+  -o-transform: rotate(150deg);
+  transform: rotate(150deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round6.rotate11 {
+  -webkit-transform: rotate(165deg);
+  -moz-transform: rotate(165deg);
+  -ms-transform: rotate(165deg);
+  -o-transform: rotate(165deg);
+  transform: rotate(165deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round6.rotate12 {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round6.rotate13 {
+  -webkit-transform: rotate(195deg);
+  -moz-transform: rotate(195deg);
+  -ms-transform: rotate(195deg);
+  -o-transform: rotate(195deg);
+  transform: rotate(195deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round6.rotate14 {
+  -webkit-transform: rotate(210deg);
+  -moz-transform: rotate(210deg);
+  -ms-transform: rotate(210deg);
+  -o-transform: rotate(210deg);
+  transform: rotate(210deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round6.rotate15 {
+  -webkit-transform: rotate(225deg);
+  -moz-transform: rotate(225deg);
+  -ms-transform: rotate(225deg);
+  -o-transform: rotate(225deg);
+  transform: rotate(225deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round6.rotate16 {
+  -webkit-transform: rotate(240deg);
+  -moz-transform: rotate(240deg);
+  -ms-transform: rotate(240deg);
+  -o-transform: rotate(240deg);
+  transform: rotate(240deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round6.rotate17 {
+  -webkit-transform: rotate(255deg);
+  -moz-transform: rotate(255deg);
+  -ms-transform: rotate(255deg);
+  -o-transform: rotate(255deg);
+  transform: rotate(255deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round6.rotate18 {
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round6.rotate19 {
+  -webkit-transform: rotate(285deg);
+  -moz-transform: rotate(285deg);
+  -ms-transform: rotate(285deg);
+  -o-transform: rotate(285deg);
+  transform: rotate(285deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round6.rotate20 {
+  -webkit-transform: rotate(300deg);
+  -moz-transform: rotate(300deg);
+  -ms-transform: rotate(300deg);
+  -o-transform: rotate(300deg);
+  transform: rotate(300deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round6.rotate21 {
+  -webkit-transform: rotate(315deg);
+  -moz-transform: rotate(315deg);
+  -ms-transform: rotate(315deg);
+  -o-transform: rotate(315deg);
+  transform: rotate(315deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round6.rotate22 {
+  -webkit-transform: rotate(330deg);
+  -moz-transform: rotate(330deg);
+  -ms-transform: rotate(330deg);
+  -o-transform: rotate(330deg);
+  transform: rotate(330deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round6.rotate23 {
+  -webkit-transform: rotate(345deg);
+  -moz-transform: rotate(345deg);
+  -ms-transform: rotate(345deg);
+  -o-transform: rotate(345deg);
+  transform: rotate(345deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round6.rotate24 {
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+/* line 106, sass/styles.scss */
+.logo-block-round5 .logo-points-box {
+  height: 70px;
+  top: 20px;
+}
+
+/* line 112, sass/styles.scss */
+.logo-round5.rotate1 {
+  -webkit-transform: rotate(12deg);
+  -moz-transform: rotate(12deg);
+  -ms-transform: rotate(12deg);
+  -o-transform: rotate(12deg);
+  transform: rotate(12deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round5.rotate2 {
+  -webkit-transform: rotate(24deg);
+  -moz-transform: rotate(24deg);
+  -ms-transform: rotate(24deg);
+  -o-transform: rotate(24deg);
+  transform: rotate(24deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round5.rotate3 {
+  -webkit-transform: rotate(36deg);
+  -moz-transform: rotate(36deg);
+  -ms-transform: rotate(36deg);
+  -o-transform: rotate(36deg);
+  transform: rotate(36deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round5.rotate4 {
+  -webkit-transform: rotate(48deg);
+  -moz-transform: rotate(48deg);
+  -ms-transform: rotate(48deg);
+  -o-transform: rotate(48deg);
+  transform: rotate(48deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round5.rotate5 {
+  -webkit-transform: rotate(60deg);
+  -moz-transform: rotate(60deg);
+  -ms-transform: rotate(60deg);
+  -o-transform: rotate(60deg);
+  transform: rotate(60deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round5.rotate6 {
   -webkit-transform: rotate(72deg);
   -moz-transform: rotate(72deg);
   -ms-transform: rotate(72deg);
   -o-transform: rotate(72deg);
   transform: rotate(72deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round5.rotate7 {
+  -webkit-transform: rotate(84deg);
+  -moz-transform: rotate(84deg);
+  -ms-transform: rotate(84deg);
+  -o-transform: rotate(84deg);
+  transform: rotate(84deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round5.rotate8 {
+  -webkit-transform: rotate(96deg);
+  -moz-transform: rotate(96deg);
+  -ms-transform: rotate(96deg);
+  -o-transform: rotate(96deg);
+  transform: rotate(96deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round5.rotate9 {
+  -webkit-transform: rotate(108deg);
+  -moz-transform: rotate(108deg);
+  -ms-transform: rotate(108deg);
+  -o-transform: rotate(108deg);
+  transform: rotate(108deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round5.rotate10 {
+  -webkit-transform: rotate(120deg);
+  -moz-transform: rotate(120deg);
+  -ms-transform: rotate(120deg);
+  -o-transform: rotate(120deg);
+  transform: rotate(120deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round5.rotate11 {
+  -webkit-transform: rotate(132deg);
+  -moz-transform: rotate(132deg);
+  -ms-transform: rotate(132deg);
+  -o-transform: rotate(132deg);
+  transform: rotate(132deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round5.rotate12 {
+  -webkit-transform: rotate(144deg);
+  -moz-transform: rotate(144deg);
+  -ms-transform: rotate(144deg);
+  -o-transform: rotate(144deg);
+  transform: rotate(144deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round5.rotate13 {
+  -webkit-transform: rotate(156deg);
+  -moz-transform: rotate(156deg);
+  -ms-transform: rotate(156deg);
+  -o-transform: rotate(156deg);
+  transform: rotate(156deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round5.rotate14 {
+  -webkit-transform: rotate(168deg);
+  -moz-transform: rotate(168deg);
+  -ms-transform: rotate(168deg);
+  -o-transform: rotate(168deg);
+  transform: rotate(168deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round5.rotate15 {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round5.rotate16 {
+  -webkit-transform: rotate(192deg);
+  -moz-transform: rotate(192deg);
+  -ms-transform: rotate(192deg);
+  -o-transform: rotate(192deg);
+  transform: rotate(192deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round5.rotate17 {
+  -webkit-transform: rotate(204deg);
+  -moz-transform: rotate(204deg);
+  -ms-transform: rotate(204deg);
+  -o-transform: rotate(204deg);
+  transform: rotate(204deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round5.rotate18 {
+  -webkit-transform: rotate(216deg);
+  -moz-transform: rotate(216deg);
+  -ms-transform: rotate(216deg);
+  -o-transform: rotate(216deg);
+  transform: rotate(216deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round5.rotate19 {
+  -webkit-transform: rotate(228deg);
+  -moz-transform: rotate(228deg);
+  -ms-transform: rotate(228deg);
+  -o-transform: rotate(228deg);
+  transform: rotate(228deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round5.rotate20 {
+  -webkit-transform: rotate(240deg);
+  -moz-transform: rotate(240deg);
+  -ms-transform: rotate(240deg);
+  -o-transform: rotate(240deg);
+  transform: rotate(240deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round5.rotate21 {
+  -webkit-transform: rotate(252deg);
+  -moz-transform: rotate(252deg);
+  -ms-transform: rotate(252deg);
+  -o-transform: rotate(252deg);
+  transform: rotate(252deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round5.rotate22 {
+  -webkit-transform: rotate(264deg);
+  -moz-transform: rotate(264deg);
+  -ms-transform: rotate(264deg);
+  -o-transform: rotate(264deg);
+  transform: rotate(264deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round5.rotate23 {
+  -webkit-transform: rotate(276deg);
+  -moz-transform: rotate(276deg);
+  -ms-transform: rotate(276deg);
+  -o-transform: rotate(276deg);
+  transform: rotate(276deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round5.rotate24 {
+  -webkit-transform: rotate(288deg);
+  -moz-transform: rotate(288deg);
+  -ms-transform: rotate(288deg);
+  -o-transform: rotate(288deg);
+  transform: rotate(288deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round5.rotate25 {
+  -webkit-transform: rotate(300deg);
+  -moz-transform: rotate(300deg);
+  -ms-transform: rotate(300deg);
+  -o-transform: rotate(300deg);
+  transform: rotate(300deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round5.rotate26 {
+  -webkit-transform: rotate(312deg);
+  -moz-transform: rotate(312deg);
+  -ms-transform: rotate(312deg);
+  -o-transform: rotate(312deg);
+  transform: rotate(312deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round5.rotate27 {
+  -webkit-transform: rotate(324deg);
+  -moz-transform: rotate(324deg);
+  -ms-transform: rotate(324deg);
+  -o-transform: rotate(324deg);
+  transform: rotate(324deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round5.rotate28 {
+  -webkit-transform: rotate(336deg);
+  -moz-transform: rotate(336deg);
+  -ms-transform: rotate(336deg);
+  -o-transform: rotate(336deg);
+  transform: rotate(336deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round5.rotate29 {
+  -webkit-transform: rotate(348deg);
+  -moz-transform: rotate(348deg);
+  -ms-transform: rotate(348deg);
+  -o-transform: rotate(348deg);
+  transform: rotate(348deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round5.rotate30 {
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+/* line 106, sass/styles.scss */
+.logo-block-round4 .logo-points-box {
+  height: 80px;
+  top: 15px;
+}
+
+/* line 112, sass/styles.scss */
+.logo-round4.rotate1 {
+  -webkit-transform: rotate(10deg);
+  -moz-transform: rotate(10deg);
+  -ms-transform: rotate(10deg);
+  -o-transform: rotate(10deg);
+  transform: rotate(10deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round4.rotate2 {
+  -webkit-transform: rotate(20deg);
+  -moz-transform: rotate(20deg);
+  -ms-transform: rotate(20deg);
+  -o-transform: rotate(20deg);
+  transform: rotate(20deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round4.rotate3 {
+  -webkit-transform: rotate(30deg);
+  -moz-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  -o-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round4.rotate4 {
+  -webkit-transform: rotate(40deg);
+  -moz-transform: rotate(40deg);
+  -ms-transform: rotate(40deg);
+  -o-transform: rotate(40deg);
+  transform: rotate(40deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round4.rotate5 {
+  -webkit-transform: rotate(50deg);
+  -moz-transform: rotate(50deg);
+  -ms-transform: rotate(50deg);
+  -o-transform: rotate(50deg);
+  transform: rotate(50deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round4.rotate6 {
+  -webkit-transform: rotate(60deg);
+  -moz-transform: rotate(60deg);
+  -ms-transform: rotate(60deg);
+  -o-transform: rotate(60deg);
+  transform: rotate(60deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round4.rotate7 {
+  -webkit-transform: rotate(70deg);
+  -moz-transform: rotate(70deg);
+  -ms-transform: rotate(70deg);
+  -o-transform: rotate(70deg);
+  transform: rotate(70deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round4.rotate8 {
+  -webkit-transform: rotate(80deg);
+  -moz-transform: rotate(80deg);
+  -ms-transform: rotate(80deg);
+  -o-transform: rotate(80deg);
+  transform: rotate(80deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round4.rotate9 {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round4.rotate10 {
+  -webkit-transform: rotate(100deg);
+  -moz-transform: rotate(100deg);
+  -ms-transform: rotate(100deg);
+  -o-transform: rotate(100deg);
+  transform: rotate(100deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round4.rotate11 {
+  -webkit-transform: rotate(110deg);
+  -moz-transform: rotate(110deg);
+  -ms-transform: rotate(110deg);
+  -o-transform: rotate(110deg);
+  transform: rotate(110deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round4.rotate12 {
+  -webkit-transform: rotate(120deg);
+  -moz-transform: rotate(120deg);
+  -ms-transform: rotate(120deg);
+  -o-transform: rotate(120deg);
+  transform: rotate(120deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round4.rotate13 {
+  -webkit-transform: rotate(130deg);
+  -moz-transform: rotate(130deg);
+  -ms-transform: rotate(130deg);
+  -o-transform: rotate(130deg);
+  transform: rotate(130deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round4.rotate14 {
+  -webkit-transform: rotate(140deg);
+  -moz-transform: rotate(140deg);
+  -ms-transform: rotate(140deg);
+  -o-transform: rotate(140deg);
+  transform: rotate(140deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round4.rotate15 {
+  -webkit-transform: rotate(150deg);
+  -moz-transform: rotate(150deg);
+  -ms-transform: rotate(150deg);
+  -o-transform: rotate(150deg);
+  transform: rotate(150deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round4.rotate16 {
+  -webkit-transform: rotate(160deg);
+  -moz-transform: rotate(160deg);
+  -ms-transform: rotate(160deg);
+  -o-transform: rotate(160deg);
+  transform: rotate(160deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round4.rotate17 {
+  -webkit-transform: rotate(170deg);
+  -moz-transform: rotate(170deg);
+  -ms-transform: rotate(170deg);
+  -o-transform: rotate(170deg);
+  transform: rotate(170deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round4.rotate18 {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round4.rotate19 {
+  -webkit-transform: rotate(190deg);
+  -moz-transform: rotate(190deg);
+  -ms-transform: rotate(190deg);
+  -o-transform: rotate(190deg);
+  transform: rotate(190deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round4.rotate20 {
+  -webkit-transform: rotate(200deg);
+  -moz-transform: rotate(200deg);
+  -ms-transform: rotate(200deg);
+  -o-transform: rotate(200deg);
+  transform: rotate(200deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round4.rotate21 {
+  -webkit-transform: rotate(210deg);
+  -moz-transform: rotate(210deg);
+  -ms-transform: rotate(210deg);
+  -o-transform: rotate(210deg);
+  transform: rotate(210deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round4.rotate22 {
+  -webkit-transform: rotate(220deg);
+  -moz-transform: rotate(220deg);
+  -ms-transform: rotate(220deg);
+  -o-transform: rotate(220deg);
+  transform: rotate(220deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round4.rotate23 {
+  -webkit-transform: rotate(230deg);
+  -moz-transform: rotate(230deg);
+  -ms-transform: rotate(230deg);
+  -o-transform: rotate(230deg);
+  transform: rotate(230deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round4.rotate24 {
+  -webkit-transform: rotate(240deg);
+  -moz-transform: rotate(240deg);
+  -ms-transform: rotate(240deg);
+  -o-transform: rotate(240deg);
+  transform: rotate(240deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round4.rotate25 {
+  -webkit-transform: rotate(250deg);
+  -moz-transform: rotate(250deg);
+  -ms-transform: rotate(250deg);
+  -o-transform: rotate(250deg);
+  transform: rotate(250deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round4.rotate26 {
+  -webkit-transform: rotate(260deg);
+  -moz-transform: rotate(260deg);
+  -ms-transform: rotate(260deg);
+  -o-transform: rotate(260deg);
+  transform: rotate(260deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round4.rotate27 {
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round4.rotate28 {
+  -webkit-transform: rotate(280deg);
+  -moz-transform: rotate(280deg);
+  -ms-transform: rotate(280deg);
+  -o-transform: rotate(280deg);
+  transform: rotate(280deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round4.rotate29 {
+  -webkit-transform: rotate(290deg);
+  -moz-transform: rotate(290deg);
+  -ms-transform: rotate(290deg);
+  -o-transform: rotate(290deg);
+  transform: rotate(290deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round4.rotate30 {
+  -webkit-transform: rotate(300deg);
+  -moz-transform: rotate(300deg);
+  -ms-transform: rotate(300deg);
+  -o-transform: rotate(300deg);
+  transform: rotate(300deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round4.rotate31 {
+  -webkit-transform: rotate(310deg);
+  -moz-transform: rotate(310deg);
+  -ms-transform: rotate(310deg);
+  -o-transform: rotate(310deg);
+  transform: rotate(310deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round4.rotate32 {
+  -webkit-transform: rotate(320deg);
+  -moz-transform: rotate(320deg);
+  -ms-transform: rotate(320deg);
+  -o-transform: rotate(320deg);
+  transform: rotate(320deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round4.rotate33 {
+  -webkit-transform: rotate(330deg);
+  -moz-transform: rotate(330deg);
+  -ms-transform: rotate(330deg);
+  -o-transform: rotate(330deg);
+  transform: rotate(330deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round4.rotate34 {
+  -webkit-transform: rotate(340deg);
+  -moz-transform: rotate(340deg);
+  -ms-transform: rotate(340deg);
+  -o-transform: rotate(340deg);
+  transform: rotate(340deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round4.rotate35 {
+  -webkit-transform: rotate(350deg);
+  -moz-transform: rotate(350deg);
+  -ms-transform: rotate(350deg);
+  -o-transform: rotate(350deg);
+  transform: rotate(350deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round4.rotate36 {
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+/* line 106, sass/styles.scss */
+.logo-block-round3 .logo-points-box {
+  height: 90px;
+  top: 10px;
+}
+
+/* line 112, sass/styles.scss */
+.logo-round3.rotate1 {
+  -webkit-transform: rotate(8.57143deg);
+  -moz-transform: rotate(8.57143deg);
+  -ms-transform: rotate(8.57143deg);
+  -o-transform: rotate(8.57143deg);
+  transform: rotate(8.57143deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round3.rotate2 {
+  -webkit-transform: rotate(17.14286deg);
+  -moz-transform: rotate(17.14286deg);
+  -ms-transform: rotate(17.14286deg);
+  -o-transform: rotate(17.14286deg);
+  transform: rotate(17.14286deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round3.rotate3 {
+  -webkit-transform: rotate(25.71429deg);
+  -moz-transform: rotate(25.71429deg);
+  -ms-transform: rotate(25.71429deg);
+  -o-transform: rotate(25.71429deg);
+  transform: rotate(25.71429deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round3.rotate4 {
+  -webkit-transform: rotate(34.28571deg);
+  -moz-transform: rotate(34.28571deg);
+  -ms-transform: rotate(34.28571deg);
+  -o-transform: rotate(34.28571deg);
+  transform: rotate(34.28571deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round3.rotate5 {
+  -webkit-transform: rotate(42.85714deg);
+  -moz-transform: rotate(42.85714deg);
+  -ms-transform: rotate(42.85714deg);
+  -o-transform: rotate(42.85714deg);
+  transform: rotate(42.85714deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round3.rotate6 {
+  -webkit-transform: rotate(51.42857deg);
+  -moz-transform: rotate(51.42857deg);
+  -ms-transform: rotate(51.42857deg);
+  -o-transform: rotate(51.42857deg);
+  transform: rotate(51.42857deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round3.rotate7 {
+  -webkit-transform: rotate(60deg);
+  -moz-transform: rotate(60deg);
+  -ms-transform: rotate(60deg);
+  -o-transform: rotate(60deg);
+  transform: rotate(60deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round3.rotate8 {
+  -webkit-transform: rotate(68.57143deg);
+  -moz-transform: rotate(68.57143deg);
+  -ms-transform: rotate(68.57143deg);
+  -o-transform: rotate(68.57143deg);
+  transform: rotate(68.57143deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round3.rotate9 {
+  -webkit-transform: rotate(77.14286deg);
+  -moz-transform: rotate(77.14286deg);
+  -ms-transform: rotate(77.14286deg);
+  -o-transform: rotate(77.14286deg);
+  transform: rotate(77.14286deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round3.rotate10 {
+  -webkit-transform: rotate(85.71429deg);
+  -moz-transform: rotate(85.71429deg);
+  -ms-transform: rotate(85.71429deg);
+  -o-transform: rotate(85.71429deg);
+  transform: rotate(85.71429deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round3.rotate11 {
+  -webkit-transform: rotate(94.28571deg);
+  -moz-transform: rotate(94.28571deg);
+  -ms-transform: rotate(94.28571deg);
+  -o-transform: rotate(94.28571deg);
+  transform: rotate(94.28571deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round3.rotate12 {
+  -webkit-transform: rotate(102.85714deg);
+  -moz-transform: rotate(102.85714deg);
+  -ms-transform: rotate(102.85714deg);
+  -o-transform: rotate(102.85714deg);
+  transform: rotate(102.85714deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round3.rotate13 {
+  -webkit-transform: rotate(111.42857deg);
+  -moz-transform: rotate(111.42857deg);
+  -ms-transform: rotate(111.42857deg);
+  -o-transform: rotate(111.42857deg);
+  transform: rotate(111.42857deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round3.rotate14 {
+  -webkit-transform: rotate(120deg);
+  -moz-transform: rotate(120deg);
+  -ms-transform: rotate(120deg);
+  -o-transform: rotate(120deg);
+  transform: rotate(120deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round3.rotate15 {
+  -webkit-transform: rotate(128.57143deg);
+  -moz-transform: rotate(128.57143deg);
+  -ms-transform: rotate(128.57143deg);
+  -o-transform: rotate(128.57143deg);
+  transform: rotate(128.57143deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round3.rotate16 {
+  -webkit-transform: rotate(137.14286deg);
+  -moz-transform: rotate(137.14286deg);
+  -ms-transform: rotate(137.14286deg);
+  -o-transform: rotate(137.14286deg);
+  transform: rotate(137.14286deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round3.rotate17 {
+  -webkit-transform: rotate(145.71429deg);
+  -moz-transform: rotate(145.71429deg);
+  -ms-transform: rotate(145.71429deg);
+  -o-transform: rotate(145.71429deg);
+  transform: rotate(145.71429deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round3.rotate18 {
+  -webkit-transform: rotate(154.28571deg);
+  -moz-transform: rotate(154.28571deg);
+  -ms-transform: rotate(154.28571deg);
+  -o-transform: rotate(154.28571deg);
+  transform: rotate(154.28571deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round3.rotate19 {
+  -webkit-transform: rotate(162.85714deg);
+  -moz-transform: rotate(162.85714deg);
+  -ms-transform: rotate(162.85714deg);
+  -o-transform: rotate(162.85714deg);
+  transform: rotate(162.85714deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round3.rotate20 {
+  -webkit-transform: rotate(171.42857deg);
+  -moz-transform: rotate(171.42857deg);
+  -ms-transform: rotate(171.42857deg);
+  -o-transform: rotate(171.42857deg);
+  transform: rotate(171.42857deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round3.rotate21 {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round3.rotate22 {
+  -webkit-transform: rotate(188.57143deg);
+  -moz-transform: rotate(188.57143deg);
+  -ms-transform: rotate(188.57143deg);
+  -o-transform: rotate(188.57143deg);
+  transform: rotate(188.57143deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round3.rotate23 {
+  -webkit-transform: rotate(197.14286deg);
+  -moz-transform: rotate(197.14286deg);
+  -ms-transform: rotate(197.14286deg);
+  -o-transform: rotate(197.14286deg);
+  transform: rotate(197.14286deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round3.rotate24 {
+  -webkit-transform: rotate(205.71429deg);
+  -moz-transform: rotate(205.71429deg);
+  -ms-transform: rotate(205.71429deg);
+  -o-transform: rotate(205.71429deg);
+  transform: rotate(205.71429deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round3.rotate25 {
+  -webkit-transform: rotate(214.28571deg);
+  -moz-transform: rotate(214.28571deg);
+  -ms-transform: rotate(214.28571deg);
+  -o-transform: rotate(214.28571deg);
+  transform: rotate(214.28571deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round3.rotate26 {
+  -webkit-transform: rotate(222.85714deg);
+  -moz-transform: rotate(222.85714deg);
+  -ms-transform: rotate(222.85714deg);
+  -o-transform: rotate(222.85714deg);
+  transform: rotate(222.85714deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round3.rotate27 {
+  -webkit-transform: rotate(231.42857deg);
+  -moz-transform: rotate(231.42857deg);
+  -ms-transform: rotate(231.42857deg);
+  -o-transform: rotate(231.42857deg);
+  transform: rotate(231.42857deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round3.rotate28 {
+  -webkit-transform: rotate(240deg);
+  -moz-transform: rotate(240deg);
+  -ms-transform: rotate(240deg);
+  -o-transform: rotate(240deg);
+  transform: rotate(240deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round3.rotate29 {
+  -webkit-transform: rotate(248.57143deg);
+  -moz-transform: rotate(248.57143deg);
+  -ms-transform: rotate(248.57143deg);
+  -o-transform: rotate(248.57143deg);
+  transform: rotate(248.57143deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round3.rotate30 {
+  -webkit-transform: rotate(257.14286deg);
+  -moz-transform: rotate(257.14286deg);
+  -ms-transform: rotate(257.14286deg);
+  -o-transform: rotate(257.14286deg);
+  transform: rotate(257.14286deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round3.rotate31 {
+  -webkit-transform: rotate(265.71429deg);
+  -moz-transform: rotate(265.71429deg);
+  -ms-transform: rotate(265.71429deg);
+  -o-transform: rotate(265.71429deg);
+  transform: rotate(265.71429deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round3.rotate32 {
+  -webkit-transform: rotate(274.28571deg);
+  -moz-transform: rotate(274.28571deg);
+  -ms-transform: rotate(274.28571deg);
+  -o-transform: rotate(274.28571deg);
+  transform: rotate(274.28571deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round3.rotate33 {
+  -webkit-transform: rotate(282.85714deg);
+  -moz-transform: rotate(282.85714deg);
+  -ms-transform: rotate(282.85714deg);
+  -o-transform: rotate(282.85714deg);
+  transform: rotate(282.85714deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round3.rotate34 {
+  -webkit-transform: rotate(291.42857deg);
+  -moz-transform: rotate(291.42857deg);
+  -ms-transform: rotate(291.42857deg);
+  -o-transform: rotate(291.42857deg);
+  transform: rotate(291.42857deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round3.rotate35 {
+  -webkit-transform: rotate(300deg);
+  -moz-transform: rotate(300deg);
+  -ms-transform: rotate(300deg);
+  -o-transform: rotate(300deg);
+  transform: rotate(300deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round3.rotate36 {
+  -webkit-transform: rotate(308.57143deg);
+  -moz-transform: rotate(308.57143deg);
+  -ms-transform: rotate(308.57143deg);
+  -o-transform: rotate(308.57143deg);
+  transform: rotate(308.57143deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round3.rotate37 {
+  -webkit-transform: rotate(317.14286deg);
+  -moz-transform: rotate(317.14286deg);
+  -ms-transform: rotate(317.14286deg);
+  -o-transform: rotate(317.14286deg);
+  transform: rotate(317.14286deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round3.rotate38 {
+  -webkit-transform: rotate(325.71429deg);
+  -moz-transform: rotate(325.71429deg);
+  -ms-transform: rotate(325.71429deg);
+  -o-transform: rotate(325.71429deg);
+  transform: rotate(325.71429deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round3.rotate39 {
+  -webkit-transform: rotate(334.28571deg);
+  -moz-transform: rotate(334.28571deg);
+  -ms-transform: rotate(334.28571deg);
+  -o-transform: rotate(334.28571deg);
+  transform: rotate(334.28571deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round3.rotate40 {
+  -webkit-transform: rotate(342.85714deg);
+  -moz-transform: rotate(342.85714deg);
+  -ms-transform: rotate(342.85714deg);
+  -o-transform: rotate(342.85714deg);
+  transform: rotate(342.85714deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round3.rotate41 {
+  -webkit-transform: rotate(351.42857deg);
+  -moz-transform: rotate(351.42857deg);
+  -ms-transform: rotate(351.42857deg);
+  -o-transform: rotate(351.42857deg);
+  transform: rotate(351.42857deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round3.rotate42 {
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+/* line 106, sass/styles.scss */
+.logo-block-round2 .logo-points-box {
+  height: 100px;
+  top: 5px;
+}
+
+/* line 112, sass/styles.scss */
+.logo-round2.rotate1 {
+  -webkit-transform: rotate(7.5deg);
+  -moz-transform: rotate(7.5deg);
+  -ms-transform: rotate(7.5deg);
+  -o-transform: rotate(7.5deg);
+  transform: rotate(7.5deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round2.rotate2 {
+  -webkit-transform: rotate(15deg);
+  -moz-transform: rotate(15deg);
+  -ms-transform: rotate(15deg);
+  -o-transform: rotate(15deg);
+  transform: rotate(15deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round2.rotate3 {
+  -webkit-transform: rotate(22.5deg);
+  -moz-transform: rotate(22.5deg);
+  -ms-transform: rotate(22.5deg);
+  -o-transform: rotate(22.5deg);
+  transform: rotate(22.5deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round2.rotate4 {
+  -webkit-transform: rotate(30deg);
+  -moz-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  -o-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round2.rotate5 {
+  -webkit-transform: rotate(37.5deg);
+  -moz-transform: rotate(37.5deg);
+  -ms-transform: rotate(37.5deg);
+  -o-transform: rotate(37.5deg);
+  transform: rotate(37.5deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round2.rotate6 {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round2.rotate7 {
+  -webkit-transform: rotate(52.5deg);
+  -moz-transform: rotate(52.5deg);
+  -ms-transform: rotate(52.5deg);
+  -o-transform: rotate(52.5deg);
+  transform: rotate(52.5deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round2.rotate8 {
+  -webkit-transform: rotate(60deg);
+  -moz-transform: rotate(60deg);
+  -ms-transform: rotate(60deg);
+  -o-transform: rotate(60deg);
+  transform: rotate(60deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round2.rotate9 {
+  -webkit-transform: rotate(67.5deg);
+  -moz-transform: rotate(67.5deg);
+  -ms-transform: rotate(67.5deg);
+  -o-transform: rotate(67.5deg);
+  transform: rotate(67.5deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round2.rotate10 {
+  -webkit-transform: rotate(75deg);
+  -moz-transform: rotate(75deg);
+  -ms-transform: rotate(75deg);
+  -o-transform: rotate(75deg);
+  transform: rotate(75deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round2.rotate11 {
+  -webkit-transform: rotate(82.5deg);
+  -moz-transform: rotate(82.5deg);
+  -ms-transform: rotate(82.5deg);
+  -o-transform: rotate(82.5deg);
+  transform: rotate(82.5deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round2.rotate12 {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round2.rotate13 {
+  -webkit-transform: rotate(97.5deg);
+  -moz-transform: rotate(97.5deg);
+  -ms-transform: rotate(97.5deg);
+  -o-transform: rotate(97.5deg);
+  transform: rotate(97.5deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round2.rotate14 {
+  -webkit-transform: rotate(105deg);
+  -moz-transform: rotate(105deg);
+  -ms-transform: rotate(105deg);
+  -o-transform: rotate(105deg);
+  transform: rotate(105deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round2.rotate15 {
+  -webkit-transform: rotate(112.5deg);
+  -moz-transform: rotate(112.5deg);
+  -ms-transform: rotate(112.5deg);
+  -o-transform: rotate(112.5deg);
+  transform: rotate(112.5deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round2.rotate16 {
+  -webkit-transform: rotate(120deg);
+  -moz-transform: rotate(120deg);
+  -ms-transform: rotate(120deg);
+  -o-transform: rotate(120deg);
+  transform: rotate(120deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round2.rotate17 {
+  -webkit-transform: rotate(127.5deg);
+  -moz-transform: rotate(127.5deg);
+  -ms-transform: rotate(127.5deg);
+  -o-transform: rotate(127.5deg);
+  transform: rotate(127.5deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round2.rotate18 {
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round2.rotate19 {
+  -webkit-transform: rotate(142.5deg);
+  -moz-transform: rotate(142.5deg);
+  -ms-transform: rotate(142.5deg);
+  -o-transform: rotate(142.5deg);
+  transform: rotate(142.5deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round2.rotate20 {
+  -webkit-transform: rotate(150deg);
+  -moz-transform: rotate(150deg);
+  -ms-transform: rotate(150deg);
+  -o-transform: rotate(150deg);
+  transform: rotate(150deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round2.rotate21 {
+  -webkit-transform: rotate(157.5deg);
+  -moz-transform: rotate(157.5deg);
+  -ms-transform: rotate(157.5deg);
+  -o-transform: rotate(157.5deg);
+  transform: rotate(157.5deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round2.rotate22 {
+  -webkit-transform: rotate(165deg);
+  -moz-transform: rotate(165deg);
+  -ms-transform: rotate(165deg);
+  -o-transform: rotate(165deg);
+  transform: rotate(165deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round2.rotate23 {
+  -webkit-transform: rotate(172.5deg);
+  -moz-transform: rotate(172.5deg);
+  -ms-transform: rotate(172.5deg);
+  -o-transform: rotate(172.5deg);
+  transform: rotate(172.5deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round2.rotate24 {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round2.rotate25 {
+  -webkit-transform: rotate(187.5deg);
+  -moz-transform: rotate(187.5deg);
+  -ms-transform: rotate(187.5deg);
+  -o-transform: rotate(187.5deg);
+  transform: rotate(187.5deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round2.rotate26 {
+  -webkit-transform: rotate(195deg);
+  -moz-transform: rotate(195deg);
+  -ms-transform: rotate(195deg);
+  -o-transform: rotate(195deg);
+  transform: rotate(195deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round2.rotate27 {
+  -webkit-transform: rotate(202.5deg);
+  -moz-transform: rotate(202.5deg);
+  -ms-transform: rotate(202.5deg);
+  -o-transform: rotate(202.5deg);
+  transform: rotate(202.5deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round2.rotate28 {
+  -webkit-transform: rotate(210deg);
+  -moz-transform: rotate(210deg);
+  -ms-transform: rotate(210deg);
+  -o-transform: rotate(210deg);
+  transform: rotate(210deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round2.rotate29 {
+  -webkit-transform: rotate(217.5deg);
+  -moz-transform: rotate(217.5deg);
+  -ms-transform: rotate(217.5deg);
+  -o-transform: rotate(217.5deg);
+  transform: rotate(217.5deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round2.rotate30 {
+  -webkit-transform: rotate(225deg);
+  -moz-transform: rotate(225deg);
+  -ms-transform: rotate(225deg);
+  -o-transform: rotate(225deg);
+  transform: rotate(225deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round2.rotate31 {
+  -webkit-transform: rotate(232.5deg);
+  -moz-transform: rotate(232.5deg);
+  -ms-transform: rotate(232.5deg);
+  -o-transform: rotate(232.5deg);
+  transform: rotate(232.5deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round2.rotate32 {
+  -webkit-transform: rotate(240deg);
+  -moz-transform: rotate(240deg);
+  -ms-transform: rotate(240deg);
+  -o-transform: rotate(240deg);
+  transform: rotate(240deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round2.rotate33 {
+  -webkit-transform: rotate(247.5deg);
+  -moz-transform: rotate(247.5deg);
+  -ms-transform: rotate(247.5deg);
+  -o-transform: rotate(247.5deg);
+  transform: rotate(247.5deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round2.rotate34 {
+  -webkit-transform: rotate(255deg);
+  -moz-transform: rotate(255deg);
+  -ms-transform: rotate(255deg);
+  -o-transform: rotate(255deg);
+  transform: rotate(255deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round2.rotate35 {
+  -webkit-transform: rotate(262.5deg);
+  -moz-transform: rotate(262.5deg);
+  -ms-transform: rotate(262.5deg);
+  -o-transform: rotate(262.5deg);
+  transform: rotate(262.5deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round2.rotate36 {
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round2.rotate37 {
+  -webkit-transform: rotate(277.5deg);
+  -moz-transform: rotate(277.5deg);
+  -ms-transform: rotate(277.5deg);
+  -o-transform: rotate(277.5deg);
+  transform: rotate(277.5deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round2.rotate38 {
+  -webkit-transform: rotate(285deg);
+  -moz-transform: rotate(285deg);
+  -ms-transform: rotate(285deg);
+  -o-transform: rotate(285deg);
+  transform: rotate(285deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round2.rotate39 {
+  -webkit-transform: rotate(292.5deg);
+  -moz-transform: rotate(292.5deg);
+  -ms-transform: rotate(292.5deg);
+  -o-transform: rotate(292.5deg);
+  transform: rotate(292.5deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round2.rotate40 {
+  -webkit-transform: rotate(300deg);
+  -moz-transform: rotate(300deg);
+  -ms-transform: rotate(300deg);
+  -o-transform: rotate(300deg);
+  transform: rotate(300deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round2.rotate41 {
+  -webkit-transform: rotate(307.5deg);
+  -moz-transform: rotate(307.5deg);
+  -ms-transform: rotate(307.5deg);
+  -o-transform: rotate(307.5deg);
+  transform: rotate(307.5deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round2.rotate42 {
+  -webkit-transform: rotate(315deg);
+  -moz-transform: rotate(315deg);
+  -ms-transform: rotate(315deg);
+  -o-transform: rotate(315deg);
+  transform: rotate(315deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round2.rotate43 {
+  -webkit-transform: rotate(322.5deg);
+  -moz-transform: rotate(322.5deg);
+  -ms-transform: rotate(322.5deg);
+  -o-transform: rotate(322.5deg);
+  transform: rotate(322.5deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round2.rotate44 {
+  -webkit-transform: rotate(330deg);
+  -moz-transform: rotate(330deg);
+  -ms-transform: rotate(330deg);
+  -o-transform: rotate(330deg);
+  transform: rotate(330deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round2.rotate45 {
+  -webkit-transform: rotate(337.5deg);
+  -moz-transform: rotate(337.5deg);
+  -ms-transform: rotate(337.5deg);
+  -o-transform: rotate(337.5deg);
+  transform: rotate(337.5deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round2.rotate46 {
+  -webkit-transform: rotate(345deg);
+  -moz-transform: rotate(345deg);
+  -ms-transform: rotate(345deg);
+  -o-transform: rotate(345deg);
+  transform: rotate(345deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round2.rotate47 {
+  -webkit-transform: rotate(352.5deg);
+  -moz-transform: rotate(352.5deg);
+  -ms-transform: rotate(352.5deg);
+  -o-transform: rotate(352.5deg);
+  transform: rotate(352.5deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round2.rotate48 {
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+/* line 106, sass/styles.scss */
+.logo-block-round1 .logo-points-box {
+  height: 110px;
+  top: 0px;
+}
+
+/* line 112, sass/styles.scss */
+.logo-round1.rotate1 {
+  -webkit-transform: rotate(6.66667deg);
+  -moz-transform: rotate(6.66667deg);
+  -ms-transform: rotate(6.66667deg);
+  -o-transform: rotate(6.66667deg);
+  transform: rotate(6.66667deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round1.rotate2 {
+  -webkit-transform: rotate(13.33333deg);
+  -moz-transform: rotate(13.33333deg);
+  -ms-transform: rotate(13.33333deg);
+  -o-transform: rotate(13.33333deg);
+  transform: rotate(13.33333deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round1.rotate3 {
+  -webkit-transform: rotate(20deg);
+  -moz-transform: rotate(20deg);
+  -ms-transform: rotate(20deg);
+  -o-transform: rotate(20deg);
+  transform: rotate(20deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round1.rotate4 {
+  -webkit-transform: rotate(26.66667deg);
+  -moz-transform: rotate(26.66667deg);
+  -ms-transform: rotate(26.66667deg);
+  -o-transform: rotate(26.66667deg);
+  transform: rotate(26.66667deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round1.rotate5 {
+  -webkit-transform: rotate(33.33333deg);
+  -moz-transform: rotate(33.33333deg);
+  -ms-transform: rotate(33.33333deg);
+  -o-transform: rotate(33.33333deg);
+  transform: rotate(33.33333deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round1.rotate6 {
+  -webkit-transform: rotate(40deg);
+  -moz-transform: rotate(40deg);
+  -ms-transform: rotate(40deg);
+  -o-transform: rotate(40deg);
+  transform: rotate(40deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round1.rotate7 {
+  -webkit-transform: rotate(46.66667deg);
+  -moz-transform: rotate(46.66667deg);
+  -ms-transform: rotate(46.66667deg);
+  -o-transform: rotate(46.66667deg);
+  transform: rotate(46.66667deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round1.rotate8 {
+  -webkit-transform: rotate(53.33333deg);
+  -moz-transform: rotate(53.33333deg);
+  -ms-transform: rotate(53.33333deg);
+  -o-transform: rotate(53.33333deg);
+  transform: rotate(53.33333deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round1.rotate9 {
+  -webkit-transform: rotate(60deg);
+  -moz-transform: rotate(60deg);
+  -ms-transform: rotate(60deg);
+  -o-transform: rotate(60deg);
+  transform: rotate(60deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round1.rotate10 {
+  -webkit-transform: rotate(66.66667deg);
+  -moz-transform: rotate(66.66667deg);
+  -ms-transform: rotate(66.66667deg);
+  -o-transform: rotate(66.66667deg);
+  transform: rotate(66.66667deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round1.rotate11 {
+  -webkit-transform: rotate(73.33333deg);
+  -moz-transform: rotate(73.33333deg);
+  -ms-transform: rotate(73.33333deg);
+  -o-transform: rotate(73.33333deg);
+  transform: rotate(73.33333deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round1.rotate12 {
+  -webkit-transform: rotate(80deg);
+  -moz-transform: rotate(80deg);
+  -ms-transform: rotate(80deg);
+  -o-transform: rotate(80deg);
+  transform: rotate(80deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round1.rotate13 {
+  -webkit-transform: rotate(86.66667deg);
+  -moz-transform: rotate(86.66667deg);
+  -ms-transform: rotate(86.66667deg);
+  -o-transform: rotate(86.66667deg);
+  transform: rotate(86.66667deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round1.rotate14 {
+  -webkit-transform: rotate(93.33333deg);
+  -moz-transform: rotate(93.33333deg);
+  -ms-transform: rotate(93.33333deg);
+  -o-transform: rotate(93.33333deg);
+  transform: rotate(93.33333deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round1.rotate15 {
+  -webkit-transform: rotate(100deg);
+  -moz-transform: rotate(100deg);
+  -ms-transform: rotate(100deg);
+  -o-transform: rotate(100deg);
+  transform: rotate(100deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round1.rotate16 {
+  -webkit-transform: rotate(106.66667deg);
+  -moz-transform: rotate(106.66667deg);
+  -ms-transform: rotate(106.66667deg);
+  -o-transform: rotate(106.66667deg);
+  transform: rotate(106.66667deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round1.rotate17 {
+  -webkit-transform: rotate(113.33333deg);
+  -moz-transform: rotate(113.33333deg);
+  -ms-transform: rotate(113.33333deg);
+  -o-transform: rotate(113.33333deg);
+  transform: rotate(113.33333deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round1.rotate18 {
+  -webkit-transform: rotate(120deg);
+  -moz-transform: rotate(120deg);
+  -ms-transform: rotate(120deg);
+  -o-transform: rotate(120deg);
+  transform: rotate(120deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round1.rotate19 {
+  -webkit-transform: rotate(126.66667deg);
+  -moz-transform: rotate(126.66667deg);
+  -ms-transform: rotate(126.66667deg);
+  -o-transform: rotate(126.66667deg);
+  transform: rotate(126.66667deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round1.rotate20 {
+  -webkit-transform: rotate(133.33333deg);
+  -moz-transform: rotate(133.33333deg);
+  -ms-transform: rotate(133.33333deg);
+  -o-transform: rotate(133.33333deg);
+  transform: rotate(133.33333deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round1.rotate21 {
+  -webkit-transform: rotate(140deg);
+  -moz-transform: rotate(140deg);
+  -ms-transform: rotate(140deg);
+  -o-transform: rotate(140deg);
+  transform: rotate(140deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round1.rotate22 {
+  -webkit-transform: rotate(146.66667deg);
+  -moz-transform: rotate(146.66667deg);
+  -ms-transform: rotate(146.66667deg);
+  -o-transform: rotate(146.66667deg);
+  transform: rotate(146.66667deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round1.rotate23 {
+  -webkit-transform: rotate(153.33333deg);
+  -moz-transform: rotate(153.33333deg);
+  -ms-transform: rotate(153.33333deg);
+  -o-transform: rotate(153.33333deg);
+  transform: rotate(153.33333deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round1.rotate24 {
+  -webkit-transform: rotate(160deg);
+  -moz-transform: rotate(160deg);
+  -ms-transform: rotate(160deg);
+  -o-transform: rotate(160deg);
+  transform: rotate(160deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round1.rotate25 {
+  -webkit-transform: rotate(166.66667deg);
+  -moz-transform: rotate(166.66667deg);
+  -ms-transform: rotate(166.66667deg);
+  -o-transform: rotate(166.66667deg);
+  transform: rotate(166.66667deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round1.rotate26 {
+  -webkit-transform: rotate(173.33333deg);
+  -moz-transform: rotate(173.33333deg);
+  -ms-transform: rotate(173.33333deg);
+  -o-transform: rotate(173.33333deg);
+  transform: rotate(173.33333deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round1.rotate27 {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round1.rotate28 {
+  -webkit-transform: rotate(186.66667deg);
+  -moz-transform: rotate(186.66667deg);
+  -ms-transform: rotate(186.66667deg);
+  -o-transform: rotate(186.66667deg);
+  transform: rotate(186.66667deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round1.rotate29 {
+  -webkit-transform: rotate(193.33333deg);
+  -moz-transform: rotate(193.33333deg);
+  -ms-transform: rotate(193.33333deg);
+  -o-transform: rotate(193.33333deg);
+  transform: rotate(193.33333deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round1.rotate30 {
+  -webkit-transform: rotate(200deg);
+  -moz-transform: rotate(200deg);
+  -ms-transform: rotate(200deg);
+  -o-transform: rotate(200deg);
+  transform: rotate(200deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round1.rotate31 {
+  -webkit-transform: rotate(206.66667deg);
+  -moz-transform: rotate(206.66667deg);
+  -ms-transform: rotate(206.66667deg);
+  -o-transform: rotate(206.66667deg);
+  transform: rotate(206.66667deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round1.rotate32 {
+  -webkit-transform: rotate(213.33333deg);
+  -moz-transform: rotate(213.33333deg);
+  -ms-transform: rotate(213.33333deg);
+  -o-transform: rotate(213.33333deg);
+  transform: rotate(213.33333deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round1.rotate33 {
+  -webkit-transform: rotate(220deg);
+  -moz-transform: rotate(220deg);
+  -ms-transform: rotate(220deg);
+  -o-transform: rotate(220deg);
+  transform: rotate(220deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round1.rotate34 {
+  -webkit-transform: rotate(226.66667deg);
+  -moz-transform: rotate(226.66667deg);
+  -ms-transform: rotate(226.66667deg);
+  -o-transform: rotate(226.66667deg);
+  transform: rotate(226.66667deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round1.rotate35 {
+  -webkit-transform: rotate(233.33333deg);
+  -moz-transform: rotate(233.33333deg);
+  -ms-transform: rotate(233.33333deg);
+  -o-transform: rotate(233.33333deg);
+  transform: rotate(233.33333deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round1.rotate36 {
+  -webkit-transform: rotate(240deg);
+  -moz-transform: rotate(240deg);
+  -ms-transform: rotate(240deg);
+  -o-transform: rotate(240deg);
+  transform: rotate(240deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round1.rotate37 {
+  -webkit-transform: rotate(246.66667deg);
+  -moz-transform: rotate(246.66667deg);
+  -ms-transform: rotate(246.66667deg);
+  -o-transform: rotate(246.66667deg);
+  transform: rotate(246.66667deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round1.rotate38 {
+  -webkit-transform: rotate(253.33333deg);
+  -moz-transform: rotate(253.33333deg);
+  -ms-transform: rotate(253.33333deg);
+  -o-transform: rotate(253.33333deg);
+  transform: rotate(253.33333deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round1.rotate39 {
+  -webkit-transform: rotate(260deg);
+  -moz-transform: rotate(260deg);
+  -ms-transform: rotate(260deg);
+  -o-transform: rotate(260deg);
+  transform: rotate(260deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round1.rotate40 {
+  -webkit-transform: rotate(266.66667deg);
+  -moz-transform: rotate(266.66667deg);
+  -ms-transform: rotate(266.66667deg);
+  -o-transform: rotate(266.66667deg);
+  transform: rotate(266.66667deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round1.rotate41 {
+  -webkit-transform: rotate(273.33333deg);
+  -moz-transform: rotate(273.33333deg);
+  -ms-transform: rotate(273.33333deg);
+  -o-transform: rotate(273.33333deg);
+  transform: rotate(273.33333deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round1.rotate42 {
+  -webkit-transform: rotate(280deg);
+  -moz-transform: rotate(280deg);
+  -ms-transform: rotate(280deg);
+  -o-transform: rotate(280deg);
+  transform: rotate(280deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round1.rotate43 {
+  -webkit-transform: rotate(286.66667deg);
+  -moz-transform: rotate(286.66667deg);
+  -ms-transform: rotate(286.66667deg);
+  -o-transform: rotate(286.66667deg);
+  transform: rotate(286.66667deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round1.rotate44 {
+  -webkit-transform: rotate(293.33333deg);
+  -moz-transform: rotate(293.33333deg);
+  -ms-transform: rotate(293.33333deg);
+  -o-transform: rotate(293.33333deg);
+  transform: rotate(293.33333deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round1.rotate45 {
+  -webkit-transform: rotate(300deg);
+  -moz-transform: rotate(300deg);
+  -ms-transform: rotate(300deg);
+  -o-transform: rotate(300deg);
+  transform: rotate(300deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round1.rotate46 {
+  -webkit-transform: rotate(306.66667deg);
+  -moz-transform: rotate(306.66667deg);
+  -ms-transform: rotate(306.66667deg);
+  -o-transform: rotate(306.66667deg);
+  transform: rotate(306.66667deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round1.rotate47 {
+  -webkit-transform: rotate(313.33333deg);
+  -moz-transform: rotate(313.33333deg);
+  -ms-transform: rotate(313.33333deg);
+  -o-transform: rotate(313.33333deg);
+  transform: rotate(313.33333deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round1.rotate48 {
+  -webkit-transform: rotate(320deg);
+  -moz-transform: rotate(320deg);
+  -ms-transform: rotate(320deg);
+  -o-transform: rotate(320deg);
+  transform: rotate(320deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round1.rotate49 {
+  -webkit-transform: rotate(326.66667deg);
+  -moz-transform: rotate(326.66667deg);
+  -ms-transform: rotate(326.66667deg);
+  -o-transform: rotate(326.66667deg);
+  transform: rotate(326.66667deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round1.rotate50 {
+  -webkit-transform: rotate(333.33333deg);
+  -moz-transform: rotate(333.33333deg);
+  -ms-transform: rotate(333.33333deg);
+  -o-transform: rotate(333.33333deg);
+  transform: rotate(333.33333deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round1.rotate51 {
+  -webkit-transform: rotate(340deg);
+  -moz-transform: rotate(340deg);
+  -ms-transform: rotate(340deg);
+  -o-transform: rotate(340deg);
+  transform: rotate(340deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round1.rotate52 {
+  -webkit-transform: rotate(346.66667deg);
+  -moz-transform: rotate(346.66667deg);
+  -ms-transform: rotate(346.66667deg);
+  -o-transform: rotate(346.66667deg);
+  transform: rotate(346.66667deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round1.rotate53 {
+  -webkit-transform: rotate(353.33333deg);
+  -moz-transform: rotate(353.33333deg);
+  -ms-transform: rotate(353.33333deg);
+  -o-transform: rotate(353.33333deg);
+  transform: rotate(353.33333deg);
+}
+
+/* line 112, sass/styles.scss */
+.logo-round1.rotate54 {
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+/*печать логотипа*/
+/*
+.logo-block-round1{
+	.logo-points-box {
+		height: 100px;
+		top: 0px;
+	}
+}*/
+/* line 127, sass/styles.scss */
+.logo-block-round2 .logo-points-box {
+  height: 100px;
+  top: 5px;
 }
 
 /*----------------------------------------------

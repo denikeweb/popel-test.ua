@@ -71,30 +71,64 @@ ins {
 /*===============================================================================
         	logo begin
 ----------------------------------------------*/
-.logo-block-round1{
-
+.logo{
+	position: relative;
 }
-.logo-point {
-	background: $point;
+.logo-points-box {
 	display: inline-block;
-	width: 5px;
-	height: 5px;
-	border-radius: 5px;
-		position: absolute;
-		left: 50px;
-		top: 50px;
-		margin: 20px;
+	position: absolute;
+	margin-left: 50px;
+	.logo-point {
+		background: $point;
+		display: inline-block;
+		width: 3px;
+		height: 3px;
+		border-radius: 3px;
 
-	transform-origin: bottom center;
-	transform: rotate(60deg);
-}
-
-@for $i from 1 through 12 {
-	.rotate#{$i} {
-		@include transform(rotate(($i*6)+deg));
+		transform-origin: bottom center;
 	}
 }
- 
+
+$s : 0;
+@for $k from 1 through 10 {
+	$t : 11 - $k;
+	$myH : #{120-(10*($t))}px;
+	$myT : #{5*(10-$k)}px;
+	@if $t == 10 {
+		$myH : 10px;
+		$myT : 43.3px;
+	}
+	@if $t == 9 {
+		$myH : 32px;
+		$myT : 39px;
+	}
+	.logo-block-round#{$t}{
+		.logo-points-box {
+			height: $myH;
+			top: $myT;
+		}
+	}
+	@for $i from 1 through $s {
+		.logo-round#{$t}.rotate#{$i} {
+			@include transform(rotate(($i*(360/($s)))+deg));
+		}
+	}
+	$s : $s + 6;
+}
+/*печать логотипа*/
+/*
+.logo-block-round1{
+	.logo-points-box {
+		height: 100px;
+		top: 0px;
+	}
+}*/
+.logo-block-round2{
+	.logo-points-box {
+		height: 100px;
+		top: 5px;
+	}
+}
 .logo-round1 {
 
 }
