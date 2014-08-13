@@ -21,9 +21,11 @@ html, body {
 @keyframes 				blink 	{@include  		mix-blink;}
 
 .plug-box {
+	position: absolute;
 	background: $w;
 	width: 100%;
 	height: 100%;
+	z-index: 999;
 }
 .start-plug{
 	-webkit-animation: 	blink 2s linear 2s infinite;
@@ -74,10 +76,11 @@ html, body {
 
 @mixin mix-load-level-1 								{
 	0% 			{opacity: 0;}
-	89.5833% 	{opacity: 0;	height: 400px;	}
+	80% 	{opacity: 0;	height: 400px;	}
+	//89.5833%
 	100% 		{opacity: 1;	height: 120px;	}		}
 @mixin mix-load-pre-level-1 							{
-	89.5833% 	{top: -140px;	}
+	80% 	{top: -140px;	}
 	100% 		{top: -7px;		}						}
 @-webkit-keyframes  	load-level-1 	{@include 		mix-load-level-1;}
 @keyframes 				load-level-1 	{@include  		mix-load-level-1;}
@@ -87,11 +90,11 @@ html, body {
 
 @mixin mix-load-level-2 								{
 	0% 			{opacity: 0;}
-	83.3333% 	{opacity: 0;	height: 380px;	}
-	91% 		{opacity: 1;	height: 110px;	}		}
+	78% 	{opacity: 0;	height: 380px;	}
+	97% 		{opacity: 1;	height: 110px;	}		}
 @mixin mix-load-pre-level-2 							{
-	83.3333% 	{top: -110px;	}
-	91% 		{top: -2px;	}						}
+	78% 	{top: -110px;	}
+	97% 		{top: -2px;	}						}
 @-webkit-keyframes  	load-level-2 	{@include 		mix-load-level-2;}
 @keyframes 				load-level-2 	{@include  		mix-load-level-2;}
 @-webkit-keyframes  load-pre-level-2 	{@include 	mix-load-pre-level-2;}
@@ -101,10 +104,10 @@ html, body {
 @mixin mix-load-level-3 								{
 	0% 			{opacity: 0;}
 	77.0833% 	{opacity: 0;	height: 350px;	}
-	85% 		{opacity: 1;	height: 100px;	}		}
+	94% 		{opacity: 1;	height: 100px;	}		}
 @mixin mix-load-pre-level-3 							{
 	77.0833% 	{top: -120px;	}
-	85% 		{top: 3px;	}						}
+	94% 		{top: 3px;	}						}
 @-webkit-keyframes  	load-level-3 	{@include 		mix-load-level-3;}
 @keyframes 				load-level-3 	{@include  		mix-load-level-3;}
 @-webkit-keyframes  load-pre-level-3 	{@include 	mix-load-pre-level-3;}
@@ -114,10 +117,10 @@ html, body {
 @mixin mix-load-level-4 								{
 	0% 			{opacity: 0;}
 	70.8333% 	{opacity: 0;	height: 330px;	}
-	77.0833% 	{opacity: 1;	height: 90px;	}		}
+	88% 	{opacity: 1;	height: 90px;	}		}
 @mixin mix-load-pre-level-4 							{
 	70.8333% 	{top: -110px;	}
-	77.0833% 	{top: 8px;	}						}
+	88% 	{top: 8px;	}						}
 @-webkit-keyframes  	load-level-4 	{@include 		mix-load-level-4;}
 @keyframes 				load-level-4 	{@include  		mix-load-level-4;}
 @-webkit-keyframes  load-pre-level-4 	{@include 	mix-load-pre-level-4;}
@@ -127,10 +130,10 @@ html, body {
 @mixin mix-load-level-5 								{
 	0% 			{opacity: 0;}
 	64.5833% 	{opacity: 0;	height: 300px;	}
-	70.8333% 	{opacity: 1;	height: 80px;	}		}
+	82% 	{opacity: 1;	height: 80px;	}		}
 @mixin mix-load-pre-level-5								{
 	64.5833% 	{top: -100px;	}
-	70.8333% 	{top: 13px;	}						}
+	82% 	{top: 10px;	}						}
 @-webkit-keyframes  	load-level-5 	{@include 		mix-load-level-5;}
 @keyframes 				load-level-5 	{@include  		mix-load-level-5;}
 @-webkit-keyframes  load-pre-level-5 	{@include 	mix-load-pre-level-5;}
@@ -140,10 +143,10 @@ html, body {
 @mixin mix-load-level-6 								{
 	0% 			{opacity: 0;}
 	58.3333% 	{opacity: 0;	height: 280px;	}
-	64.5833% 	{opacity: 1;	height: 70px;	}		}
+	76% 	{opacity: 1;	height: 70px;	}		}
 @mixin mix-load-pre-level-6 							{
 	58.3333% 	{top: -90px;	}
-	64.5833% 	{top: 18px;	}						}
+	76% 	{top: 15px;	}						}
 @-webkit-keyframes  	load-level-6 	{@include 		mix-load-level-6;}
 @keyframes 				load-level-6 	{@include  		mix-load-level-6;}
 @-webkit-keyframes  load-pre-level-6 	{@include 	mix-load-pre-level-6;}
@@ -153,10 +156,10 @@ html, body {
 @mixin mix-load-level-7 								{
 	0% 			{opacity: 0;}
 	52.0833% 	{opacity: 0;	height: 240px;	}
-	58.3333% 	{opacity: 1;	height: 60px;	}		}
+	72% 	{opacity: 1;	height: 60px;	}		}
 @mixin mix-load-pre-level-7								{
-	52.0833% 	{top: -8px;	}
-	58.3333% 	{top: 23px;	}						}
+	52.0833% 	{top: -90px;	}
+	72% 	{top: 20px;	}						}
 @-webkit-keyframes  	load-level-7 	{@include 		mix-load-level-7;}
 @keyframes 				load-level-7 	{@include  		mix-load-level-7;}
 @-webkit-keyframes  load-pre-level-7 	{@include 	mix-load-pre-level-7;}
@@ -166,10 +169,10 @@ html, body {
 @mixin mix-load-level-8 								{
 	0% 			{opacity: 0;}
 	47.9167% 	{opacity: 0;	height: 210px;	}
-	52.0833% 	{opacity: 1;	height: 50px;	}		}
+	66% 	{opacity: 1;	height: 50px;	}		}
 @mixin mix-load-pre-level-8 							{
-	47.9167% 	{top: -70px;	}
-	52.0833% 	{top: 28px;	}						}
+	47.9167% 	{top: -90px;	}
+	66% 	{top: 25px;	}						}
 @-webkit-keyframes  	load-level-8 	{@include 		mix-load-level-8;}
 @keyframes 				load-level-8 	{@include  		mix-load-level-8;}
 @-webkit-keyframes  load-pre-level-8 	{@include 	mix-load-pre-level-8;}
@@ -179,10 +182,10 @@ html, body {
 @mixin mix-load-level-9 								{
 	0% 			{opacity: 0;}
 	41.6667% 	{opacity: 0;	height: 150px;	}
-	47.9167% 	{opacity: 1;	height: 40px;	}		}
+	62% 	{opacity: 1;	height: 40px;	}		}
 @mixin mix-load-pre-level-9 							{
 	41.6667% 	{top: 0px;	}
-	47.9167% 	{top: 33px;	}						}
+	62% 	{top: 31px;	}						}
 @-webkit-keyframes  	load-level-9 	{@include 		mix-load-level-9;}
 @keyframes 				load-level-9 	{@include  		mix-load-level-9;}
 @-webkit-keyframes  load-pre-level-9 	{@include 	mix-load-pre-level-9;}
@@ -228,15 +231,15 @@ $s : 0;
 	// исключения
 
 	.logo-block-round#{$t} {
-		-webkit-animation: load-level-#{$t} 2s ease;
-		animation: load-level-#{$t} 2s;
+		-webkit-animation: load-level-#{$t} 2s ease-in;
+		animation: load-level-#{$t} 2s ease-in;
 		height: $myH;
 		position: absolute;
 		.logo-points-box {
 			height: inherit;
 			top: $myT;
-			-webkit-animation: load-pre-level-#{$t} 2s ease;
-			animation: load-pre-level-#{$t} 2s;
+			-webkit-animation: load-pre-level-#{$t} 2s ease-in;
+			animation: load-pre-level-#{$t} 2s ease-in;
 		}
 	}
 	// определяется высота столбиков уровня и сдвиг уровня
@@ -260,24 +263,15 @@ $s : 0;
 
 
 /*===============================================================================
-        	First content area begin
+        	First content bg area begin
 ----------------------------------------------*/
-	.content {
-		&.one {
-			background: rgba(0, 0, 0, 0.6);
-			width: 100%;
-			height: 100%;
-			position: absolute;
-			z-index: 120;
-		}
-	}
 
 	@mixin mix-moving {
 		0%, 100% {
-			//@include transform(translate(0, 0));
+			@include transform(translate(0, 0));
 		}
 		50% {
-			//@include transform(translate(-20px, 20px));
+			@include transform(translate(-5%, 5%));
 		}
 	}
 	@-webkit-keyframes  	moving 	{@include 		mix-moving;}
@@ -290,19 +284,17 @@ $s : 0;
 			right: 0;
 			bottom: 0;
 			left: 0;
-			margin: 20px;
-			border: 1px solid crimson;
-			width: 100%;
-			height: 100%;
-			background: url(../img/bgs/1.jpg) no-repeat bottom right fixed;
-			-webkit-background-size: cover;
-			-moz-background-size: cover;
-			-o-background-size: cover;
-			background-size: cover;
+			width: 120%;
+			height: 120%;
+			margin: auto;
 			z-index: 0;
 
-			-webkit-animation: 	moving 10s infinite;
-			animation: 			moving 10s infinite;
+			-webkit-animation: 	moving 20s ease-in infinite;
+			animation: 			moving 20s ease-in infinite;
+		}
+		&.image{
+			width: 100%;
+			height: 100%;
 		}
 	}
 
@@ -315,17 +307,30 @@ $s : 0;
 		}
 	}
 /*----------------------------------------------
-        	First content area end
+        	First content bg area end
 ===============================================================================*/
 
 
 
 /*===============================================================================
-        	_ begin
+        	First content begin
 ----------------------------------------------*/
 
+.content {
+	&.one {
+		background: rgba(0, 0, 0, 0.6);
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		z-index: 120;
+	}
+}
+.in940 {
+	width: 940px;
+	margin: 0 auto;
+}
 /*----------------------------------------------
-        	_ end
+        	First content end
 ===============================================================================*/
 
 
