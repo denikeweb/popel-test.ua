@@ -3,7 +3,7 @@ $F = {
 		loadingStatus : false,
 		// setting timer for tracking loading
 		logoLoadingControll : function () {
-			animationTime = 2500; // default: 2s + .5s = 2500
+			animationTime = 12500; // default: 2s + .5s = 2500
 			setTimeout(function () {
 				This = $F.loading;
 				//console.log ('Заданный интервал времени прошел: ' + This.loadingStatus + This);
@@ -47,6 +47,6 @@ $F.loading.logoLoadingControll ();
 
 $(function(){
 	$F.loading.pageIsLoad ();
-	$F.loading.debugClear ();
+	//$F.loading.debugClear ();
 	//console.log ('Страница загружена: ' + $F.loading.loadingStatus);
 });
