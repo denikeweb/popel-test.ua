@@ -67,36 +67,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /*===============================================================================
         	logo begin
 ----------------------------------------------*/
-@-webkit-keyframes load-logo {
-  /* line 9, sass/styles.scss */
-  0% {
-    opacity: 0;
-  }
-
-  /* line 10, sass/styles.scss */
-  100% {
-    opacity: 1;
-  }
+/*@mixin mix-load-logo {
+	0%   {opacity: 0;}
+	100% {opacity: 1;}
 }
-
-@keyframes load-logo {
-  /* line 9, sass/styles.scss */
-  0% {
-    opacity: 0;
-  }
-
-  /* line 10, sass/styles.scss */
-  100% {
-    opacity: 1;
-  }
-}
-
-/* line 15, sass/styles.scss */
+@-webkit-keyframes load-logo {@include mix-load-logo;}
+@keyframes load-logo {@include mix-load-logo;}
+*/
+/* line 16, sass/styles.scss */
 .start-plug {
-  -webkit-animation: load-logo 2s;
-  animation: load-logo 2s;
+  /*-webkit-animation: load-logo 2s;
+  animation: load-logo 2s;*/
 }
-/* line 18, sass/styles.scss */
+/* line 19, sass/styles.scss */
 .start-plug.download {
   width: 120px;
   height: 120px;
@@ -107,19 +90,23 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   right: 0;
   margin: auto;
 }
-
 /* line 29, sass/styles.scss */
-.logo {
+.start-plug .logo {
   position: relative;
 }
 
-/* line 32, sass/styles.scss */
+/* line 33, sass/styles.scss */
+body.download {
+  overflow: hidden;
+}
+
+/* line 36, sass/styles.scss */
 .logo-points-box {
   display: inline-block;
   position: absolute;
   margin-left: 50px;
 }
-/* line 36, sass/styles.scss */
+/* line 40, sass/styles.scss */
 .logo-points-box .logo-point {
   background: #83c0d7;
   display: inline-block;
@@ -129,29 +116,513 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform-origin: bottom center;
 }
 
-/* line 66, sass/styles.scss */
+@-webkit-keyframes load-level-1 {
+  /* line 56, sass/styles.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 57, sass/styles.scss */
+  89.5833% {
+    opacity: 0;
+    height: 400px;
+  }
+
+  /* line 58, sass/styles.scss */
+  100% {
+    opacity: 1;
+    height: 120px;
+  }
+}
+
+@keyframes load-level-1 {
+  /* line 56, sass/styles.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 57, sass/styles.scss */
+  89.5833% {
+    opacity: 0;
+    height: 400px;
+  }
+
+  /* line 58, sass/styles.scss */
+  100% {
+    opacity: 1;
+    height: 120px;
+  }
+}
+
+@-webkit-keyframes load-pre-level-1 {
+  /* line 60, sass/styles.scss */
+  89.5833% {
+    top: -140px;
+  }
+
+  /* line 61, sass/styles.scss */
+  100% {
+    top: -5px;
+  }
+}
+
+@keyframes load-pre-level-1 {
+  /* line 60, sass/styles.scss */
+  89.5833% {
+    top: -140px;
+  }
+
+  /* line 61, sass/styles.scss */
+  100% {
+    top: -5px;
+  }
+}
+
+@-webkit-keyframes load-level-2 {
+  /* line 69, sass/styles.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 70, sass/styles.scss */
+  83.3333% {
+    opacity: 0;
+    height: 380px;
+  }
+
+  /* line 71, sass/styles.scss */
+  89.5833% {
+    opacity: 1;
+    height: 110px;
+  }
+}
+
+@keyframes load-level-2 {
+  /* line 69, sass/styles.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 70, sass/styles.scss */
+  83.3333% {
+    opacity: 0;
+    height: 380px;
+  }
+
+  /* line 71, sass/styles.scss */
+  89.5833% {
+    opacity: 1;
+    height: 110px;
+  }
+}
+
+@-webkit-keyframes load-pre-level-2 {
+  /* line 73, sass/styles.scss */
+  83.3333% {
+    top: -130px;
+  }
+
+  /* line 74, sass/styles.scss */
+  89.5833% {
+    top: -10px;
+  }
+}
+
+@keyframes load-pre-level-2 {
+  /* line 73, sass/styles.scss */
+  83.3333% {
+    top: -130px;
+  }
+
+  /* line 74, sass/styles.scss */
+  89.5833% {
+    top: -10px;
+  }
+}
+
+@-webkit-keyframes load-level-3 {
+  /* line 82, sass/styles.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /*77.0833% 	{opacity: 0;	height: 350px;	}
+  83.3333% 	{opacity: 1;	height: 100px;	}*/
+}
+
+@keyframes load-level-3 {
+  /* line 82, sass/styles.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /*77.0833% 	{opacity: 0;	height: 350px;	}
+  83.3333% 	{opacity: 1;	height: 100px;	}*/
+}
+
+@-webkit-keyframes load-pre-level-3 {
+  /* line 86, sass/styles.scss */
+  77.0833% {
+    top: -120px;
+  }
+
+  /* line 87, sass/styles.scss */
+  83.3333% {
+    top: -15px;
+  }
+}
+
+@keyframes load-pre-level-3 {
+  /* line 86, sass/styles.scss */
+  77.0833% {
+    top: -120px;
+  }
+
+  /* line 87, sass/styles.scss */
+  83.3333% {
+    top: -15px;
+  }
+}
+
+@-webkit-keyframes load-level-4 {
+  /* line 95, sass/styles.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /*70.8333% 	{opacity: 0;	height: 330px;	}
+  77.0833% 	{opacity: 1;	height: 90px;	}*/
+}
+
+@keyframes load-level-4 {
+  /* line 95, sass/styles.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /*70.8333% 	{opacity: 0;	height: 330px;	}
+  77.0833% 	{opacity: 1;	height: 90px;	}*/
+}
+
+@-webkit-keyframes load-pre-level-4 {
+  /* line 99, sass/styles.scss */
+  70.8333% {
+    top: -110px;
+  }
+
+  /* line 100, sass/styles.scss */
+  77.0833% {
+    top: -20px;
+  }
+}
+
+@keyframes load-pre-level-4 {
+  /* line 99, sass/styles.scss */
+  70.8333% {
+    top: -110px;
+  }
+
+  /* line 100, sass/styles.scss */
+  77.0833% {
+    top: -20px;
+  }
+}
+
+@-webkit-keyframes load-level-5 {
+  /* line 108, sass/styles.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /*64.5833% 	{opacity: 0;	height: 300px;	}
+  70.8333% 	{opacity: 1;	height: 80px;	}*/
+}
+
+@keyframes load-level-5 {
+  /* line 108, sass/styles.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /*64.5833% 	{opacity: 0;	height: 300px;	}
+  70.8333% 	{opacity: 1;	height: 80px;	}*/
+}
+
+@-webkit-keyframes load-pre-level-5 {
+  /* line 112, sass/styles.scss */
+  64.5833% {
+    top: -100px;
+  }
+
+  /* line 113, sass/styles.scss */
+  70.8333% {
+    top: -25px;
+  }
+}
+
+@keyframes load-pre-level-5 {
+  /* line 112, sass/styles.scss */
+  64.5833% {
+    top: -100px;
+  }
+
+  /* line 113, sass/styles.scss */
+  70.8333% {
+    top: -25px;
+  }
+}
+
+@-webkit-keyframes load-level-6 {
+  /* line 121, sass/styles.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /*58.3333% 	{opacity: 0;	height: 280px;	}
+  64.5833% 	{opacity: 1;	height: 70px;	}*/
+}
+
+@keyframes load-level-6 {
+  /* line 121, sass/styles.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /*58.3333% 	{opacity: 0;	height: 280px;	}
+  64.5833% 	{opacity: 1;	height: 70px;	}*/
+}
+
+@-webkit-keyframes load-pre-level-6 {
+  /* line 125, sass/styles.scss */
+  58.3333% {
+    top: -90px;
+  }
+
+  /* line 126, sass/styles.scss */
+  64.5833% {
+    top: -30px;
+  }
+}
+
+@keyframes load-pre-level-6 {
+  /* line 125, sass/styles.scss */
+  58.3333% {
+    top: -90px;
+  }
+
+  /* line 126, sass/styles.scss */
+  64.5833% {
+    top: -30px;
+  }
+}
+
+@-webkit-keyframes load-level-7 {
+  /* line 134, sass/styles.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /*52.0833% 	{opacity: 0;	height: 240px;	}
+  58.3333% 	{opacity: 1;	height: 60px;	}*/
+}
+
+@keyframes load-level-7 {
+  /* line 134, sass/styles.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /*52.0833% 	{opacity: 0;	height: 240px;	}
+  58.3333% 	{opacity: 1;	height: 60px;	}*/
+}
+
+@-webkit-keyframes load-pre-level-7 {
+  /* line 138, sass/styles.scss */
+  52.0833% {
+    top: -8px;
+  }
+
+  /* line 139, sass/styles.scss */
+  58.3333% {
+    top: -35px;
+  }
+}
+
+@keyframes load-pre-level-7 {
+  /* line 138, sass/styles.scss */
+  52.0833% {
+    top: -8px;
+  }
+
+  /* line 139, sass/styles.scss */
+  58.3333% {
+    top: -35px;
+  }
+}
+
+@-webkit-keyframes load-level-8 {
+  /* line 147, sass/styles.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /*47.9167% 	{opacity: 0;	height: 210px;	}
+  52.0833% 	{opacity: 1;	height: 50px;	}*/
+}
+
+@keyframes load-level-8 {
+  /* line 147, sass/styles.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /*47.9167% 	{opacity: 0;	height: 210px;	}
+  52.0833% 	{opacity: 1;	height: 50px;	}*/
+}
+
+@-webkit-keyframes load-pre-level-8 {
+  /* line 151, sass/styles.scss */
+  47.9167% {
+    top: -70px;
+  }
+
+  /* line 152, sass/styles.scss */
+  52.0833% {
+    top: -40px;
+  }
+}
+
+@keyframes load-pre-level-8 {
+  /* line 151, sass/styles.scss */
+  47.9167% {
+    top: -70px;
+  }
+
+  /* line 152, sass/styles.scss */
+  52.0833% {
+    top: -40px;
+  }
+}
+
+@-webkit-keyframes load-level-9 {
+  /* line 160, sass/styles.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /*41.6667% 	{opacity: 0;	height: 150px;	}
+  47.9167% 	{opacity: 1;	height: 40px;	}*/
+}
+
+@keyframes load-level-9 {
+  /* line 160, sass/styles.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /*41.6667% 	{opacity: 0;	height: 150px;	}
+  47.9167% 	{opacity: 1;	height: 40px;	}*/
+}
+
+@-webkit-keyframes load-pre-level-9 {
+  /* line 164, sass/styles.scss */
+  41.6667% {
+    top: -60px;
+  }
+
+  /* line 165, sass/styles.scss */
+  47.9167% {
+    top: -45px;
+  }
+}
+
+@keyframes load-pre-level-9 {
+  /* line 164, sass/styles.scss */
+  41.6667% {
+    top: -60px;
+  }
+
+  /* line 165, sass/styles.scss */
+  47.9167% {
+    top: -45px;
+  }
+}
+
+@-webkit-keyframes load-level-10 {
+  /* line 173, sass/styles.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /*37.5% 		{opacity: 0;	height: 50px;	}
+  41.6667% 	{opacity: 1;	height: 30px;	}*/
+}
+
+@keyframes load-level-10 {
+  /* line 173, sass/styles.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /*37.5% 		{opacity: 0;	height: 50px;	}
+  41.6667% 	{opacity: 1;	height: 30px;	}*/
+}
+
+@-webkit-keyframes load-pre-level-10 {
+  /* line 177, sass/styles.scss */
+  37.5% {
+    top: -50px;
+  }
+
+  /* line 178, sass/styles.scss */
+  41.6667% {
+    top: -43.3px;
+  }
+}
+
+@keyframes load-pre-level-10 {
+  /* line 177, sass/styles.scss */
+  37.5% {
+    top: -50px;
+  }
+
+  /* line 178, sass/styles.scss */
+  41.6667% {
+    top: -43.3px;
+  }
+}
+
+/* line 210, sass/styles.scss */
 .logo-block-round10 {
+  -webkit-animation: load-level-10 2s;
+  animation: load-level-10 2s;
   height: 10px;
   position: absolute;
 }
-/* line 69, sass/styles.scss */
+/* line 215, sass/styles.scss */
 .logo-block-round10 .logo-points-box {
   height: inherit;
   top: 43.3px;
+  -webkit-animation: load-pre-level-10 2s;
+  animation: load-pre-level-10 2s;
 }
 
-/* line 66, sass/styles.scss */
+/* line 210, sass/styles.scss */
 .logo-block-round9 {
+  -webkit-animation: load-level-9 2s;
+  animation: load-level-9 2s;
   height: 32px;
   position: absolute;
 }
-/* line 69, sass/styles.scss */
+/* line 215, sass/styles.scss */
 .logo-block-round9 .logo-points-box {
   height: inherit;
   top: 39px;
+  -webkit-animation: load-pre-level-9 2s;
+  animation: load-pre-level-9 2s;
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round9.rotate1 {
   -webkit-transform: rotate(60deg);
   -moz-transform: rotate(60deg);
@@ -160,7 +631,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(60deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round9.rotate2 {
   -webkit-transform: rotate(120deg);
   -moz-transform: rotate(120deg);
@@ -169,7 +640,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(120deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round9.rotate3 {
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
@@ -178,7 +649,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(180deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round9.rotate4 {
   -webkit-transform: rotate(240deg);
   -moz-transform: rotate(240deg);
@@ -187,7 +658,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(240deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round9.rotate5 {
   -webkit-transform: rotate(300deg);
   -moz-transform: rotate(300deg);
@@ -196,7 +667,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(300deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round9.rotate6 {
   -webkit-transform: rotate(360deg);
   -moz-transform: rotate(360deg);
@@ -205,18 +676,22 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(360deg);
 }
 
-/* line 66, sass/styles.scss */
+/* line 210, sass/styles.scss */
 .logo-block-round8 {
+  -webkit-animation: load-level-8 2s;
+  animation: load-level-8 2s;
   height: 40px;
   position: absolute;
 }
-/* line 69, sass/styles.scss */
+/* line 215, sass/styles.scss */
 .logo-block-round8 .logo-points-box {
   height: inherit;
   top: 35px;
+  -webkit-animation: load-pre-level-8 2s;
+  animation: load-pre-level-8 2s;
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round8.rotate1 {
   -webkit-transform: rotate(30deg);
   -moz-transform: rotate(30deg);
@@ -225,7 +700,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(30deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round8.rotate2 {
   -webkit-transform: rotate(60deg);
   -moz-transform: rotate(60deg);
@@ -234,7 +709,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(60deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round8.rotate3 {
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
@@ -243,7 +718,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(90deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round8.rotate4 {
   -webkit-transform: rotate(120deg);
   -moz-transform: rotate(120deg);
@@ -252,7 +727,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(120deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round8.rotate5 {
   -webkit-transform: rotate(150deg);
   -moz-transform: rotate(150deg);
@@ -261,7 +736,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(150deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round8.rotate6 {
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
@@ -270,7 +745,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(180deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round8.rotate7 {
   -webkit-transform: rotate(210deg);
   -moz-transform: rotate(210deg);
@@ -279,7 +754,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(210deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round8.rotate8 {
   -webkit-transform: rotate(240deg);
   -moz-transform: rotate(240deg);
@@ -288,7 +763,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(240deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round8.rotate9 {
   -webkit-transform: rotate(270deg);
   -moz-transform: rotate(270deg);
@@ -297,7 +772,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(270deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round8.rotate10 {
   -webkit-transform: rotate(300deg);
   -moz-transform: rotate(300deg);
@@ -306,7 +781,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(300deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round8.rotate11 {
   -webkit-transform: rotate(330deg);
   -moz-transform: rotate(330deg);
@@ -315,7 +790,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(330deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round8.rotate12 {
   -webkit-transform: rotate(360deg);
   -moz-transform: rotate(360deg);
@@ -324,18 +799,22 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(360deg);
 }
 
-/* line 66, sass/styles.scss */
+/* line 210, sass/styles.scss */
 .logo-block-round7 {
+  -webkit-animation: load-level-7 2s;
+  animation: load-level-7 2s;
   height: 50px;
   position: absolute;
 }
-/* line 69, sass/styles.scss */
+/* line 215, sass/styles.scss */
 .logo-block-round7 .logo-points-box {
   height: inherit;
   top: 30px;
+  -webkit-animation: load-pre-level-7 2s;
+  animation: load-pre-level-7 2s;
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round7.rotate1 {
   -webkit-transform: rotate(20deg);
   -moz-transform: rotate(20deg);
@@ -344,7 +823,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(20deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round7.rotate2 {
   -webkit-transform: rotate(40deg);
   -moz-transform: rotate(40deg);
@@ -353,7 +832,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(40deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round7.rotate3 {
   -webkit-transform: rotate(60deg);
   -moz-transform: rotate(60deg);
@@ -362,7 +841,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(60deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round7.rotate4 {
   -webkit-transform: rotate(80deg);
   -moz-transform: rotate(80deg);
@@ -371,7 +850,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(80deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round7.rotate5 {
   -webkit-transform: rotate(100deg);
   -moz-transform: rotate(100deg);
@@ -380,7 +859,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(100deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round7.rotate6 {
   -webkit-transform: rotate(120deg);
   -moz-transform: rotate(120deg);
@@ -389,7 +868,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(120deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round7.rotate7 {
   -webkit-transform: rotate(140deg);
   -moz-transform: rotate(140deg);
@@ -398,7 +877,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(140deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round7.rotate8 {
   -webkit-transform: rotate(160deg);
   -moz-transform: rotate(160deg);
@@ -407,7 +886,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(160deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round7.rotate9 {
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
@@ -416,7 +895,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(180deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round7.rotate10 {
   -webkit-transform: rotate(200deg);
   -moz-transform: rotate(200deg);
@@ -425,7 +904,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(200deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round7.rotate11 {
   -webkit-transform: rotate(220deg);
   -moz-transform: rotate(220deg);
@@ -434,7 +913,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(220deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round7.rotate12 {
   -webkit-transform: rotate(240deg);
   -moz-transform: rotate(240deg);
@@ -443,7 +922,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(240deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round7.rotate13 {
   -webkit-transform: rotate(260deg);
   -moz-transform: rotate(260deg);
@@ -452,7 +931,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(260deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round7.rotate14 {
   -webkit-transform: rotate(280deg);
   -moz-transform: rotate(280deg);
@@ -461,7 +940,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(280deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round7.rotate15 {
   -webkit-transform: rotate(300deg);
   -moz-transform: rotate(300deg);
@@ -470,7 +949,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(300deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round7.rotate16 {
   -webkit-transform: rotate(320deg);
   -moz-transform: rotate(320deg);
@@ -479,7 +958,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(320deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round7.rotate17 {
   -webkit-transform: rotate(340deg);
   -moz-transform: rotate(340deg);
@@ -488,7 +967,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(340deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round7.rotate18 {
   -webkit-transform: rotate(360deg);
   -moz-transform: rotate(360deg);
@@ -497,18 +976,22 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(360deg);
 }
 
-/* line 66, sass/styles.scss */
+/* line 210, sass/styles.scss */
 .logo-block-round6 {
+  -webkit-animation: load-level-6 2s;
+  animation: load-level-6 2s;
   height: 60px;
   position: absolute;
 }
-/* line 69, sass/styles.scss */
+/* line 215, sass/styles.scss */
 .logo-block-round6 .logo-points-box {
   height: inherit;
   top: 25px;
+  -webkit-animation: load-pre-level-6 2s;
+  animation: load-pre-level-6 2s;
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round6.rotate1 {
   -webkit-transform: rotate(15deg);
   -moz-transform: rotate(15deg);
@@ -517,7 +1000,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(15deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round6.rotate2 {
   -webkit-transform: rotate(30deg);
   -moz-transform: rotate(30deg);
@@ -526,7 +1009,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(30deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round6.rotate3 {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -535,7 +1018,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(45deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round6.rotate4 {
   -webkit-transform: rotate(60deg);
   -moz-transform: rotate(60deg);
@@ -544,7 +1027,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(60deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round6.rotate5 {
   -webkit-transform: rotate(75deg);
   -moz-transform: rotate(75deg);
@@ -553,7 +1036,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(75deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round6.rotate6 {
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
@@ -562,7 +1045,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(90deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round6.rotate7 {
   -webkit-transform: rotate(105deg);
   -moz-transform: rotate(105deg);
@@ -571,7 +1054,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(105deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round6.rotate8 {
   -webkit-transform: rotate(120deg);
   -moz-transform: rotate(120deg);
@@ -580,7 +1063,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(120deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round6.rotate9 {
   -webkit-transform: rotate(135deg);
   -moz-transform: rotate(135deg);
@@ -589,7 +1072,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(135deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round6.rotate10 {
   -webkit-transform: rotate(150deg);
   -moz-transform: rotate(150deg);
@@ -598,7 +1081,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(150deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round6.rotate11 {
   -webkit-transform: rotate(165deg);
   -moz-transform: rotate(165deg);
@@ -607,7 +1090,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(165deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round6.rotate12 {
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
@@ -616,7 +1099,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(180deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round6.rotate13 {
   -webkit-transform: rotate(195deg);
   -moz-transform: rotate(195deg);
@@ -625,7 +1108,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(195deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round6.rotate14 {
   -webkit-transform: rotate(210deg);
   -moz-transform: rotate(210deg);
@@ -634,7 +1117,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(210deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round6.rotate15 {
   -webkit-transform: rotate(225deg);
   -moz-transform: rotate(225deg);
@@ -643,7 +1126,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(225deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round6.rotate16 {
   -webkit-transform: rotate(240deg);
   -moz-transform: rotate(240deg);
@@ -652,7 +1135,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(240deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round6.rotate17 {
   -webkit-transform: rotate(255deg);
   -moz-transform: rotate(255deg);
@@ -661,7 +1144,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(255deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round6.rotate18 {
   -webkit-transform: rotate(270deg);
   -moz-transform: rotate(270deg);
@@ -670,7 +1153,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(270deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round6.rotate19 {
   -webkit-transform: rotate(285deg);
   -moz-transform: rotate(285deg);
@@ -679,7 +1162,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(285deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round6.rotate20 {
   -webkit-transform: rotate(300deg);
   -moz-transform: rotate(300deg);
@@ -688,7 +1171,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(300deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round6.rotate21 {
   -webkit-transform: rotate(315deg);
   -moz-transform: rotate(315deg);
@@ -697,7 +1180,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(315deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round6.rotate22 {
   -webkit-transform: rotate(330deg);
   -moz-transform: rotate(330deg);
@@ -706,7 +1189,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(330deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round6.rotate23 {
   -webkit-transform: rotate(345deg);
   -moz-transform: rotate(345deg);
@@ -715,7 +1198,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(345deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round6.rotate24 {
   -webkit-transform: rotate(360deg);
   -moz-transform: rotate(360deg);
@@ -724,18 +1207,22 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(360deg);
 }
 
-/* line 66, sass/styles.scss */
+/* line 210, sass/styles.scss */
 .logo-block-round5 {
+  -webkit-animation: load-level-5 2s;
+  animation: load-level-5 2s;
   height: 70px;
   position: absolute;
 }
-/* line 69, sass/styles.scss */
+/* line 215, sass/styles.scss */
 .logo-block-round5 .logo-points-box {
   height: inherit;
   top: 20px;
+  -webkit-animation: load-pre-level-5 2s;
+  animation: load-pre-level-5 2s;
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round5.rotate1 {
   -webkit-transform: rotate(12deg);
   -moz-transform: rotate(12deg);
@@ -744,7 +1231,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(12deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round5.rotate2 {
   -webkit-transform: rotate(24deg);
   -moz-transform: rotate(24deg);
@@ -753,7 +1240,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(24deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round5.rotate3 {
   -webkit-transform: rotate(36deg);
   -moz-transform: rotate(36deg);
@@ -762,7 +1249,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(36deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round5.rotate4 {
   -webkit-transform: rotate(48deg);
   -moz-transform: rotate(48deg);
@@ -771,7 +1258,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(48deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round5.rotate5 {
   -webkit-transform: rotate(60deg);
   -moz-transform: rotate(60deg);
@@ -780,7 +1267,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(60deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round5.rotate6 {
   -webkit-transform: rotate(72deg);
   -moz-transform: rotate(72deg);
@@ -789,7 +1276,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(72deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round5.rotate7 {
   -webkit-transform: rotate(84deg);
   -moz-transform: rotate(84deg);
@@ -798,7 +1285,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(84deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round5.rotate8 {
   -webkit-transform: rotate(96deg);
   -moz-transform: rotate(96deg);
@@ -807,7 +1294,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(96deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round5.rotate9 {
   -webkit-transform: rotate(108deg);
   -moz-transform: rotate(108deg);
@@ -816,7 +1303,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(108deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round5.rotate10 {
   -webkit-transform: rotate(120deg);
   -moz-transform: rotate(120deg);
@@ -825,7 +1312,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(120deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round5.rotate11 {
   -webkit-transform: rotate(132deg);
   -moz-transform: rotate(132deg);
@@ -834,7 +1321,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(132deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round5.rotate12 {
   -webkit-transform: rotate(144deg);
   -moz-transform: rotate(144deg);
@@ -843,7 +1330,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(144deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round5.rotate13 {
   -webkit-transform: rotate(156deg);
   -moz-transform: rotate(156deg);
@@ -852,7 +1339,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(156deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round5.rotate14 {
   -webkit-transform: rotate(168deg);
   -moz-transform: rotate(168deg);
@@ -861,7 +1348,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(168deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round5.rotate15 {
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
@@ -870,7 +1357,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(180deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round5.rotate16 {
   -webkit-transform: rotate(192deg);
   -moz-transform: rotate(192deg);
@@ -879,7 +1366,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(192deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round5.rotate17 {
   -webkit-transform: rotate(204deg);
   -moz-transform: rotate(204deg);
@@ -888,7 +1375,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(204deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round5.rotate18 {
   -webkit-transform: rotate(216deg);
   -moz-transform: rotate(216deg);
@@ -897,7 +1384,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(216deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round5.rotate19 {
   -webkit-transform: rotate(228deg);
   -moz-transform: rotate(228deg);
@@ -906,7 +1393,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(228deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round5.rotate20 {
   -webkit-transform: rotate(240deg);
   -moz-transform: rotate(240deg);
@@ -915,7 +1402,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(240deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round5.rotate21 {
   -webkit-transform: rotate(252deg);
   -moz-transform: rotate(252deg);
@@ -924,7 +1411,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(252deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round5.rotate22 {
   -webkit-transform: rotate(264deg);
   -moz-transform: rotate(264deg);
@@ -933,7 +1420,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(264deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round5.rotate23 {
   -webkit-transform: rotate(276deg);
   -moz-transform: rotate(276deg);
@@ -942,7 +1429,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(276deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round5.rotate24 {
   -webkit-transform: rotate(288deg);
   -moz-transform: rotate(288deg);
@@ -951,7 +1438,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(288deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round5.rotate25 {
   -webkit-transform: rotate(300deg);
   -moz-transform: rotate(300deg);
@@ -960,7 +1447,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(300deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round5.rotate26 {
   -webkit-transform: rotate(312deg);
   -moz-transform: rotate(312deg);
@@ -969,7 +1456,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(312deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round5.rotate27 {
   -webkit-transform: rotate(324deg);
   -moz-transform: rotate(324deg);
@@ -978,7 +1465,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(324deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round5.rotate28 {
   -webkit-transform: rotate(336deg);
   -moz-transform: rotate(336deg);
@@ -987,7 +1474,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(336deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round5.rotate29 {
   -webkit-transform: rotate(348deg);
   -moz-transform: rotate(348deg);
@@ -996,7 +1483,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(348deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round5.rotate30 {
   -webkit-transform: rotate(360deg);
   -moz-transform: rotate(360deg);
@@ -1005,18 +1492,22 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(360deg);
 }
 
-/* line 66, sass/styles.scss */
+/* line 210, sass/styles.scss */
 .logo-block-round4 {
+  -webkit-animation: load-level-4 2s;
+  animation: load-level-4 2s;
   height: 80px;
   position: absolute;
 }
-/* line 69, sass/styles.scss */
+/* line 215, sass/styles.scss */
 .logo-block-round4 .logo-points-box {
   height: inherit;
   top: 15px;
+  -webkit-animation: load-pre-level-4 2s;
+  animation: load-pre-level-4 2s;
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round4.rotate1 {
   -webkit-transform: rotate(10deg);
   -moz-transform: rotate(10deg);
@@ -1025,7 +1516,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(10deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round4.rotate2 {
   -webkit-transform: rotate(20deg);
   -moz-transform: rotate(20deg);
@@ -1034,7 +1525,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(20deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round4.rotate3 {
   -webkit-transform: rotate(30deg);
   -moz-transform: rotate(30deg);
@@ -1043,7 +1534,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(30deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round4.rotate4 {
   -webkit-transform: rotate(40deg);
   -moz-transform: rotate(40deg);
@@ -1052,7 +1543,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(40deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round4.rotate5 {
   -webkit-transform: rotate(50deg);
   -moz-transform: rotate(50deg);
@@ -1061,7 +1552,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(50deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round4.rotate6 {
   -webkit-transform: rotate(60deg);
   -moz-transform: rotate(60deg);
@@ -1070,7 +1561,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(60deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round4.rotate7 {
   -webkit-transform: rotate(70deg);
   -moz-transform: rotate(70deg);
@@ -1079,7 +1570,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(70deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round4.rotate8 {
   -webkit-transform: rotate(80deg);
   -moz-transform: rotate(80deg);
@@ -1088,7 +1579,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(80deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round4.rotate9 {
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
@@ -1097,7 +1588,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(90deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round4.rotate10 {
   -webkit-transform: rotate(100deg);
   -moz-transform: rotate(100deg);
@@ -1106,7 +1597,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(100deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round4.rotate11 {
   -webkit-transform: rotate(110deg);
   -moz-transform: rotate(110deg);
@@ -1115,7 +1606,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(110deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round4.rotate12 {
   -webkit-transform: rotate(120deg);
   -moz-transform: rotate(120deg);
@@ -1124,7 +1615,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(120deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round4.rotate13 {
   -webkit-transform: rotate(130deg);
   -moz-transform: rotate(130deg);
@@ -1133,7 +1624,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(130deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round4.rotate14 {
   -webkit-transform: rotate(140deg);
   -moz-transform: rotate(140deg);
@@ -1142,7 +1633,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(140deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round4.rotate15 {
   -webkit-transform: rotate(150deg);
   -moz-transform: rotate(150deg);
@@ -1151,7 +1642,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(150deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round4.rotate16 {
   -webkit-transform: rotate(160deg);
   -moz-transform: rotate(160deg);
@@ -1160,7 +1651,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(160deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round4.rotate17 {
   -webkit-transform: rotate(170deg);
   -moz-transform: rotate(170deg);
@@ -1169,7 +1660,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(170deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round4.rotate18 {
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
@@ -1178,7 +1669,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(180deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round4.rotate19 {
   -webkit-transform: rotate(190deg);
   -moz-transform: rotate(190deg);
@@ -1187,7 +1678,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(190deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round4.rotate20 {
   -webkit-transform: rotate(200deg);
   -moz-transform: rotate(200deg);
@@ -1196,7 +1687,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(200deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round4.rotate21 {
   -webkit-transform: rotate(210deg);
   -moz-transform: rotate(210deg);
@@ -1205,7 +1696,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(210deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round4.rotate22 {
   -webkit-transform: rotate(220deg);
   -moz-transform: rotate(220deg);
@@ -1214,7 +1705,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(220deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round4.rotate23 {
   -webkit-transform: rotate(230deg);
   -moz-transform: rotate(230deg);
@@ -1223,7 +1714,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(230deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round4.rotate24 {
   -webkit-transform: rotate(240deg);
   -moz-transform: rotate(240deg);
@@ -1232,7 +1723,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(240deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round4.rotate25 {
   -webkit-transform: rotate(250deg);
   -moz-transform: rotate(250deg);
@@ -1241,7 +1732,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(250deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round4.rotate26 {
   -webkit-transform: rotate(260deg);
   -moz-transform: rotate(260deg);
@@ -1250,7 +1741,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(260deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round4.rotate27 {
   -webkit-transform: rotate(270deg);
   -moz-transform: rotate(270deg);
@@ -1259,7 +1750,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(270deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round4.rotate28 {
   -webkit-transform: rotate(280deg);
   -moz-transform: rotate(280deg);
@@ -1268,7 +1759,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(280deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round4.rotate29 {
   -webkit-transform: rotate(290deg);
   -moz-transform: rotate(290deg);
@@ -1277,7 +1768,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(290deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round4.rotate30 {
   -webkit-transform: rotate(300deg);
   -moz-transform: rotate(300deg);
@@ -1286,7 +1777,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(300deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round4.rotate31 {
   -webkit-transform: rotate(310deg);
   -moz-transform: rotate(310deg);
@@ -1295,7 +1786,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(310deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round4.rotate32 {
   -webkit-transform: rotate(320deg);
   -moz-transform: rotate(320deg);
@@ -1304,7 +1795,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(320deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round4.rotate33 {
   -webkit-transform: rotate(330deg);
   -moz-transform: rotate(330deg);
@@ -1313,7 +1804,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(330deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round4.rotate34 {
   -webkit-transform: rotate(340deg);
   -moz-transform: rotate(340deg);
@@ -1322,7 +1813,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(340deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round4.rotate35 {
   -webkit-transform: rotate(350deg);
   -moz-transform: rotate(350deg);
@@ -1331,7 +1822,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(350deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round4.rotate36 {
   -webkit-transform: rotate(360deg);
   -moz-transform: rotate(360deg);
@@ -1340,18 +1831,22 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(360deg);
 }
 
-/* line 66, sass/styles.scss */
+/* line 210, sass/styles.scss */
 .logo-block-round3 {
+  -webkit-animation: load-level-3 2s;
+  animation: load-level-3 2s;
   height: 90px;
   position: absolute;
 }
-/* line 69, sass/styles.scss */
+/* line 215, sass/styles.scss */
 .logo-block-round3 .logo-points-box {
   height: inherit;
   top: 10px;
+  -webkit-animation: load-pre-level-3 2s;
+  animation: load-pre-level-3 2s;
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round3.rotate1 {
   -webkit-transform: rotate(8.57143deg);
   -moz-transform: rotate(8.57143deg);
@@ -1360,7 +1855,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(8.57143deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round3.rotate2 {
   -webkit-transform: rotate(17.14286deg);
   -moz-transform: rotate(17.14286deg);
@@ -1369,7 +1864,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(17.14286deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round3.rotate3 {
   -webkit-transform: rotate(25.71429deg);
   -moz-transform: rotate(25.71429deg);
@@ -1378,7 +1873,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(25.71429deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round3.rotate4 {
   -webkit-transform: rotate(34.28571deg);
   -moz-transform: rotate(34.28571deg);
@@ -1387,7 +1882,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(34.28571deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round3.rotate5 {
   -webkit-transform: rotate(42.85714deg);
   -moz-transform: rotate(42.85714deg);
@@ -1396,7 +1891,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(42.85714deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round3.rotate6 {
   -webkit-transform: rotate(51.42857deg);
   -moz-transform: rotate(51.42857deg);
@@ -1405,7 +1900,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(51.42857deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round3.rotate7 {
   -webkit-transform: rotate(60deg);
   -moz-transform: rotate(60deg);
@@ -1414,7 +1909,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(60deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round3.rotate8 {
   -webkit-transform: rotate(68.57143deg);
   -moz-transform: rotate(68.57143deg);
@@ -1423,7 +1918,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(68.57143deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round3.rotate9 {
   -webkit-transform: rotate(77.14286deg);
   -moz-transform: rotate(77.14286deg);
@@ -1432,7 +1927,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(77.14286deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round3.rotate10 {
   -webkit-transform: rotate(85.71429deg);
   -moz-transform: rotate(85.71429deg);
@@ -1441,7 +1936,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(85.71429deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round3.rotate11 {
   -webkit-transform: rotate(94.28571deg);
   -moz-transform: rotate(94.28571deg);
@@ -1450,7 +1945,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(94.28571deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round3.rotate12 {
   -webkit-transform: rotate(102.85714deg);
   -moz-transform: rotate(102.85714deg);
@@ -1459,7 +1954,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(102.85714deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round3.rotate13 {
   -webkit-transform: rotate(111.42857deg);
   -moz-transform: rotate(111.42857deg);
@@ -1468,7 +1963,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(111.42857deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round3.rotate14 {
   -webkit-transform: rotate(120deg);
   -moz-transform: rotate(120deg);
@@ -1477,7 +1972,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(120deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round3.rotate15 {
   -webkit-transform: rotate(128.57143deg);
   -moz-transform: rotate(128.57143deg);
@@ -1486,7 +1981,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(128.57143deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round3.rotate16 {
   -webkit-transform: rotate(137.14286deg);
   -moz-transform: rotate(137.14286deg);
@@ -1495,7 +1990,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(137.14286deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round3.rotate17 {
   -webkit-transform: rotate(145.71429deg);
   -moz-transform: rotate(145.71429deg);
@@ -1504,7 +1999,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(145.71429deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round3.rotate18 {
   -webkit-transform: rotate(154.28571deg);
   -moz-transform: rotate(154.28571deg);
@@ -1513,7 +2008,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(154.28571deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round3.rotate19 {
   -webkit-transform: rotate(162.85714deg);
   -moz-transform: rotate(162.85714deg);
@@ -1522,7 +2017,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(162.85714deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round3.rotate20 {
   -webkit-transform: rotate(171.42857deg);
   -moz-transform: rotate(171.42857deg);
@@ -1531,7 +2026,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(171.42857deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round3.rotate21 {
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
@@ -1540,7 +2035,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(180deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round3.rotate22 {
   -webkit-transform: rotate(188.57143deg);
   -moz-transform: rotate(188.57143deg);
@@ -1549,7 +2044,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(188.57143deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round3.rotate23 {
   -webkit-transform: rotate(197.14286deg);
   -moz-transform: rotate(197.14286deg);
@@ -1558,7 +2053,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(197.14286deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round3.rotate24 {
   -webkit-transform: rotate(205.71429deg);
   -moz-transform: rotate(205.71429deg);
@@ -1567,7 +2062,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(205.71429deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round3.rotate25 {
   -webkit-transform: rotate(214.28571deg);
   -moz-transform: rotate(214.28571deg);
@@ -1576,7 +2071,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(214.28571deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round3.rotate26 {
   -webkit-transform: rotate(222.85714deg);
   -moz-transform: rotate(222.85714deg);
@@ -1585,7 +2080,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(222.85714deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round3.rotate27 {
   -webkit-transform: rotate(231.42857deg);
   -moz-transform: rotate(231.42857deg);
@@ -1594,7 +2089,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(231.42857deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round3.rotate28 {
   -webkit-transform: rotate(240deg);
   -moz-transform: rotate(240deg);
@@ -1603,7 +2098,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(240deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round3.rotate29 {
   -webkit-transform: rotate(248.57143deg);
   -moz-transform: rotate(248.57143deg);
@@ -1612,7 +2107,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(248.57143deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round3.rotate30 {
   -webkit-transform: rotate(257.14286deg);
   -moz-transform: rotate(257.14286deg);
@@ -1621,7 +2116,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(257.14286deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round3.rotate31 {
   -webkit-transform: rotate(265.71429deg);
   -moz-transform: rotate(265.71429deg);
@@ -1630,7 +2125,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(265.71429deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round3.rotate32 {
   -webkit-transform: rotate(274.28571deg);
   -moz-transform: rotate(274.28571deg);
@@ -1639,7 +2134,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(274.28571deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round3.rotate33 {
   -webkit-transform: rotate(282.85714deg);
   -moz-transform: rotate(282.85714deg);
@@ -1648,7 +2143,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(282.85714deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round3.rotate34 {
   -webkit-transform: rotate(291.42857deg);
   -moz-transform: rotate(291.42857deg);
@@ -1657,7 +2152,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(291.42857deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round3.rotate35 {
   -webkit-transform: rotate(300deg);
   -moz-transform: rotate(300deg);
@@ -1666,7 +2161,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(300deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round3.rotate36 {
   -webkit-transform: rotate(308.57143deg);
   -moz-transform: rotate(308.57143deg);
@@ -1675,7 +2170,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(308.57143deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round3.rotate37 {
   -webkit-transform: rotate(317.14286deg);
   -moz-transform: rotate(317.14286deg);
@@ -1684,7 +2179,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(317.14286deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round3.rotate38 {
   -webkit-transform: rotate(325.71429deg);
   -moz-transform: rotate(325.71429deg);
@@ -1693,7 +2188,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(325.71429deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round3.rotate39 {
   -webkit-transform: rotate(334.28571deg);
   -moz-transform: rotate(334.28571deg);
@@ -1702,7 +2197,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(334.28571deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round3.rotate40 {
   -webkit-transform: rotate(342.85714deg);
   -moz-transform: rotate(342.85714deg);
@@ -1711,7 +2206,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(342.85714deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round3.rotate41 {
   -webkit-transform: rotate(351.42857deg);
   -moz-transform: rotate(351.42857deg);
@@ -1720,7 +2215,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(351.42857deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round3.rotate42 {
   -webkit-transform: rotate(360deg);
   -moz-transform: rotate(360deg);
@@ -1729,18 +2224,22 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(360deg);
 }
 
-/* line 66, sass/styles.scss */
+/* line 210, sass/styles.scss */
 .logo-block-round2 {
+  -webkit-animation: load-level-2 2s;
+  animation: load-level-2 2s;
   height: 100px;
   position: absolute;
 }
-/* line 69, sass/styles.scss */
+/* line 215, sass/styles.scss */
 .logo-block-round2 .logo-points-box {
   height: inherit;
   top: 5px;
+  -webkit-animation: load-pre-level-2 2s;
+  animation: load-pre-level-2 2s;
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round2.rotate1 {
   -webkit-transform: rotate(7.5deg);
   -moz-transform: rotate(7.5deg);
@@ -1749,7 +2248,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(7.5deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round2.rotate2 {
   -webkit-transform: rotate(15deg);
   -moz-transform: rotate(15deg);
@@ -1758,7 +2257,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(15deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round2.rotate3 {
   -webkit-transform: rotate(22.5deg);
   -moz-transform: rotate(22.5deg);
@@ -1767,7 +2266,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(22.5deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round2.rotate4 {
   -webkit-transform: rotate(30deg);
   -moz-transform: rotate(30deg);
@@ -1776,7 +2275,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(30deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round2.rotate5 {
   -webkit-transform: rotate(37.5deg);
   -moz-transform: rotate(37.5deg);
@@ -1785,7 +2284,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(37.5deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round2.rotate6 {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -1794,7 +2293,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(45deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round2.rotate7 {
   -webkit-transform: rotate(52.5deg);
   -moz-transform: rotate(52.5deg);
@@ -1803,7 +2302,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(52.5deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round2.rotate8 {
   -webkit-transform: rotate(60deg);
   -moz-transform: rotate(60deg);
@@ -1812,7 +2311,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(60deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round2.rotate9 {
   -webkit-transform: rotate(67.5deg);
   -moz-transform: rotate(67.5deg);
@@ -1821,7 +2320,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(67.5deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round2.rotate10 {
   -webkit-transform: rotate(75deg);
   -moz-transform: rotate(75deg);
@@ -1830,7 +2329,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(75deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round2.rotate11 {
   -webkit-transform: rotate(82.5deg);
   -moz-transform: rotate(82.5deg);
@@ -1839,7 +2338,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(82.5deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round2.rotate12 {
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
@@ -1848,7 +2347,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(90deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round2.rotate13 {
   -webkit-transform: rotate(97.5deg);
   -moz-transform: rotate(97.5deg);
@@ -1857,7 +2356,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(97.5deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round2.rotate14 {
   -webkit-transform: rotate(105deg);
   -moz-transform: rotate(105deg);
@@ -1866,7 +2365,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(105deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round2.rotate15 {
   -webkit-transform: rotate(112.5deg);
   -moz-transform: rotate(112.5deg);
@@ -1875,7 +2374,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(112.5deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round2.rotate16 {
   -webkit-transform: rotate(120deg);
   -moz-transform: rotate(120deg);
@@ -1884,7 +2383,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(120deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round2.rotate17 {
   -webkit-transform: rotate(127.5deg);
   -moz-transform: rotate(127.5deg);
@@ -1893,7 +2392,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(127.5deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round2.rotate18 {
   -webkit-transform: rotate(135deg);
   -moz-transform: rotate(135deg);
@@ -1902,7 +2401,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(135deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round2.rotate19 {
   -webkit-transform: rotate(142.5deg);
   -moz-transform: rotate(142.5deg);
@@ -1911,7 +2410,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(142.5deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round2.rotate20 {
   -webkit-transform: rotate(150deg);
   -moz-transform: rotate(150deg);
@@ -1920,7 +2419,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(150deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round2.rotate21 {
   -webkit-transform: rotate(157.5deg);
   -moz-transform: rotate(157.5deg);
@@ -1929,7 +2428,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(157.5deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round2.rotate22 {
   -webkit-transform: rotate(165deg);
   -moz-transform: rotate(165deg);
@@ -1938,7 +2437,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(165deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round2.rotate23 {
   -webkit-transform: rotate(172.5deg);
   -moz-transform: rotate(172.5deg);
@@ -1947,7 +2446,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(172.5deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round2.rotate24 {
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
@@ -1956,7 +2455,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(180deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round2.rotate25 {
   -webkit-transform: rotate(187.5deg);
   -moz-transform: rotate(187.5deg);
@@ -1965,7 +2464,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(187.5deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round2.rotate26 {
   -webkit-transform: rotate(195deg);
   -moz-transform: rotate(195deg);
@@ -1974,7 +2473,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(195deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round2.rotate27 {
   -webkit-transform: rotate(202.5deg);
   -moz-transform: rotate(202.5deg);
@@ -1983,7 +2482,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(202.5deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round2.rotate28 {
   -webkit-transform: rotate(210deg);
   -moz-transform: rotate(210deg);
@@ -1992,7 +2491,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(210deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round2.rotate29 {
   -webkit-transform: rotate(217.5deg);
   -moz-transform: rotate(217.5deg);
@@ -2001,7 +2500,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(217.5deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round2.rotate30 {
   -webkit-transform: rotate(225deg);
   -moz-transform: rotate(225deg);
@@ -2010,7 +2509,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(225deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round2.rotate31 {
   -webkit-transform: rotate(232.5deg);
   -moz-transform: rotate(232.5deg);
@@ -2019,7 +2518,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(232.5deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round2.rotate32 {
   -webkit-transform: rotate(240deg);
   -moz-transform: rotate(240deg);
@@ -2028,7 +2527,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(240deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round2.rotate33 {
   -webkit-transform: rotate(247.5deg);
   -moz-transform: rotate(247.5deg);
@@ -2037,7 +2536,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(247.5deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round2.rotate34 {
   -webkit-transform: rotate(255deg);
   -moz-transform: rotate(255deg);
@@ -2046,7 +2545,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(255deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round2.rotate35 {
   -webkit-transform: rotate(262.5deg);
   -moz-transform: rotate(262.5deg);
@@ -2055,7 +2554,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(262.5deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round2.rotate36 {
   -webkit-transform: rotate(270deg);
   -moz-transform: rotate(270deg);
@@ -2064,7 +2563,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(270deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round2.rotate37 {
   -webkit-transform: rotate(277.5deg);
   -moz-transform: rotate(277.5deg);
@@ -2073,7 +2572,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(277.5deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round2.rotate38 {
   -webkit-transform: rotate(285deg);
   -moz-transform: rotate(285deg);
@@ -2082,7 +2581,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(285deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round2.rotate39 {
   -webkit-transform: rotate(292.5deg);
   -moz-transform: rotate(292.5deg);
@@ -2091,7 +2590,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(292.5deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round2.rotate40 {
   -webkit-transform: rotate(300deg);
   -moz-transform: rotate(300deg);
@@ -2100,7 +2599,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(300deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round2.rotate41 {
   -webkit-transform: rotate(307.5deg);
   -moz-transform: rotate(307.5deg);
@@ -2109,7 +2608,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(307.5deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round2.rotate42 {
   -webkit-transform: rotate(315deg);
   -moz-transform: rotate(315deg);
@@ -2118,7 +2617,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(315deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round2.rotate43 {
   -webkit-transform: rotate(322.5deg);
   -moz-transform: rotate(322.5deg);
@@ -2127,7 +2626,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(322.5deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round2.rotate44 {
   -webkit-transform: rotate(330deg);
   -moz-transform: rotate(330deg);
@@ -2136,7 +2635,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(330deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round2.rotate45 {
   -webkit-transform: rotate(337.5deg);
   -moz-transform: rotate(337.5deg);
@@ -2145,7 +2644,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(337.5deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round2.rotate46 {
   -webkit-transform: rotate(345deg);
   -moz-transform: rotate(345deg);
@@ -2154,7 +2653,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(345deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round2.rotate47 {
   -webkit-transform: rotate(352.5deg);
   -moz-transform: rotate(352.5deg);
@@ -2163,7 +2662,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(352.5deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round2.rotate48 {
   -webkit-transform: rotate(360deg);
   -moz-transform: rotate(360deg);
@@ -2172,18 +2671,22 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(360deg);
 }
 
-/* line 66, sass/styles.scss */
+/* line 210, sass/styles.scss */
 .logo-block-round1 {
+  -webkit-animation: load-level-1 2s;
+  animation: load-level-1 2s;
   height: 110px;
   position: absolute;
 }
-/* line 69, sass/styles.scss */
+/* line 215, sass/styles.scss */
 .logo-block-round1 .logo-points-box {
   height: inherit;
   top: 0px;
+  -webkit-animation: load-pre-level-1 2s;
+  animation: load-pre-level-1 2s;
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round1.rotate1 {
   -webkit-transform: rotate(6.66667deg);
   -moz-transform: rotate(6.66667deg);
@@ -2192,7 +2695,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(6.66667deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round1.rotate2 {
   -webkit-transform: rotate(13.33333deg);
   -moz-transform: rotate(13.33333deg);
@@ -2201,7 +2704,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(13.33333deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round1.rotate3 {
   -webkit-transform: rotate(20deg);
   -moz-transform: rotate(20deg);
@@ -2210,7 +2713,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(20deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round1.rotate4 {
   -webkit-transform: rotate(26.66667deg);
   -moz-transform: rotate(26.66667deg);
@@ -2219,7 +2722,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(26.66667deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round1.rotate5 {
   -webkit-transform: rotate(33.33333deg);
   -moz-transform: rotate(33.33333deg);
@@ -2228,7 +2731,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(33.33333deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round1.rotate6 {
   -webkit-transform: rotate(40deg);
   -moz-transform: rotate(40deg);
@@ -2237,7 +2740,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(40deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round1.rotate7 {
   -webkit-transform: rotate(46.66667deg);
   -moz-transform: rotate(46.66667deg);
@@ -2246,7 +2749,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(46.66667deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round1.rotate8 {
   -webkit-transform: rotate(53.33333deg);
   -moz-transform: rotate(53.33333deg);
@@ -2255,7 +2758,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(53.33333deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round1.rotate9 {
   -webkit-transform: rotate(60deg);
   -moz-transform: rotate(60deg);
@@ -2264,7 +2767,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(60deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round1.rotate10 {
   -webkit-transform: rotate(66.66667deg);
   -moz-transform: rotate(66.66667deg);
@@ -2273,7 +2776,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(66.66667deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round1.rotate11 {
   -webkit-transform: rotate(73.33333deg);
   -moz-transform: rotate(73.33333deg);
@@ -2282,7 +2785,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(73.33333deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round1.rotate12 {
   -webkit-transform: rotate(80deg);
   -moz-transform: rotate(80deg);
@@ -2291,7 +2794,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(80deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round1.rotate13 {
   -webkit-transform: rotate(86.66667deg);
   -moz-transform: rotate(86.66667deg);
@@ -2300,7 +2803,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(86.66667deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round1.rotate14 {
   -webkit-transform: rotate(93.33333deg);
   -moz-transform: rotate(93.33333deg);
@@ -2309,7 +2812,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(93.33333deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round1.rotate15 {
   -webkit-transform: rotate(100deg);
   -moz-transform: rotate(100deg);
@@ -2318,7 +2821,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(100deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round1.rotate16 {
   -webkit-transform: rotate(106.66667deg);
   -moz-transform: rotate(106.66667deg);
@@ -2327,7 +2830,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(106.66667deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round1.rotate17 {
   -webkit-transform: rotate(113.33333deg);
   -moz-transform: rotate(113.33333deg);
@@ -2336,7 +2839,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(113.33333deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round1.rotate18 {
   -webkit-transform: rotate(120deg);
   -moz-transform: rotate(120deg);
@@ -2345,7 +2848,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(120deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round1.rotate19 {
   -webkit-transform: rotate(126.66667deg);
   -moz-transform: rotate(126.66667deg);
@@ -2354,7 +2857,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(126.66667deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round1.rotate20 {
   -webkit-transform: rotate(133.33333deg);
   -moz-transform: rotate(133.33333deg);
@@ -2363,7 +2866,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(133.33333deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round1.rotate21 {
   -webkit-transform: rotate(140deg);
   -moz-transform: rotate(140deg);
@@ -2372,7 +2875,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(140deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round1.rotate22 {
   -webkit-transform: rotate(146.66667deg);
   -moz-transform: rotate(146.66667deg);
@@ -2381,7 +2884,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(146.66667deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round1.rotate23 {
   -webkit-transform: rotate(153.33333deg);
   -moz-transform: rotate(153.33333deg);
@@ -2390,7 +2893,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(153.33333deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round1.rotate24 {
   -webkit-transform: rotate(160deg);
   -moz-transform: rotate(160deg);
@@ -2399,7 +2902,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(160deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round1.rotate25 {
   -webkit-transform: rotate(166.66667deg);
   -moz-transform: rotate(166.66667deg);
@@ -2408,7 +2911,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(166.66667deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round1.rotate26 {
   -webkit-transform: rotate(173.33333deg);
   -moz-transform: rotate(173.33333deg);
@@ -2417,7 +2920,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(173.33333deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round1.rotate27 {
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
@@ -2426,7 +2929,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(180deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round1.rotate28 {
   -webkit-transform: rotate(186.66667deg);
   -moz-transform: rotate(186.66667deg);
@@ -2435,7 +2938,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(186.66667deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round1.rotate29 {
   -webkit-transform: rotate(193.33333deg);
   -moz-transform: rotate(193.33333deg);
@@ -2444,7 +2947,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(193.33333deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round1.rotate30 {
   -webkit-transform: rotate(200deg);
   -moz-transform: rotate(200deg);
@@ -2453,7 +2956,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(200deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round1.rotate31 {
   -webkit-transform: rotate(206.66667deg);
   -moz-transform: rotate(206.66667deg);
@@ -2462,7 +2965,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(206.66667deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round1.rotate32 {
   -webkit-transform: rotate(213.33333deg);
   -moz-transform: rotate(213.33333deg);
@@ -2471,7 +2974,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(213.33333deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round1.rotate33 {
   -webkit-transform: rotate(220deg);
   -moz-transform: rotate(220deg);
@@ -2480,7 +2983,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(220deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round1.rotate34 {
   -webkit-transform: rotate(226.66667deg);
   -moz-transform: rotate(226.66667deg);
@@ -2489,7 +2992,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(226.66667deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round1.rotate35 {
   -webkit-transform: rotate(233.33333deg);
   -moz-transform: rotate(233.33333deg);
@@ -2498,7 +3001,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(233.33333deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round1.rotate36 {
   -webkit-transform: rotate(240deg);
   -moz-transform: rotate(240deg);
@@ -2507,7 +3010,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(240deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round1.rotate37 {
   -webkit-transform: rotate(246.66667deg);
   -moz-transform: rotate(246.66667deg);
@@ -2516,7 +3019,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(246.66667deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round1.rotate38 {
   -webkit-transform: rotate(253.33333deg);
   -moz-transform: rotate(253.33333deg);
@@ -2525,7 +3028,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(253.33333deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round1.rotate39 {
   -webkit-transform: rotate(260deg);
   -moz-transform: rotate(260deg);
@@ -2534,7 +3037,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(260deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round1.rotate40 {
   -webkit-transform: rotate(266.66667deg);
   -moz-transform: rotate(266.66667deg);
@@ -2543,7 +3046,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(266.66667deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round1.rotate41 {
   -webkit-transform: rotate(273.33333deg);
   -moz-transform: rotate(273.33333deg);
@@ -2552,7 +3055,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(273.33333deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round1.rotate42 {
   -webkit-transform: rotate(280deg);
   -moz-transform: rotate(280deg);
@@ -2561,7 +3064,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(280deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round1.rotate43 {
   -webkit-transform: rotate(286.66667deg);
   -moz-transform: rotate(286.66667deg);
@@ -2570,7 +3073,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(286.66667deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round1.rotate44 {
   -webkit-transform: rotate(293.33333deg);
   -moz-transform: rotate(293.33333deg);
@@ -2579,7 +3082,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(293.33333deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round1.rotate45 {
   -webkit-transform: rotate(300deg);
   -moz-transform: rotate(300deg);
@@ -2588,7 +3091,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(300deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round1.rotate46 {
   -webkit-transform: rotate(306.66667deg);
   -moz-transform: rotate(306.66667deg);
@@ -2597,7 +3100,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(306.66667deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round1.rotate47 {
   -webkit-transform: rotate(313.33333deg);
   -moz-transform: rotate(313.33333deg);
@@ -2606,7 +3109,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(313.33333deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round1.rotate48 {
   -webkit-transform: rotate(320deg);
   -moz-transform: rotate(320deg);
@@ -2615,7 +3118,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(320deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round1.rotate49 {
   -webkit-transform: rotate(326.66667deg);
   -moz-transform: rotate(326.66667deg);
@@ -2624,7 +3127,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(326.66667deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round1.rotate50 {
   -webkit-transform: rotate(333.33333deg);
   -moz-transform: rotate(333.33333deg);
@@ -2633,7 +3136,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(333.33333deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round1.rotate51 {
   -webkit-transform: rotate(340deg);
   -moz-transform: rotate(340deg);
@@ -2642,7 +3145,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(340deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round1.rotate52 {
   -webkit-transform: rotate(346.66667deg);
   -moz-transform: rotate(346.66667deg);
@@ -2651,7 +3154,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(346.66667deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round1.rotate53 {
   -webkit-transform: rotate(353.33333deg);
   -moz-transform: rotate(353.33333deg);
@@ -2660,7 +3163,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   transform: rotate(353.33333deg);
 }
 
-/* line 77, sass/styles.scss */
+/* line 225, sass/styles.scss */
 .logo-round1.rotate54 {
   -webkit-transform: rotate(360deg);
   -moz-transform: rotate(360deg);
