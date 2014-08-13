@@ -2,6 +2,8 @@ $F = {
 	loading : {
 		loadingStatus : false,
 		// setting timer for tracking loading
+
+
 		logoLoadingControll : function () {
 			animationTime = 2500; // default: 2s + .5s = 2500
 			setTimeout(function () {
@@ -19,6 +21,7 @@ $F = {
 			return true;
 		},
 		//reporting loading complete
+
 		pageIsLoad : function () {
 			if (this.loadingStatus === true) {
 				//console.log('Должно быть выполнено действие: по статусу загрузки');
@@ -29,15 +32,33 @@ $F = {
 			}
 		},
 		// actions after all page loading
+
 		loadingAction : function () {
 			var logo = $('.start-plug'),
 				plug = $('.plug-box');
-			plug.fadeOut (1000, function () {$('.download').removeClass ('download')});
+			actionTime = 1000;
+			plug.fadeOut (actionTime, function () {$('.download').removeClass ('download')});
+			setTimeout(function () {$('.plug-box').detach ();}, actionTime);
+			// спустя некоторое время после открытия контента удаляем
+			// сверстанный логотип, так как он занимает много памяти и нам не нужен
+
 			console.log ('Выполнено действие');
 			return true;
 		},
+
 		debugClear : function (){
 			this.loadingAction ();
+		}
+	},
+	initializeLections : {
+		lections : {
+			lection1 : {
+				price : 75,
+				inBusket: false,
+				title: 'Стародавня Греція. Боги. Мармур. Емоції.',
+				date: '6 жовтня 2014 о 14:00',
+				lector: ''
+			}
 		}
 	}
 };
@@ -50,3 +71,7 @@ $(function(){
 	$F.loading.debugClear ();
 	//console.log ('Страница загружена: ' + $F.loading.loadingStatus);
 });
+
+window.onresize = function () {
+	alert ();
+};

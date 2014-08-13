@@ -1,6 +1,13 @@
-$point: #83C0D7;
-$grey:  #f7f7f7;
-$w: #ffffff;
+$point: 	#83C0D7;
+$grey:  	#f7f7f7;
+$w: 		#ffffff;
+$b: 		#000000;
+
+$default: 	#83C0D7;
+$b-hover:  	#FF794C;
+$b-active: 	#4D2417;
+
+$grid1: 30px;
 
 @import "compass";
 @import "compass/reset";
@@ -11,7 +18,7 @@ html, body {
 
 
 /*===============================================================================
-        	initialisation begin
+        	initialization begin
 ----------------------------------------------*/
 @mixin mix-blink {
 	0%, 100% {opacity: 1;}
@@ -46,7 +53,7 @@ html, body {
 	}
 }
 /*----------------------------------------------
-        	initialisation end
+        	initialization end
 ===============================================================================*/
 
 
@@ -316,6 +323,10 @@ $s : 0;
         	First content begin
 ----------------------------------------------*/
 
+.in940 {
+	width: 940px;
+	margin: 0 auto;
+}
 .content {
 	&.one {
 		background: rgba(0, 0, 0, 0.6);
@@ -325,9 +336,79 @@ $s : 0;
 		z-index: 120;
 	}
 }
-.in940 {
-	width: 940px;
-	margin: 0 auto;
+@mixin text-style{
+	font-family: GillSansProCyrillicMedium;
+	font-size: 20px;
+	text-align: center;
+}
+.header {
+	margin-top: $grid1;
+	height: 120px;
+	.logo {
+		width: 190px;
+		height: 100px;
+		display: inline-block;
+		background: url(../img/logo.png);
+		&:hover {
+			background: url(../img/logo_active.png);
+		}
+	}
+	.busket{
+		float: right;
+		@include text-style;
+		color: $b;
+		.add-to-busket{
+			display: inline-block;
+			width: 190px;
+			height: 30px;
+			font-family: inherit;
+			font-size: inherit;
+			text-align: center;
+			background: $default;
+			border: 0;
+			border-radius: 15px;
+			color: inherit;
+			cursor: pointer;
+			&:hover  {background: $b-hover;}
+			&:active {background: $b-active; color: $w;}
+		}
+		.price{
+			display: inline-block;
+			font-family: inherit;
+			font-size: inherit;
+			padding-right: 20px;
+			// WARNING padding-top
+			color: $default;
+			&:after {
+				content: ' грн';
+			}
+		}
+	}
+}
+.lection-titles {
+	color: $w;
+	.titles-date {
+		@include text-style;
+		padding-top: 50px;
+	}
+	.titles-title {
+		font-family: GillSansProCyrillicLight;
+		font-size: 50px;
+		text-align: center;
+		padding-top: 40px;
+	}
+}
+.center {
+	text-align: center;
+}
+.lection-info{
+
+}
+.block33{
+	width: 33.333333333333%;
+	display: inline-block;
+	padding-top: 40px;
+	color: $w;
 }
 /*----------------------------------------------
         	First content end
