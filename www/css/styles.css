@@ -3358,52 +3358,69 @@ html, body {
   background: rgba(0, 0, 0, 0.6);
   width: 100%;
   height: 100%;
+  position: absolute;
+  z-index: 120;
 }
 
-@-webkit-keyframes blink {
-  /* line 274, sass/styles.scss */
+@-webkit-keyframes moving {
+  /* line 276, sass/styles.scss */
   0%, 100% {
-    opacity: 1;
+    top: -50px;
+    right: -50px;
+    bottom: -50px;
+    left: -50px;
   }
 
-  /* line 275, sass/styles.scss */
+  /* line 282, sass/styles.scss */
   50% {
-    opacity: 0.1;
+    top: -10px;
+    right: -10px;
+    bottom: -90px;
+    left: -90px;
   }
 }
 
-@keyframes blink {
-  /* line 274, sass/styles.scss */
+@keyframes moving {
+  /* line 276, sass/styles.scss */
   0%, 100% {
-    opacity: 1;
+    top: -50px;
+    right: -50px;
+    bottom: -50px;
+    left: -50px;
   }
 
-  /* line 275, sass/styles.scss */
+  /* line 282, sass/styles.scss */
   50% {
-    opacity: 0.1;
+    top: -10px;
+    right: -10px;
+    bottom: -90px;
+    left: -90px;
   }
 }
 
-/* line 281, sass/styles.scss */
+/* line 293, sass/styles.scss */
 .background.one {
   position: absolute;
   top: -50px;
+  right: -50px;
   bottom: -50px;
   left: -50px;
-  right: -50px;
   margin: auto;
   background: url(../img/bgs/1.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  z-index: 0;
+  -webkit-animation: moving 10s infinite;
+  animation: moving 10s infinite;
 }
 
-/* line 297, sass/styles.scss */
+/* line 313, sass/styles.scss */
 body.one {
   overflow: hidden;
 }
-/* line 300, sass/styles.scss */
+/* line 316, sass/styles.scss */
 body.download {
   overflow: hidden;
 }
