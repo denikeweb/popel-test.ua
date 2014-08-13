@@ -1,21 +1,34 @@
 $point: #83C0D7;
 $grey:  #f7f7f7;
+$w: #ffffff;
+
 @import "compass";
 @import "compass/reset";
 
-/*===============================================================================
-        	logo begin
-----------------------------------------------*/
-/*@mixin mix-load-logo {
-	0%   {opacity: 0;}
-	100% {opacity: 1;}
+html, body {
+	height: 100%;
 }
-@-webkit-keyframes load-logo {@include mix-load-logo;}
-@keyframes load-logo {@include mix-load-logo;}
-*/
+
+
+/*===============================================================================
+        	initialisation begin
+----------------------------------------------*/
+@mixin mix-blink {
+	0%, 100% {opacity: 1;}
+	50% {opacity: 0.1;}
+}
+@-webkit-keyframes  	blink 	{@include 		mix-blink;}
+@keyframes 				blink 	{@include  		mix-blink;}
+
+.plug-box {
+	background: $w;
+	width: 100%;
+	height: 100%;
+}
 .start-plug{
-	/*-webkit-animation: load-logo 2s;
-	animation: load-logo 2s;*/
+	-webkit-animation: 	blink 2s linear 2s infinite;
+	animation: 			blink 2s;
+	//если страница грузится более 2-х секунд, логотип начинает мигать
 	&.download {
 		width: 120px;
 		height: 120px;
@@ -30,9 +43,15 @@ $grey:  #f7f7f7;
 		position: relative;
 	}
 }
-body.download{
-	overflow: hidden;
-}
+/*----------------------------------------------
+        	initialisation end
+===============================================================================*/
+
+
+
+/*===============================================================================
+        	logo begin
+----------------------------------------------*/
 .logo-points-box {
 	display: inline-block;
 	position: absolute;
@@ -52,13 +71,14 @@ body.download{
 // начальная анимация уровней; на видео — 9, на логотипе — 10, сверстано 10;
 // уровни по кадрам: 0,   18,20,23,25,28,31,34,37,40,43,   48
 //
+
 @mixin mix-load-level-1 								{
 	0% 			{opacity: 0;}
 	89.5833% 	{opacity: 0;	height: 400px;	}
 	100% 		{opacity: 1;	height: 120px;	}		}
 @mixin mix-load-pre-level-1 							{
 	89.5833% 	{top: -140px;	}
-	100% 		{top: -5px;		}						}
+	100% 		{top: -7px;		}						}
 @-webkit-keyframes  	load-level-1 	{@include 		mix-load-level-1;}
 @keyframes 				load-level-1 	{@include  		mix-load-level-1;}
 @-webkit-keyframes  load-pre-level-1 	{@include 	mix-load-pre-level-1;}
@@ -68,10 +88,10 @@ body.download{
 @mixin mix-load-level-2 								{
 	0% 			{opacity: 0;}
 	83.3333% 	{opacity: 0;	height: 380px;	}
-	89.5833% 	{opacity: 1;	height: 110px;	}		}
+	91% 		{opacity: 1;	height: 110px;	}		}
 @mixin mix-load-pre-level-2 							{
-	83.3333% 	{top: -130px;	}
-	89.5833% 	{top: -10px;	}						}
+	83.3333% 	{top: -110px;	}
+	91% 		{top: -2px;	}						}
 @-webkit-keyframes  	load-level-2 	{@include 		mix-load-level-2;}
 @keyframes 				load-level-2 	{@include  		mix-load-level-2;}
 @-webkit-keyframes  load-pre-level-2 	{@include 	mix-load-pre-level-2;}
@@ -80,11 +100,11 @@ body.download{
 
 @mixin mix-load-level-3 								{
 	0% 			{opacity: 0;}
-	/*77.0833% 	{opacity: 0;	height: 350px;	}
-	83.3333% 	{opacity: 1;	height: 100px;	}*/		}
+	77.0833% 	{opacity: 0;	height: 350px;	}
+	85% 		{opacity: 1;	height: 100px;	}		}
 @mixin mix-load-pre-level-3 							{
 	77.0833% 	{top: -120px;	}
-	83.3333% 	{top: -15px;	}						}
+	85% 		{top: 3px;	}						}
 @-webkit-keyframes  	load-level-3 	{@include 		mix-load-level-3;}
 @keyframes 				load-level-3 	{@include  		mix-load-level-3;}
 @-webkit-keyframes  load-pre-level-3 	{@include 	mix-load-pre-level-3;}
@@ -93,11 +113,11 @@ body.download{
 
 @mixin mix-load-level-4 								{
 	0% 			{opacity: 0;}
-	/*70.8333% 	{opacity: 0;	height: 330px;	}
-	77.0833% 	{opacity: 1;	height: 90px;	}*/		}
+	70.8333% 	{opacity: 0;	height: 330px;	}
+	77.0833% 	{opacity: 1;	height: 90px;	}		}
 @mixin mix-load-pre-level-4 							{
 	70.8333% 	{top: -110px;	}
-	77.0833% 	{top: -20px;	}						}
+	77.0833% 	{top: 8px;	}						}
 @-webkit-keyframes  	load-level-4 	{@include 		mix-load-level-4;}
 @keyframes 				load-level-4 	{@include  		mix-load-level-4;}
 @-webkit-keyframes  load-pre-level-4 	{@include 	mix-load-pre-level-4;}
@@ -106,11 +126,11 @@ body.download{
 
 @mixin mix-load-level-5 								{
 	0% 			{opacity: 0;}
-	/*64.5833% 	{opacity: 0;	height: 300px;	}
-	70.8333% 	{opacity: 1;	height: 80px;	}*/		}
+	64.5833% 	{opacity: 0;	height: 300px;	}
+	70.8333% 	{opacity: 1;	height: 80px;	}		}
 @mixin mix-load-pre-level-5								{
 	64.5833% 	{top: -100px;	}
-	70.8333% 	{top: -25px;	}						}
+	70.8333% 	{top: 13px;	}						}
 @-webkit-keyframes  	load-level-5 	{@include 		mix-load-level-5;}
 @keyframes 				load-level-5 	{@include  		mix-load-level-5;}
 @-webkit-keyframes  load-pre-level-5 	{@include 	mix-load-pre-level-5;}
@@ -119,11 +139,11 @@ body.download{
 
 @mixin mix-load-level-6 								{
 	0% 			{opacity: 0;}
-	/*58.3333% 	{opacity: 0;	height: 280px;	}
-	64.5833% 	{opacity: 1;	height: 70px;	}*/		}
+	58.3333% 	{opacity: 0;	height: 280px;	}
+	64.5833% 	{opacity: 1;	height: 70px;	}		}
 @mixin mix-load-pre-level-6 							{
 	58.3333% 	{top: -90px;	}
-	64.5833% 	{top: -30px;	}						}
+	64.5833% 	{top: 18px;	}						}
 @-webkit-keyframes  	load-level-6 	{@include 		mix-load-level-6;}
 @keyframes 				load-level-6 	{@include  		mix-load-level-6;}
 @-webkit-keyframes  load-pre-level-6 	{@include 	mix-load-pre-level-6;}
@@ -132,11 +152,11 @@ body.download{
 
 @mixin mix-load-level-7 								{
 	0% 			{opacity: 0;}
-	/*52.0833% 	{opacity: 0;	height: 240px;	}
-	58.3333% 	{opacity: 1;	height: 60px;	}*/		}
+	52.0833% 	{opacity: 0;	height: 240px;	}
+	58.3333% 	{opacity: 1;	height: 60px;	}		}
 @mixin mix-load-pre-level-7								{
 	52.0833% 	{top: -8px;	}
-	58.3333% 		{top: -35px;	}						}
+	58.3333% 	{top: 23px;	}						}
 @-webkit-keyframes  	load-level-7 	{@include 		mix-load-level-7;}
 @keyframes 				load-level-7 	{@include  		mix-load-level-7;}
 @-webkit-keyframes  load-pre-level-7 	{@include 	mix-load-pre-level-7;}
@@ -145,11 +165,11 @@ body.download{
 
 @mixin mix-load-level-8 								{
 	0% 			{opacity: 0;}
-	/*47.9167% 	{opacity: 0;	height: 210px;	}
-	52.0833% 	{opacity: 1;	height: 50px;	}*/		}
+	47.9167% 	{opacity: 0;	height: 210px;	}
+	52.0833% 	{opacity: 1;	height: 50px;	}		}
 @mixin mix-load-pre-level-8 							{
 	47.9167% 	{top: -70px;	}
-	52.0833% 	{top: -40px;	}						}
+	52.0833% 	{top: 28px;	}						}
 @-webkit-keyframes  	load-level-8 	{@include 		mix-load-level-8;}
 @keyframes 				load-level-8 	{@include  		mix-load-level-8;}
 @-webkit-keyframes  load-pre-level-8 	{@include 	mix-load-pre-level-8;}
@@ -158,11 +178,11 @@ body.download{
 
 @mixin mix-load-level-9 								{
 	0% 			{opacity: 0;}
-	/*41.6667% 	{opacity: 0;	height: 150px;	}
-	47.9167% 	{opacity: 1;	height: 40px;	}*/		}
+	41.6667% 	{opacity: 0;	height: 150px;	}
+	47.9167% 	{opacity: 1;	height: 40px;	}		}
 @mixin mix-load-pre-level-9 							{
-	41.6667% 	{top: -60px;	}
-	47.9167% 	{top: -45px;	}						}
+	41.6667% 	{top: 0px;	}
+	47.9167% 	{top: 33px;	}						}
 @-webkit-keyframes  	load-level-9 	{@include 		mix-load-level-9;}
 @keyframes 				load-level-9 	{@include  		mix-load-level-9;}
 @-webkit-keyframes  load-pre-level-9 	{@include 	mix-load-pre-level-9;}
@@ -171,16 +191,16 @@ body.download{
 
 @mixin mix-load-level-10 								{
 	0% 			{opacity: 0;}
-	/*37.5% 		{opacity: 0;	height: 50px;	}
-	41.6667% 	{opacity: 1;	height: 30px;	}*/		}
+	37.5% 		{opacity: 0;	height: 50px;	}
+	41.6667% 	{opacity: 1;	height: 30px;	}		}
 @mixin mix-load-pre-level-10 							{
-	37.5% 		{top: -50px;		}
-	41.6667% 	{top: -43.3px;	}						}
+	37.5% 		{top: 43px;		}
+	41.6667% 	{top: 43.3px;		}					}
 @-webkit-keyframes  	load-level-10 	{@include 		mix-load-level-10;}
 @keyframes 				load-level-10 	{@include  		mix-load-level-10;}
 @-webkit-keyframes  load-pre-level-10 	{@include 	mix-load-pre-level-10;}
 @keyframes 			load-pre-level-10 	{@include  	mix-load-pre-level-10;}
-
+// анимация появления шариков
 
 
 $startValue: 120;
@@ -233,11 +253,66 @@ $s : 0;
 }
 /*печать логотипа*/
 
-
-
-
 /*----------------------------------------------
         	logo end
+===============================================================================*/
+
+
+
+/*===============================================================================
+        	First content area begin
+----------------------------------------------*/
+	.content {
+		&.one {
+			background: rgba(0, 0, 0, 0.6);
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	@mixin mix-blink {
+		0%, 100% {opacity: 1;}
+		50% {opacity: 0.1;}
+	}
+	@-webkit-keyframes  	blink 	{@include 		mix-blink;}
+	@keyframes 				blink 	{@include  		mix-blink;}
+
+	.background{
+		&.one {
+			position: absolute;
+			top: -50px;
+			bottom: -50px;
+			left: -50px;
+			right: -50px;
+			margin: auto;
+			background: url(../img/bgs/1.jpg) no-repeat center center fixed;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+		}
+	}
+
+	body{
+		&.one {
+			overflow: hidden;
+		}
+		&.download{
+			overflow: hidden;
+		}
+	}
+/*----------------------------------------------
+        	First content area end
+===============================================================================*/
+
+
+
+/*===============================================================================
+        	_ begin
+----------------------------------------------*/
+
+/*----------------------------------------------
+        	_ end
 ===============================================================================*/
 
 

@@ -3,6 +3,7 @@ $F = {
 		loadingStatus : false,
 		// setting timer for tracking loading
 		logoLoadingControll : function () {
+			animationTime = 2500; // default: 2s + .5s = 2500
 			setTimeout(function () {
 				This = $F.loading;
 				//console.log ('Заданный интервал времени прошел: ' + This.loadingStatus + This);
@@ -13,7 +14,7 @@ $F = {
 					This.loadingStatus = true;
 					//console.log('Изменен статус по истечению времени: ' + This.loadingStatus);
 				}
-			}, 2000);
+			}, animationTime);
 			//console.log (this);
 			return true;
 		},
@@ -29,8 +30,14 @@ $F = {
 		},
 		// actions after all page loading
 		loadingAction : function () {
-			//console.log ('Выполнено действие');
+			var logo = $('.start-plug'),
+				plug = $('.plug-box');
+			plug.fadeOut (1000, function () {$('.download').removeClass ('download')});
+			console.log ('Выполнено действие');
 			return true;
+		},
+		debugClear : function (){
+			this.loadingAction ();
 		}
 	}
 };
@@ -40,5 +47,6 @@ $F.loading.logoLoadingControll ();
 
 $(function(){
 	$F.loading.pageIsLoad ();
+	$F.loading.debugClear ();
 	//console.log ('Страница загружена: ' + $F.loading.loadingStatus);
 });
