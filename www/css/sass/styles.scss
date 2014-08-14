@@ -15,6 +15,10 @@ $grid1: 30px;
 html, body {
 	height: 100%;
 }
+body{
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+}
 
 
 /*===============================================================================
@@ -54,6 +58,22 @@ html, body {
 }
 /*----------------------------------------------
         	initialization end
+===============================================================================*/
+
+
+
+/*===============================================================================
+        	typography begin
+----------------------------------------------*/
+a:link, a:visited {color: $default; text-decoration: none; padding:0px; font-size: 20px;}
+a:hover, a:active {color: $hover; 	text-decoration: none; padding:0px; font-size: 20px;}
+body, p, div, a, span{
+	font-family: GillSansProCyrillicMedium;
+	font-size: 20px;
+}
+
+/*----------------------------------------------
+        	typography end
 ===============================================================================*/
 
 
@@ -285,20 +305,18 @@ $s : 0;
 	@keyframes 				moving 	{@include  		mix-moving;}
 
 	.background{
-		&.one {
-			position: absolute;
-			top: 0;
-			right: 0;
-			bottom: 0;
-			left: 0;
-			width: 120%;
-			height: 120%;
-			margin: auto;
-			z-index: 0;
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		width: 130%;
+		height: 130%;
+		margin: auto;
+		z-index: 0;
 
-			-webkit-animation: 	moving 20s ease-in infinite;
-			animation: 			moving 20s ease-in infinite;
-		}
+		-webkit-animation: 	moving 20s ease-in infinite;
+		animation: 			moving 20s ease-in infinite;
 		&.image{
 			width: 100%;
 			height: 100%;
@@ -445,6 +463,55 @@ $s : 0;
 				@include eclipces;
 			}
 		}
+	}
+}
+.text-block-modificator{
+	display: inline-block;
+	vertical-align: top;
+	width: 176px;
+	padding-left: 20px;
+}
+.caption{
+	&.one{
+		font-size: 20px;
+		font-family: GillSansProCyrillicLight;
+		display: block;
+	}
+}
+.action{
+	&.one{
+		padding-top: 5px;
+		display: block;
+	}
+}
+.lector-photo{
+	&.mini{
+
+	}
+}
+.more{
+	&.one {
+		position: fixed;
+		width: 100%;
+		color: $w;
+		bottom: 0;
+		text-align: center;
+		padding: 25px 0 45px 0;
+		background: rgba(0, 0, 0, 0.8);
+		cursor: pointer;
+		///*background: url(../img/bgs/1_footer.jpg) no-repeat fixed 100%;
+		//-webkit-background-size: cover;
+		//-moz-background-size: cover;
+		//-o-background-size: cover;
+		//background-size: cover;
+
+		///*filter: blur(5px);
+		//// Browser Specific
+		//-webkit-filter: blur(5px);
+		//-moz-filter: blur(5px);
+		//-o-filter: blur(5px);
+		//-ms-filter: blur(5px);
+
 	}
 }
 /*----------------------------------------------

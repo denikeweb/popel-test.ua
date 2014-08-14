@@ -48,6 +48,7 @@ $F = {
 
 		debugClear : function (){
 			this.loadingAction ();
+			$('.content.one, .background').hide();
 		},
 
 		onWindowResize : function () {
@@ -74,6 +75,10 @@ $(function(){
 	$F.loading.pageIsLoad ();
 	$F.loading.debugClear ();
 	//console.log ('Страница загружена: ' + $F.loading.loadingStatus);
+	var readMore = $('.more.one');
+	readMore.on('click', function () {
+
+	});
 });
 
 window.onresize = $F.loading.onWindowResize;
