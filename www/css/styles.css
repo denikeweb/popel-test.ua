@@ -3673,12 +3673,17 @@ body.download {
 /* line 533, sass/styles.scss */
 .two-blocks-parent .two-blocks:first-child {
   width: 620px;
-  float: left;
+  margin-right: 100px;
+  margin-top: 80px;
+  display: inline-block;
 }
-/* line 537, sass/styles.scss */
+/* line 539, sass/styles.scss */
 .two-blocks-parent .two-blocks:last-child {
+  display: inline-block;
+  margin-top: 160px;
   width: 220px;
-  float: right;
+  position: fixed;
+  z-index: 1;
 }
 
 /*----------------------------------------------
@@ -3687,20 +3692,20 @@ body.download {
 /*===============================================================================
         	footer begin
 ----------------------------------------------*/
-/* line 552, sass/styles.scss */
+/* line 557, sass/styles.scss */
 .related-lections {
   width: 100%;
   height: 440px;
   background: #f0f2f5;
 }
-/* line 556, sass/styles.scss */
+/* line 561, sass/styles.scss */
 .related-lections .related-title {
   text-align: center;
   font-size: 30px;
   padding: 50px 0 20px 0;
 }
 
-/* line 562, sass/styles.scss */
+/* line 567, sass/styles.scss */
 .rounded {
   -webkit-border-radius: 100px;
   -moz-border-radius: 100px;
@@ -3709,12 +3714,12 @@ body.download {
   border-radius: 100px;
 }
 
-/* line 566, sass/styles.scss */
+/* line 571, sass/styles.scss */
 .block33.related {
   text-align: center;
 }
 
-/* line 570, sass/styles.scss */
+/* line 575, sass/styles.scss */
 .date.related {
   font-size: 16px;
   color: #555555;
@@ -3723,7 +3728,7 @@ body.download {
   font-family: GillSansProCyrillicLight;
 }
 
-/* line 577, sass/styles.scss */
+/* line 582, sass/styles.scss */
 .title.related {
   display: block;
 }

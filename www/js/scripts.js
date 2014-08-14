@@ -49,6 +49,7 @@ $F = {
 		debugClear : function (){
 			this.loadingAction ();
 			$('.content.one, .background').hide();
+			$('body').removeClass('one');
 		},
 
 		onWindowResize : function () {

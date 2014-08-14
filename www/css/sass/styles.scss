@@ -532,11 +532,16 @@ $s : 0;
 	.two-blocks {
 		&:first-child {
 			width: 620px;
-			float: left;
+			margin-right: 100px;
+			margin-top: 80px;
+			display: inline-block;
 		}
 		&:last-child {
+			display: inline-block;
+			margin-top: 160px;
 			width: 220px;
-			float: right;
+			position: fixed;
+			z-index: 1;
 		}
 	}
 }
