@@ -48,6 +48,10 @@ $F = {
 
 		debugClear : function (){
 			this.loadingAction ();
+		},
+
+		onWindowResize : function () {
+			console.log('_resize');
 		}
 	},
 	initializeLections : {
@@ -72,6 +76,4 @@ $(function(){
 	//console.log ('Страница загружена: ' + $F.loading.loadingStatus);
 });
 
-window.onresize = function () {
-	alert ();
-};
+window.onresize = $F.loading.onWindowResize;

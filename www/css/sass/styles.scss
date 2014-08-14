@@ -4,8 +4,8 @@ $w: 		#ffffff;
 $b: 		#000000;
 
 $default: 	#83C0D7;
-$b-hover:  	#FF794C;
-$b-active: 	#4D2417;
+$hover:  	#FF794C;
+$active: 	#4D2417;
 
 $grid1: 30px;
 
@@ -369,8 +369,8 @@ $s : 0;
 			border-radius: 15px;
 			color: inherit;
 			cursor: pointer;
-			&:hover  {background: $b-hover;}
-			&:active {background: $b-active; color: $w;}
+			&:hover  {background: $hover;}
+			&:active {background: $active; color: $w;}
 		}
 		.price{
 			display: inline-block;
@@ -404,11 +404,48 @@ $s : 0;
 .lection-info{
 
 }
+@mixin eclipces {
+	display: inline-block;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAA1CAYAAACJFSFIAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NDkxMSwgMjAxMy8xMC8yOS0xMTo0NzoxNiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpCQzQ2QzIwRTIzMUUxMUU0OTdGQkU5QjRBMUI2NDVDNSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpCQzQ2QzIwRjIzMUUxMUU0OTdGQkU5QjRBMUI2NDVDNSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkJDNDZDMjBDMjMxRTExRTQ5N0ZCRTlCNEExQjY0NUM1IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkJDNDZDMjBEMjMxRTExRTQ5N0ZCRTlCNEExQjY0NUM1Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+VFOfxwAAAFNJREFUeNpi/P//PycDA4M+EAsC8XsgvsgIFLQAMkQZEOAtE1QFMhBkgmpBBu9BgheB+DUQ/4XS50FmMqADJgYsAKsgCxCPunPUnaPuHCLuBAgwAK4fbjmbOOTsAAAAAElFTkSuQmCC);
+	width: 5px;
+	height: 53px;
+}
+.t-left{
+	text-align: left;
+	&.lection {
+		padding-left: 30px;
+		padding-right: 20px;
+		width: 250px;
+		display: inline-block;
+		vertical-align: top;
+	}
+}
 .block33{
 	width: 33.333333333333%;
 	display: inline-block;
-	padding-top: 40px;
-	color: $w;
+	vertical-align: top;
+	&.lection{
+		padding-top: 40px;
+		color: $w;
+		text-align: left;
+		&:nth-child(1) {
+			text-align: right;
+			&:after {
+				content: '';
+				@include eclipces;
+			}
+		}
+		&:nth-child(2) {
+			text-align: center;
+		}
+		&:nth-child(3) {
+			text-align: left;
+			&:before {
+				content: '';
+				@include eclipces;
+			}
+		}
+	}
 }
 /*----------------------------------------------
         	First content end
