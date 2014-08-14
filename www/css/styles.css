@@ -3723,25 +3723,25 @@ body.download {
   vertical-align: bottom;
 }
 
-/* line 575, sass/styles.scss */
+/* line 576, sass/styles.scss */
 .top-image {
   display: block;
   margin: 0 -20px;
   margin-bottom: 45px;
 }
 
-/* line 580, sass/styles.scss */
+/* line 581, sass/styles.scss */
 .description {
   padding-top: 25px;
 }
 
-/* line 583, sass/styles.scss */
+/* line 586, sass/styles.scss */
 .chunk {
   padding: 35px 20px;
   background: #f7f8fa;
 }
 
-/* line 588, sass/styles.scss */
+/* line 591, sass/styles.scss */
 .lector-photo.mini {
   -webkit-border-radius: 24px;
   -moz-border-radius: 24px;
@@ -3749,7 +3749,7 @@ body.download {
   -o-border-radius: 24px;
   border-radius: 24px;
 }
-/* line 591, sass/styles.scss */
+/* line 594, sass/styles.scss */
 .lector-photo.large {
   -webkit-border-radius: 68px;
   -moz-border-radius: 68px;
@@ -3760,7 +3760,7 @@ body.download {
   vertical-align: middle;
 }
 
-/* line 602, sass/styles.scss */
+/* line 605, sass/styles.scss */
 .lector-title {
   display: inline-block;
   width: 400px;
@@ -3770,7 +3770,7 @@ body.download {
   padding-bottom: 10px;
 }
 
-/* line 608, sass/styles.scss */
+/* line 611, sass/styles.scss */
 .lector-text {
   display: inline-block;
   width: 400px;
@@ -3780,17 +3780,32 @@ body.download {
   line-height: 1.4;
 }
 
-/* line 614, sass/styles.scss */
+/* line 617, sass/styles.scss */
 .ib {
   display: inline-block;
 }
-/* line 616, sass/styles.scss */
+/* line 619, sass/styles.scss */
 .ib.lector {
   width: 400px;
   vertical-align: top;
 }
 
-/* line 622, sass/styles.scss */
+/* line 626, sass/styles.scss */
+.storage-item {
+  width: 290px;
+  padding-bottom: 30px;
+}
+/* line 629, sass/styles.scss */
+.storage-item:first-child {
+  padding-right: 40px;
+}
+
+/* line 638, sass/styles.scss */
+.gallery {
+  padding-top: 35px;
+}
+
+/* line 645, sass/styles.scss */
 .busket .to-enroll {
   display: inline-block;
   width: 138px;
@@ -3808,49 +3823,44 @@ body.download {
   cursor: pointer;
   color: white;
 }
-/* line 634, sass/styles.scss */
+/* line 657, sass/styles.scss */
 .busket .to-enroll:hover {
   background: #ff794c;
 }
-/* line 635, sass/styles.scss */
+/* line 658, sass/styles.scss */
 .busket .to-enroll:active {
   background: #4d2417;
 }
 
-/* line 639, sass/styles.scss */
-.gallery {
-  padding-top: 35px;
-}
-
-/* line 645, sass/styles.scss */
+/* line 663, sass/styles.scss */
 .free-places-group:after {
   display: block;
   content: '';
   clear: both;
 }
 
-/* line 649, sass/styles.scss */
+/* line 667, sass/styles.scss */
 .free-places-label {
   font-family: GillSansProCyrillicLight;
   font-size: 25px;
 }
 
-/* line 653, sass/styles.scss */
+/* line 671, sass/styles.scss */
 .follow {
   border: 2px solid #73acbf;
   padding: 27px 58px 46px 58px;
 }
-/* line 656, sass/styles.scss */
+/* line 674, sass/styles.scss */
 .follow .follow-title {
   font-size: 30px;
   font-family: GillSansProCyrillicMedium;
   text-align: center;
 }
-/* line 662, sass/styles.scss */
+/* line 680, sass/styles.scss */
 .follow .fb-api {
   display: block;
 }
-/* line 665, sass/styles.scss */
+/* line 683, sass/styles.scss */
 .follow .fb-face {
   width: 50px;
   height: 50px;
@@ -3864,20 +3874,20 @@ body.download {
 /*===============================================================================
         	footer begin
 ----------------------------------------------*/
-/* line 682, sass/styles.scss */
+/* line 700, sass/styles.scss */
 .related-lections {
   width: 100%;
   height: 440px;
   background: #f0f2f5;
 }
-/* line 686, sass/styles.scss */
+/* line 704, sass/styles.scss */
 .related-lections .related-title {
   text-align: center;
   font-size: 30px;
   padding: 50px 0 20px 0;
 }
 
-/* line 692, sass/styles.scss */
+/* line 710, sass/styles.scss */
 .rounded {
   -webkit-border-radius: 100px;
   -moz-border-radius: 100px;
@@ -3886,12 +3896,12 @@ body.download {
   border-radius: 100px;
 }
 
-/* line 696, sass/styles.scss */
+/* line 714, sass/styles.scss */
 .block33.related {
   text-align: center;
 }
 
-/* line 700, sass/styles.scss */
+/* line 718, sass/styles.scss */
 .date.related {
   font-size: 16px;
   color: #555555;
@@ -3900,7 +3910,7 @@ body.download {
   font-family: GillSansProCyrillicLight;
 }
 
-/* line 707, sass/styles.scss */
+/* line 725, sass/styles.scss */
 .title.related {
   display: block;
 }

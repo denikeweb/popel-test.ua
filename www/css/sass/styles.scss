@@ -572,6 +572,7 @@ $s : 0;
 		}
 	}
 }
+//description
 .top-image{
 	display: block;
 	margin: 0 -20px;
@@ -580,6 +581,8 @@ $s : 0;
 .description{
 	padding-top: 25px;
 }
+
+//lector
 .chunk {
 	padding: 35px 20px;
 	background: $chunk;
@@ -618,6 +621,26 @@ $s : 0;
 		vertical-align: top;
 	}
 }
+
+//storage
+.storage-item {
+	width: 290px;
+	padding-bottom: 30px;
+	&:first-child{
+		padding-right: 40px;
+	}
+	.storage-get{
+		
+	}
+}
+
+//gallery
+.gallery{
+	padding-top: 35px;
+}
+
+
+//followers
 .busket{
 	.to-enroll{
 		display: inline-block;
@@ -635,11 +658,6 @@ $s : 0;
 		&:active {background: $active;}
 	}
 }
-
-.gallery{
-	padding-top: 35px;
-}
-
 .free-places-count{}
 .free-places-group{
 	&:after{
