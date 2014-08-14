@@ -1,22 +1,22 @@
 /*
 Syntax error: File to import not found or unreadable: compass.
               Load path: C:/Program Files (x86)/Endels/home/popel-test.ua/www/css/sass (DEPRECATED)
-        on line 12 of styles.scss
+        on line 13 of styles.scss
 
-7: $hover:  	#FF794C;
-8: $active: 	#4D2417;
-9: 
-10: $grid1: 30px;
-11: 
-12: @import "compass";
-13: @import "compass/reset";
-14: 
-15: html, body {
-16: 	height: 100%;
-17: }
+8: $hover:  	#FF794C;
+9: $active: 	#4D2417;
+10: 
+11: $grid1: 30px;
+12: 
+13: @import "compass";
+14: @import "compass/reset";
+15: 
+16: html, body {
+17: 	height: 100%;
+18: }
 
 Backtrace:
-styles.scss:12
+styles.scss:13
 C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.4/lib/sass/tree/import_node.rb:66:in `rescue in import'
 C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.4/lib/sass/tree/import_node.rb:45:in `import'
 C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.4/lib/sass/tree/import_node.rb:28:in `imported_file'
@@ -58,4 +58,4 @@ C:/Ruby200-x64/bin/scss:23:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: File to import not found or unreadable: compass.\A               Load path: C:/Program Files (x86)/Endels/home/popel-test.ua/www/css/sass (DEPRECATED)\A         on line 12 of styles.scss\A \A 7: $hover:  	#FF794C;\A 8: $active: 	#4D2417;\A 9: \A 10: $grid1: 30px;\A 11: \A 12: @import \"compass\";\A 13: @import \"compass/reset\";\A 14: \A 15: html, body {\A 16: 	height: 100%;\A 17: }"; }
+  content: "Syntax error: File to import not found or unreadable: compass.\A               Load path: C:/Program Files (x86)/Endels/home/popel-test.ua/www/css/sass (DEPRECATED)\A         on line 13 of styles.scss\A \A 8: $hover:  	#FF794C;\A 9: $active: 	#4D2417;\A 10: \A 11: $grid1: 30px;\A 12: \A 13: @import \"compass\";\A 14: @import \"compass/reset\";\A 15: \A 16: html, body {\A 17: 	height: 100%;\A 18: }"; }
