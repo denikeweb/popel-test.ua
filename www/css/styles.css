@@ -64,12 +64,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 16, sass/styles.scss */
+/* line 18, sass/styles.scss */
 html, body {
   height: 100%;
 }
 
-/* line 19, sass/styles.scss */
+/* line 21, sass/styles.scss */
 body {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
@@ -79,30 +79,30 @@ body {
         	initialization begin
 ----------------------------------------------*/
 @-webkit-keyframes blink {
-  /* line 29, sass/styles.scss */
+  /* line 31, sass/styles.scss */
   0%, 100% {
     opacity: 1;
   }
 
-  /* line 30, sass/styles.scss */
+  /* line 32, sass/styles.scss */
   50% {
     opacity: 0.1;
   }
 }
 
 @keyframes blink {
-  /* line 29, sass/styles.scss */
+  /* line 31, sass/styles.scss */
   0%, 100% {
     opacity: 1;
   }
 
-  /* line 30, sass/styles.scss */
+  /* line 32, sass/styles.scss */
   50% {
     opacity: 0.1;
   }
 }
 
-/* line 35, sass/styles.scss */
+/* line 37, sass/styles.scss */
 .plug-box {
   position: absolute;
   background: white;
@@ -111,12 +111,12 @@ body {
   z-index: 999;
 }
 
-/* line 42, sass/styles.scss */
+/* line 44, sass/styles.scss */
 .start-plug {
   -webkit-animation: blink 2s linear 2s infinite;
   animation: blink 2s linear 2s infinite;
 }
-/* line 46, sass/styles.scss */
+/* line 48, sass/styles.scss */
 .start-plug.download {
   width: 120px;
   height: 120px;
@@ -127,7 +127,7 @@ body {
   right: 0;
   margin: auto;
 }
-/* line 56, sass/styles.scss */
+/* line 58, sass/styles.scss */
 .start-plug .logo {
   position: relative;
 }
@@ -138,7 +138,7 @@ body {
 /*===============================================================================
         	typography begin
 ----------------------------------------------*/
-/* line 69, sass/styles.scss */
+/* line 71, sass/styles.scss */
 a:link, a:visited {
   color: #83c0d7;
   text-decoration: none;
@@ -146,7 +146,7 @@ a:link, a:visited {
   font-size: 20px;
 }
 
-/* line 70, sass/styles.scss */
+/* line 72, sass/styles.scss */
 a:hover, a:active {
   color: #ff794c;
   text-decoration: none;
@@ -154,10 +154,39 @@ a:hover, a:active {
   font-size: 20px;
 }
 
-/* line 71, sass/styles.scss */
+/* line 73, sass/styles.scss */
 body, p, div, a, span {
   font-family: GillSansProCyrillicMedium;
   font-size: 20px;
+}
+
+/* line 77, sass/styles.scss */
+h1 {
+  font-family: GillSansProCyrillicLight;
+  font-size: 40px;
+}
+
+/* line 81, sass/styles.scss */
+h2 {
+  font-family: GillSansProCyrillicMedium;
+  font-size: 30px;
+  padding-top: 80px;
+  padding-bottom: 30px;
+}
+
+/* line 87, sass/styles.scss */
+h3 {
+  font-family: GillSansProCyrillicMedium;
+  font-size: 25px;
+  line-height: 1.4;
+}
+
+/* line 92, sass/styles.scss */
+p {
+  font-family: HeuristicaRegular;
+  color: #555555;
+  font-size: 16px;
+  line-height: 1.5625;
 }
 
 /*----------------------------------------------
@@ -166,13 +195,13 @@ body, p, div, a, span {
 /*===============================================================================
         	logo begin
 ----------------------------------------------*/
-/* line 85, sass/styles.scss */
+/* line 108, sass/styles.scss */
 .logo-points-box {
   display: inline-block;
   position: absolute;
   margin-left: 50px;
 }
-/* line 89, sass/styles.scss */
+/* line 112, sass/styles.scss */
 .logo-points-box .logo-point {
   background: #83c0d7;
   display: inline-block;
@@ -187,18 +216,18 @@ body, p, div, a, span {
 }
 
 @-webkit-keyframes load-level-1 {
-  /* line 106, sass/styles.scss */
+  /* line 129, sass/styles.scss */
   0% {
     opacity: 0;
   }
 
-  /* line 107, sass/styles.scss */
+  /* line 130, sass/styles.scss */
   80% {
     opacity: 0;
     height: 400px;
   }
 
-  /* line 109, sass/styles.scss */
+  /* line 132, sass/styles.scss */
   100% {
     opacity: 1;
     height: 120px;
@@ -206,18 +235,18 @@ body, p, div, a, span {
 }
 
 @keyframes load-level-1 {
-  /* line 106, sass/styles.scss */
+  /* line 129, sass/styles.scss */
   0% {
     opacity: 0;
   }
 
-  /* line 107, sass/styles.scss */
+  /* line 130, sass/styles.scss */
   80% {
     opacity: 0;
     height: 400px;
   }
 
-  /* line 109, sass/styles.scss */
+  /* line 132, sass/styles.scss */
   100% {
     opacity: 1;
     height: 120px;
@@ -225,42 +254,42 @@ body, p, div, a, span {
 }
 
 @-webkit-keyframes load-pre-level-1 {
-  /* line 111, sass/styles.scss */
+  /* line 134, sass/styles.scss */
   80% {
     top: -140px;
   }
 
-  /* line 112, sass/styles.scss */
+  /* line 135, sass/styles.scss */
   100% {
     top: -7px;
   }
 }
 
 @keyframes load-pre-level-1 {
-  /* line 111, sass/styles.scss */
+  /* line 134, sass/styles.scss */
   80% {
     top: -140px;
   }
 
-  /* line 112, sass/styles.scss */
+  /* line 135, sass/styles.scss */
   100% {
     top: -7px;
   }
 }
 
 @-webkit-keyframes load-level-2 {
-  /* line 120, sass/styles.scss */
+  /* line 143, sass/styles.scss */
   0% {
     opacity: 0;
   }
 
-  /* line 121, sass/styles.scss */
+  /* line 144, sass/styles.scss */
   78% {
     opacity: 0;
     height: 380px;
   }
 
-  /* line 122, sass/styles.scss */
+  /* line 145, sass/styles.scss */
   97% {
     opacity: 1;
     height: 110px;
@@ -268,18 +297,18 @@ body, p, div, a, span {
 }
 
 @keyframes load-level-2 {
-  /* line 120, sass/styles.scss */
+  /* line 143, sass/styles.scss */
   0% {
     opacity: 0;
   }
 
-  /* line 121, sass/styles.scss */
+  /* line 144, sass/styles.scss */
   78% {
     opacity: 0;
     height: 380px;
   }
 
-  /* line 122, sass/styles.scss */
+  /* line 145, sass/styles.scss */
   97% {
     opacity: 1;
     height: 110px;
@@ -287,42 +316,42 @@ body, p, div, a, span {
 }
 
 @-webkit-keyframes load-pre-level-2 {
-  /* line 124, sass/styles.scss */
+  /* line 147, sass/styles.scss */
   78% {
     top: -110px;
   }
 
-  /* line 125, sass/styles.scss */
+  /* line 148, sass/styles.scss */
   97% {
     top: -2px;
   }
 }
 
 @keyframes load-pre-level-2 {
-  /* line 124, sass/styles.scss */
+  /* line 147, sass/styles.scss */
   78% {
     top: -110px;
   }
 
-  /* line 125, sass/styles.scss */
+  /* line 148, sass/styles.scss */
   97% {
     top: -2px;
   }
 }
 
 @-webkit-keyframes load-level-3 {
-  /* line 133, sass/styles.scss */
+  /* line 156, sass/styles.scss */
   0% {
     opacity: 0;
   }
 
-  /* line 134, sass/styles.scss */
+  /* line 157, sass/styles.scss */
   77.0833% {
     opacity: 0;
     height: 350px;
   }
 
-  /* line 135, sass/styles.scss */
+  /* line 158, sass/styles.scss */
   94% {
     opacity: 1;
     height: 100px;
@@ -330,18 +359,18 @@ body, p, div, a, span {
 }
 
 @keyframes load-level-3 {
-  /* line 133, sass/styles.scss */
+  /* line 156, sass/styles.scss */
   0% {
     opacity: 0;
   }
 
-  /* line 134, sass/styles.scss */
+  /* line 157, sass/styles.scss */
   77.0833% {
     opacity: 0;
     height: 350px;
   }
 
-  /* line 135, sass/styles.scss */
+  /* line 158, sass/styles.scss */
   94% {
     opacity: 1;
     height: 100px;
@@ -349,42 +378,42 @@ body, p, div, a, span {
 }
 
 @-webkit-keyframes load-pre-level-3 {
-  /* line 137, sass/styles.scss */
+  /* line 160, sass/styles.scss */
   77.0833% {
     top: -120px;
   }
 
-  /* line 138, sass/styles.scss */
+  /* line 161, sass/styles.scss */
   94% {
     top: 3px;
   }
 }
 
 @keyframes load-pre-level-3 {
-  /* line 137, sass/styles.scss */
+  /* line 160, sass/styles.scss */
   77.0833% {
     top: -120px;
   }
 
-  /* line 138, sass/styles.scss */
+  /* line 161, sass/styles.scss */
   94% {
     top: 3px;
   }
 }
 
 @-webkit-keyframes load-level-4 {
-  /* line 146, sass/styles.scss */
+  /* line 169, sass/styles.scss */
   0% {
     opacity: 0;
   }
 
-  /* line 147, sass/styles.scss */
+  /* line 170, sass/styles.scss */
   70.8333% {
     opacity: 0;
     height: 330px;
   }
 
-  /* line 148, sass/styles.scss */
+  /* line 171, sass/styles.scss */
   88% {
     opacity: 1;
     height: 90px;
@@ -392,18 +421,18 @@ body, p, div, a, span {
 }
 
 @keyframes load-level-4 {
-  /* line 146, sass/styles.scss */
+  /* line 169, sass/styles.scss */
   0% {
     opacity: 0;
   }
 
-  /* line 147, sass/styles.scss */
+  /* line 170, sass/styles.scss */
   70.8333% {
     opacity: 0;
     height: 330px;
   }
 
-  /* line 148, sass/styles.scss */
+  /* line 171, sass/styles.scss */
   88% {
     opacity: 1;
     height: 90px;
@@ -411,42 +440,42 @@ body, p, div, a, span {
 }
 
 @-webkit-keyframes load-pre-level-4 {
-  /* line 150, sass/styles.scss */
+  /* line 173, sass/styles.scss */
   70.8333% {
     top: -110px;
   }
 
-  /* line 151, sass/styles.scss */
+  /* line 174, sass/styles.scss */
   88% {
     top: 8px;
   }
 }
 
 @keyframes load-pre-level-4 {
-  /* line 150, sass/styles.scss */
+  /* line 173, sass/styles.scss */
   70.8333% {
     top: -110px;
   }
 
-  /* line 151, sass/styles.scss */
+  /* line 174, sass/styles.scss */
   88% {
     top: 8px;
   }
 }
 
 @-webkit-keyframes load-level-5 {
-  /* line 159, sass/styles.scss */
+  /* line 182, sass/styles.scss */
   0% {
     opacity: 0;
   }
 
-  /* line 160, sass/styles.scss */
+  /* line 183, sass/styles.scss */
   64.5833% {
     opacity: 0;
     height: 300px;
   }
 
-  /* line 161, sass/styles.scss */
+  /* line 184, sass/styles.scss */
   82% {
     opacity: 1;
     height: 80px;
@@ -454,18 +483,18 @@ body, p, div, a, span {
 }
 
 @keyframes load-level-5 {
-  /* line 159, sass/styles.scss */
+  /* line 182, sass/styles.scss */
   0% {
     opacity: 0;
   }
 
-  /* line 160, sass/styles.scss */
+  /* line 183, sass/styles.scss */
   64.5833% {
     opacity: 0;
     height: 300px;
   }
 
-  /* line 161, sass/styles.scss */
+  /* line 184, sass/styles.scss */
   82% {
     opacity: 1;
     height: 80px;
@@ -473,42 +502,42 @@ body, p, div, a, span {
 }
 
 @-webkit-keyframes load-pre-level-5 {
-  /* line 163, sass/styles.scss */
+  /* line 186, sass/styles.scss */
   64.5833% {
     top: -100px;
   }
 
-  /* line 164, sass/styles.scss */
+  /* line 187, sass/styles.scss */
   82% {
     top: 10px;
   }
 }
 
 @keyframes load-pre-level-5 {
-  /* line 163, sass/styles.scss */
+  /* line 186, sass/styles.scss */
   64.5833% {
     top: -100px;
   }
 
-  /* line 164, sass/styles.scss */
+  /* line 187, sass/styles.scss */
   82% {
     top: 10px;
   }
 }
 
 @-webkit-keyframes load-level-6 {
-  /* line 172, sass/styles.scss */
+  /* line 195, sass/styles.scss */
   0% {
     opacity: 0;
   }
 
-  /* line 173, sass/styles.scss */
+  /* line 196, sass/styles.scss */
   58.3333% {
     opacity: 0;
     height: 280px;
   }
 
-  /* line 174, sass/styles.scss */
+  /* line 197, sass/styles.scss */
   76% {
     opacity: 1;
     height: 70px;
@@ -516,18 +545,18 @@ body, p, div, a, span {
 }
 
 @keyframes load-level-6 {
-  /* line 172, sass/styles.scss */
+  /* line 195, sass/styles.scss */
   0% {
     opacity: 0;
   }
 
-  /* line 173, sass/styles.scss */
+  /* line 196, sass/styles.scss */
   58.3333% {
     opacity: 0;
     height: 280px;
   }
 
-  /* line 174, sass/styles.scss */
+  /* line 197, sass/styles.scss */
   76% {
     opacity: 1;
     height: 70px;
@@ -535,42 +564,42 @@ body, p, div, a, span {
 }
 
 @-webkit-keyframes load-pre-level-6 {
-  /* line 176, sass/styles.scss */
+  /* line 199, sass/styles.scss */
   58.3333% {
     top: -90px;
   }
 
-  /* line 177, sass/styles.scss */
+  /* line 200, sass/styles.scss */
   76% {
     top: 15px;
   }
 }
 
 @keyframes load-pre-level-6 {
-  /* line 176, sass/styles.scss */
+  /* line 199, sass/styles.scss */
   58.3333% {
     top: -90px;
   }
 
-  /* line 177, sass/styles.scss */
+  /* line 200, sass/styles.scss */
   76% {
     top: 15px;
   }
 }
 
 @-webkit-keyframes load-level-7 {
-  /* line 185, sass/styles.scss */
+  /* line 208, sass/styles.scss */
   0% {
     opacity: 0;
   }
 
-  /* line 186, sass/styles.scss */
+  /* line 209, sass/styles.scss */
   52.0833% {
     opacity: 0;
     height: 240px;
   }
 
-  /* line 187, sass/styles.scss */
+  /* line 210, sass/styles.scss */
   72% {
     opacity: 1;
     height: 60px;
@@ -578,18 +607,18 @@ body, p, div, a, span {
 }
 
 @keyframes load-level-7 {
-  /* line 185, sass/styles.scss */
+  /* line 208, sass/styles.scss */
   0% {
     opacity: 0;
   }
 
-  /* line 186, sass/styles.scss */
+  /* line 209, sass/styles.scss */
   52.0833% {
     opacity: 0;
     height: 240px;
   }
 
-  /* line 187, sass/styles.scss */
+  /* line 210, sass/styles.scss */
   72% {
     opacity: 1;
     height: 60px;
@@ -597,42 +626,42 @@ body, p, div, a, span {
 }
 
 @-webkit-keyframes load-pre-level-7 {
-  /* line 189, sass/styles.scss */
+  /* line 212, sass/styles.scss */
   52.0833% {
     top: -90px;
   }
 
-  /* line 190, sass/styles.scss */
+  /* line 213, sass/styles.scss */
   72% {
     top: 20px;
   }
 }
 
 @keyframes load-pre-level-7 {
-  /* line 189, sass/styles.scss */
+  /* line 212, sass/styles.scss */
   52.0833% {
     top: -90px;
   }
 
-  /* line 190, sass/styles.scss */
+  /* line 213, sass/styles.scss */
   72% {
     top: 20px;
   }
 }
 
 @-webkit-keyframes load-level-8 {
-  /* line 198, sass/styles.scss */
+  /* line 221, sass/styles.scss */
   0% {
     opacity: 0;
   }
 
-  /* line 199, sass/styles.scss */
+  /* line 222, sass/styles.scss */
   47.9167% {
     opacity: 0;
     height: 210px;
   }
 
-  /* line 200, sass/styles.scss */
+  /* line 223, sass/styles.scss */
   66% {
     opacity: 1;
     height: 50px;
@@ -640,18 +669,18 @@ body, p, div, a, span {
 }
 
 @keyframes load-level-8 {
-  /* line 198, sass/styles.scss */
+  /* line 221, sass/styles.scss */
   0% {
     opacity: 0;
   }
 
-  /* line 199, sass/styles.scss */
+  /* line 222, sass/styles.scss */
   47.9167% {
     opacity: 0;
     height: 210px;
   }
 
-  /* line 200, sass/styles.scss */
+  /* line 223, sass/styles.scss */
   66% {
     opacity: 1;
     height: 50px;
@@ -659,42 +688,42 @@ body, p, div, a, span {
 }
 
 @-webkit-keyframes load-pre-level-8 {
-  /* line 202, sass/styles.scss */
+  /* line 225, sass/styles.scss */
   47.9167% {
     top: -90px;
   }
 
-  /* line 203, sass/styles.scss */
+  /* line 226, sass/styles.scss */
   66% {
     top: 25px;
   }
 }
 
 @keyframes load-pre-level-8 {
-  /* line 202, sass/styles.scss */
+  /* line 225, sass/styles.scss */
   47.9167% {
     top: -90px;
   }
 
-  /* line 203, sass/styles.scss */
+  /* line 226, sass/styles.scss */
   66% {
     top: 25px;
   }
 }
 
 @-webkit-keyframes load-level-9 {
-  /* line 211, sass/styles.scss */
+  /* line 234, sass/styles.scss */
   0% {
     opacity: 0;
   }
 
-  /* line 212, sass/styles.scss */
+  /* line 235, sass/styles.scss */
   41.6667% {
     opacity: 0;
     height: 150px;
   }
 
-  /* line 213, sass/styles.scss */
+  /* line 236, sass/styles.scss */
   62% {
     opacity: 1;
     height: 40px;
@@ -702,18 +731,18 @@ body, p, div, a, span {
 }
 
 @keyframes load-level-9 {
-  /* line 211, sass/styles.scss */
+  /* line 234, sass/styles.scss */
   0% {
     opacity: 0;
   }
 
-  /* line 212, sass/styles.scss */
+  /* line 235, sass/styles.scss */
   41.6667% {
     opacity: 0;
     height: 150px;
   }
 
-  /* line 213, sass/styles.scss */
+  /* line 236, sass/styles.scss */
   62% {
     opacity: 1;
     height: 40px;
@@ -721,42 +750,42 @@ body, p, div, a, span {
 }
 
 @-webkit-keyframes load-pre-level-9 {
-  /* line 215, sass/styles.scss */
+  /* line 238, sass/styles.scss */
   41.6667% {
     top: 0px;
   }
 
-  /* line 216, sass/styles.scss */
+  /* line 239, sass/styles.scss */
   62% {
     top: 31px;
   }
 }
 
 @keyframes load-pre-level-9 {
-  /* line 215, sass/styles.scss */
+  /* line 238, sass/styles.scss */
   41.6667% {
     top: 0px;
   }
 
-  /* line 216, sass/styles.scss */
+  /* line 239, sass/styles.scss */
   62% {
     top: 31px;
   }
 }
 
 @-webkit-keyframes load-level-10 {
-  /* line 224, sass/styles.scss */
+  /* line 247, sass/styles.scss */
   0% {
     opacity: 0;
   }
 
-  /* line 225, sass/styles.scss */
+  /* line 248, sass/styles.scss */
   37.5% {
     opacity: 0;
     height: 50px;
   }
 
-  /* line 226, sass/styles.scss */
+  /* line 249, sass/styles.scss */
   41.6667% {
     opacity: 1;
     height: 30px;
@@ -764,18 +793,18 @@ body, p, div, a, span {
 }
 
 @keyframes load-level-10 {
-  /* line 224, sass/styles.scss */
+  /* line 247, sass/styles.scss */
   0% {
     opacity: 0;
   }
 
-  /* line 225, sass/styles.scss */
+  /* line 248, sass/styles.scss */
   37.5% {
     opacity: 0;
     height: 50px;
   }
 
-  /* line 226, sass/styles.scss */
+  /* line 249, sass/styles.scss */
   41.6667% {
     opacity: 1;
     height: 30px;
@@ -783,37 +812,37 @@ body, p, div, a, span {
 }
 
 @-webkit-keyframes load-pre-level-10 {
-  /* line 228, sass/styles.scss */
+  /* line 251, sass/styles.scss */
   37.5% {
     top: 43px;
   }
 
-  /* line 229, sass/styles.scss */
+  /* line 252, sass/styles.scss */
   41.6667% {
     top: 43.3px;
   }
 }
 
 @keyframes load-pre-level-10 {
-  /* line 228, sass/styles.scss */
+  /* line 251, sass/styles.scss */
   37.5% {
     top: 43px;
   }
 
-  /* line 229, sass/styles.scss */
+  /* line 252, sass/styles.scss */
   41.6667% {
     top: 43.3px;
   }
 }
 
-/* line 261, sass/styles.scss */
+/* line 284, sass/styles.scss */
 .logo-block-round10 {
   -webkit-animation: load-level-10 2s ease-in;
   animation: load-level-10 2s ease-in;
   height: 10px;
   position: absolute;
 }
-/* line 266, sass/styles.scss */
+/* line 289, sass/styles.scss */
 .logo-block-round10 .logo-points-box {
   height: inherit;
   top: 43.3px;
@@ -821,14 +850,14 @@ body, p, div, a, span {
   animation: load-pre-level-10 2s ease-in;
 }
 
-/* line 261, sass/styles.scss */
+/* line 284, sass/styles.scss */
 .logo-block-round9 {
   -webkit-animation: load-level-9 2s ease-in;
   animation: load-level-9 2s ease-in;
   height: 32px;
   position: absolute;
 }
-/* line 266, sass/styles.scss */
+/* line 289, sass/styles.scss */
 .logo-block-round9 .logo-points-box {
   height: inherit;
   top: 39px;
@@ -836,7 +865,7 @@ body, p, div, a, span {
   animation: load-pre-level-9 2s ease-in;
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round9.rotate1 {
   -webkit-transform: rotate(60deg);
   -moz-transform: rotate(60deg);
@@ -845,7 +874,7 @@ body, p, div, a, span {
   transform: rotate(60deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round9.rotate2 {
   -webkit-transform: rotate(120deg);
   -moz-transform: rotate(120deg);
@@ -854,7 +883,7 @@ body, p, div, a, span {
   transform: rotate(120deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round9.rotate3 {
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
@@ -863,7 +892,7 @@ body, p, div, a, span {
   transform: rotate(180deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round9.rotate4 {
   -webkit-transform: rotate(240deg);
   -moz-transform: rotate(240deg);
@@ -872,7 +901,7 @@ body, p, div, a, span {
   transform: rotate(240deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round9.rotate5 {
   -webkit-transform: rotate(300deg);
   -moz-transform: rotate(300deg);
@@ -881,7 +910,7 @@ body, p, div, a, span {
   transform: rotate(300deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round9.rotate6 {
   -webkit-transform: rotate(360deg);
   -moz-transform: rotate(360deg);
@@ -890,14 +919,14 @@ body, p, div, a, span {
   transform: rotate(360deg);
 }
 
-/* line 261, sass/styles.scss */
+/* line 284, sass/styles.scss */
 .logo-block-round8 {
   -webkit-animation: load-level-8 2s ease-in;
   animation: load-level-8 2s ease-in;
   height: 40px;
   position: absolute;
 }
-/* line 266, sass/styles.scss */
+/* line 289, sass/styles.scss */
 .logo-block-round8 .logo-points-box {
   height: inherit;
   top: 35px;
@@ -905,7 +934,7 @@ body, p, div, a, span {
   animation: load-pre-level-8 2s ease-in;
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round8.rotate1 {
   -webkit-transform: rotate(30deg);
   -moz-transform: rotate(30deg);
@@ -914,7 +943,7 @@ body, p, div, a, span {
   transform: rotate(30deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round8.rotate2 {
   -webkit-transform: rotate(60deg);
   -moz-transform: rotate(60deg);
@@ -923,7 +952,7 @@ body, p, div, a, span {
   transform: rotate(60deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round8.rotate3 {
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
@@ -932,7 +961,7 @@ body, p, div, a, span {
   transform: rotate(90deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round8.rotate4 {
   -webkit-transform: rotate(120deg);
   -moz-transform: rotate(120deg);
@@ -941,7 +970,7 @@ body, p, div, a, span {
   transform: rotate(120deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round8.rotate5 {
   -webkit-transform: rotate(150deg);
   -moz-transform: rotate(150deg);
@@ -950,7 +979,7 @@ body, p, div, a, span {
   transform: rotate(150deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round8.rotate6 {
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
@@ -959,7 +988,7 @@ body, p, div, a, span {
   transform: rotate(180deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round8.rotate7 {
   -webkit-transform: rotate(210deg);
   -moz-transform: rotate(210deg);
@@ -968,7 +997,7 @@ body, p, div, a, span {
   transform: rotate(210deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round8.rotate8 {
   -webkit-transform: rotate(240deg);
   -moz-transform: rotate(240deg);
@@ -977,7 +1006,7 @@ body, p, div, a, span {
   transform: rotate(240deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round8.rotate9 {
   -webkit-transform: rotate(270deg);
   -moz-transform: rotate(270deg);
@@ -986,7 +1015,7 @@ body, p, div, a, span {
   transform: rotate(270deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round8.rotate10 {
   -webkit-transform: rotate(300deg);
   -moz-transform: rotate(300deg);
@@ -995,7 +1024,7 @@ body, p, div, a, span {
   transform: rotate(300deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round8.rotate11 {
   -webkit-transform: rotate(330deg);
   -moz-transform: rotate(330deg);
@@ -1004,7 +1033,7 @@ body, p, div, a, span {
   transform: rotate(330deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round8.rotate12 {
   -webkit-transform: rotate(360deg);
   -moz-transform: rotate(360deg);
@@ -1013,14 +1042,14 @@ body, p, div, a, span {
   transform: rotate(360deg);
 }
 
-/* line 261, sass/styles.scss */
+/* line 284, sass/styles.scss */
 .logo-block-round7 {
   -webkit-animation: load-level-7 2s ease-in;
   animation: load-level-7 2s ease-in;
   height: 50px;
   position: absolute;
 }
-/* line 266, sass/styles.scss */
+/* line 289, sass/styles.scss */
 .logo-block-round7 .logo-points-box {
   height: inherit;
   top: 30px;
@@ -1028,7 +1057,7 @@ body, p, div, a, span {
   animation: load-pre-level-7 2s ease-in;
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round7.rotate1 {
   -webkit-transform: rotate(20deg);
   -moz-transform: rotate(20deg);
@@ -1037,7 +1066,7 @@ body, p, div, a, span {
   transform: rotate(20deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round7.rotate2 {
   -webkit-transform: rotate(40deg);
   -moz-transform: rotate(40deg);
@@ -1046,7 +1075,7 @@ body, p, div, a, span {
   transform: rotate(40deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round7.rotate3 {
   -webkit-transform: rotate(60deg);
   -moz-transform: rotate(60deg);
@@ -1055,7 +1084,7 @@ body, p, div, a, span {
   transform: rotate(60deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round7.rotate4 {
   -webkit-transform: rotate(80deg);
   -moz-transform: rotate(80deg);
@@ -1064,7 +1093,7 @@ body, p, div, a, span {
   transform: rotate(80deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round7.rotate5 {
   -webkit-transform: rotate(100deg);
   -moz-transform: rotate(100deg);
@@ -1073,7 +1102,7 @@ body, p, div, a, span {
   transform: rotate(100deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round7.rotate6 {
   -webkit-transform: rotate(120deg);
   -moz-transform: rotate(120deg);
@@ -1082,7 +1111,7 @@ body, p, div, a, span {
   transform: rotate(120deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round7.rotate7 {
   -webkit-transform: rotate(140deg);
   -moz-transform: rotate(140deg);
@@ -1091,7 +1120,7 @@ body, p, div, a, span {
   transform: rotate(140deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round7.rotate8 {
   -webkit-transform: rotate(160deg);
   -moz-transform: rotate(160deg);
@@ -1100,7 +1129,7 @@ body, p, div, a, span {
   transform: rotate(160deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round7.rotate9 {
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
@@ -1109,7 +1138,7 @@ body, p, div, a, span {
   transform: rotate(180deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round7.rotate10 {
   -webkit-transform: rotate(200deg);
   -moz-transform: rotate(200deg);
@@ -1118,7 +1147,7 @@ body, p, div, a, span {
   transform: rotate(200deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round7.rotate11 {
   -webkit-transform: rotate(220deg);
   -moz-transform: rotate(220deg);
@@ -1127,7 +1156,7 @@ body, p, div, a, span {
   transform: rotate(220deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round7.rotate12 {
   -webkit-transform: rotate(240deg);
   -moz-transform: rotate(240deg);
@@ -1136,7 +1165,7 @@ body, p, div, a, span {
   transform: rotate(240deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round7.rotate13 {
   -webkit-transform: rotate(260deg);
   -moz-transform: rotate(260deg);
@@ -1145,7 +1174,7 @@ body, p, div, a, span {
   transform: rotate(260deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round7.rotate14 {
   -webkit-transform: rotate(280deg);
   -moz-transform: rotate(280deg);
@@ -1154,7 +1183,7 @@ body, p, div, a, span {
   transform: rotate(280deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round7.rotate15 {
   -webkit-transform: rotate(300deg);
   -moz-transform: rotate(300deg);
@@ -1163,7 +1192,7 @@ body, p, div, a, span {
   transform: rotate(300deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round7.rotate16 {
   -webkit-transform: rotate(320deg);
   -moz-transform: rotate(320deg);
@@ -1172,7 +1201,7 @@ body, p, div, a, span {
   transform: rotate(320deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round7.rotate17 {
   -webkit-transform: rotate(340deg);
   -moz-transform: rotate(340deg);
@@ -1181,7 +1210,7 @@ body, p, div, a, span {
   transform: rotate(340deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round7.rotate18 {
   -webkit-transform: rotate(360deg);
   -moz-transform: rotate(360deg);
@@ -1190,14 +1219,14 @@ body, p, div, a, span {
   transform: rotate(360deg);
 }
 
-/* line 261, sass/styles.scss */
+/* line 284, sass/styles.scss */
 .logo-block-round6 {
   -webkit-animation: load-level-6 2s ease-in;
   animation: load-level-6 2s ease-in;
   height: 60px;
   position: absolute;
 }
-/* line 266, sass/styles.scss */
+/* line 289, sass/styles.scss */
 .logo-block-round6 .logo-points-box {
   height: inherit;
   top: 25px;
@@ -1205,7 +1234,7 @@ body, p, div, a, span {
   animation: load-pre-level-6 2s ease-in;
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round6.rotate1 {
   -webkit-transform: rotate(15deg);
   -moz-transform: rotate(15deg);
@@ -1214,7 +1243,7 @@ body, p, div, a, span {
   transform: rotate(15deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round6.rotate2 {
   -webkit-transform: rotate(30deg);
   -moz-transform: rotate(30deg);
@@ -1223,7 +1252,7 @@ body, p, div, a, span {
   transform: rotate(30deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round6.rotate3 {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -1232,7 +1261,7 @@ body, p, div, a, span {
   transform: rotate(45deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round6.rotate4 {
   -webkit-transform: rotate(60deg);
   -moz-transform: rotate(60deg);
@@ -1241,7 +1270,7 @@ body, p, div, a, span {
   transform: rotate(60deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round6.rotate5 {
   -webkit-transform: rotate(75deg);
   -moz-transform: rotate(75deg);
@@ -1250,7 +1279,7 @@ body, p, div, a, span {
   transform: rotate(75deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round6.rotate6 {
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
@@ -1259,7 +1288,7 @@ body, p, div, a, span {
   transform: rotate(90deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round6.rotate7 {
   -webkit-transform: rotate(105deg);
   -moz-transform: rotate(105deg);
@@ -1268,7 +1297,7 @@ body, p, div, a, span {
   transform: rotate(105deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round6.rotate8 {
   -webkit-transform: rotate(120deg);
   -moz-transform: rotate(120deg);
@@ -1277,7 +1306,7 @@ body, p, div, a, span {
   transform: rotate(120deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round6.rotate9 {
   -webkit-transform: rotate(135deg);
   -moz-transform: rotate(135deg);
@@ -1286,7 +1315,7 @@ body, p, div, a, span {
   transform: rotate(135deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round6.rotate10 {
   -webkit-transform: rotate(150deg);
   -moz-transform: rotate(150deg);
@@ -1295,7 +1324,7 @@ body, p, div, a, span {
   transform: rotate(150deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round6.rotate11 {
   -webkit-transform: rotate(165deg);
   -moz-transform: rotate(165deg);
@@ -1304,7 +1333,7 @@ body, p, div, a, span {
   transform: rotate(165deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round6.rotate12 {
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
@@ -1313,7 +1342,7 @@ body, p, div, a, span {
   transform: rotate(180deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round6.rotate13 {
   -webkit-transform: rotate(195deg);
   -moz-transform: rotate(195deg);
@@ -1322,7 +1351,7 @@ body, p, div, a, span {
   transform: rotate(195deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round6.rotate14 {
   -webkit-transform: rotate(210deg);
   -moz-transform: rotate(210deg);
@@ -1331,7 +1360,7 @@ body, p, div, a, span {
   transform: rotate(210deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round6.rotate15 {
   -webkit-transform: rotate(225deg);
   -moz-transform: rotate(225deg);
@@ -1340,7 +1369,7 @@ body, p, div, a, span {
   transform: rotate(225deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round6.rotate16 {
   -webkit-transform: rotate(240deg);
   -moz-transform: rotate(240deg);
@@ -1349,7 +1378,7 @@ body, p, div, a, span {
   transform: rotate(240deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round6.rotate17 {
   -webkit-transform: rotate(255deg);
   -moz-transform: rotate(255deg);
@@ -1358,7 +1387,7 @@ body, p, div, a, span {
   transform: rotate(255deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round6.rotate18 {
   -webkit-transform: rotate(270deg);
   -moz-transform: rotate(270deg);
@@ -1367,7 +1396,7 @@ body, p, div, a, span {
   transform: rotate(270deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round6.rotate19 {
   -webkit-transform: rotate(285deg);
   -moz-transform: rotate(285deg);
@@ -1376,7 +1405,7 @@ body, p, div, a, span {
   transform: rotate(285deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round6.rotate20 {
   -webkit-transform: rotate(300deg);
   -moz-transform: rotate(300deg);
@@ -1385,7 +1414,7 @@ body, p, div, a, span {
   transform: rotate(300deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round6.rotate21 {
   -webkit-transform: rotate(315deg);
   -moz-transform: rotate(315deg);
@@ -1394,7 +1423,7 @@ body, p, div, a, span {
   transform: rotate(315deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round6.rotate22 {
   -webkit-transform: rotate(330deg);
   -moz-transform: rotate(330deg);
@@ -1403,7 +1432,7 @@ body, p, div, a, span {
   transform: rotate(330deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round6.rotate23 {
   -webkit-transform: rotate(345deg);
   -moz-transform: rotate(345deg);
@@ -1412,7 +1441,7 @@ body, p, div, a, span {
   transform: rotate(345deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round6.rotate24 {
   -webkit-transform: rotate(360deg);
   -moz-transform: rotate(360deg);
@@ -1421,14 +1450,14 @@ body, p, div, a, span {
   transform: rotate(360deg);
 }
 
-/* line 261, sass/styles.scss */
+/* line 284, sass/styles.scss */
 .logo-block-round5 {
   -webkit-animation: load-level-5 2s ease-in;
   animation: load-level-5 2s ease-in;
   height: 70px;
   position: absolute;
 }
-/* line 266, sass/styles.scss */
+/* line 289, sass/styles.scss */
 .logo-block-round5 .logo-points-box {
   height: inherit;
   top: 20px;
@@ -1436,7 +1465,7 @@ body, p, div, a, span {
   animation: load-pre-level-5 2s ease-in;
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round5.rotate1 {
   -webkit-transform: rotate(12deg);
   -moz-transform: rotate(12deg);
@@ -1445,7 +1474,7 @@ body, p, div, a, span {
   transform: rotate(12deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round5.rotate2 {
   -webkit-transform: rotate(24deg);
   -moz-transform: rotate(24deg);
@@ -1454,7 +1483,7 @@ body, p, div, a, span {
   transform: rotate(24deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round5.rotate3 {
   -webkit-transform: rotate(36deg);
   -moz-transform: rotate(36deg);
@@ -1463,7 +1492,7 @@ body, p, div, a, span {
   transform: rotate(36deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round5.rotate4 {
   -webkit-transform: rotate(48deg);
   -moz-transform: rotate(48deg);
@@ -1472,7 +1501,7 @@ body, p, div, a, span {
   transform: rotate(48deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round5.rotate5 {
   -webkit-transform: rotate(60deg);
   -moz-transform: rotate(60deg);
@@ -1481,7 +1510,7 @@ body, p, div, a, span {
   transform: rotate(60deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round5.rotate6 {
   -webkit-transform: rotate(72deg);
   -moz-transform: rotate(72deg);
@@ -1490,7 +1519,7 @@ body, p, div, a, span {
   transform: rotate(72deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round5.rotate7 {
   -webkit-transform: rotate(84deg);
   -moz-transform: rotate(84deg);
@@ -1499,7 +1528,7 @@ body, p, div, a, span {
   transform: rotate(84deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round5.rotate8 {
   -webkit-transform: rotate(96deg);
   -moz-transform: rotate(96deg);
@@ -1508,7 +1537,7 @@ body, p, div, a, span {
   transform: rotate(96deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round5.rotate9 {
   -webkit-transform: rotate(108deg);
   -moz-transform: rotate(108deg);
@@ -1517,7 +1546,7 @@ body, p, div, a, span {
   transform: rotate(108deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round5.rotate10 {
   -webkit-transform: rotate(120deg);
   -moz-transform: rotate(120deg);
@@ -1526,7 +1555,7 @@ body, p, div, a, span {
   transform: rotate(120deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round5.rotate11 {
   -webkit-transform: rotate(132deg);
   -moz-transform: rotate(132deg);
@@ -1535,7 +1564,7 @@ body, p, div, a, span {
   transform: rotate(132deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round5.rotate12 {
   -webkit-transform: rotate(144deg);
   -moz-transform: rotate(144deg);
@@ -1544,7 +1573,7 @@ body, p, div, a, span {
   transform: rotate(144deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round5.rotate13 {
   -webkit-transform: rotate(156deg);
   -moz-transform: rotate(156deg);
@@ -1553,7 +1582,7 @@ body, p, div, a, span {
   transform: rotate(156deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round5.rotate14 {
   -webkit-transform: rotate(168deg);
   -moz-transform: rotate(168deg);
@@ -1562,7 +1591,7 @@ body, p, div, a, span {
   transform: rotate(168deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round5.rotate15 {
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
@@ -1571,7 +1600,7 @@ body, p, div, a, span {
   transform: rotate(180deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round5.rotate16 {
   -webkit-transform: rotate(192deg);
   -moz-transform: rotate(192deg);
@@ -1580,7 +1609,7 @@ body, p, div, a, span {
   transform: rotate(192deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round5.rotate17 {
   -webkit-transform: rotate(204deg);
   -moz-transform: rotate(204deg);
@@ -1589,7 +1618,7 @@ body, p, div, a, span {
   transform: rotate(204deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round5.rotate18 {
   -webkit-transform: rotate(216deg);
   -moz-transform: rotate(216deg);
@@ -1598,7 +1627,7 @@ body, p, div, a, span {
   transform: rotate(216deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round5.rotate19 {
   -webkit-transform: rotate(228deg);
   -moz-transform: rotate(228deg);
@@ -1607,7 +1636,7 @@ body, p, div, a, span {
   transform: rotate(228deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round5.rotate20 {
   -webkit-transform: rotate(240deg);
   -moz-transform: rotate(240deg);
@@ -1616,7 +1645,7 @@ body, p, div, a, span {
   transform: rotate(240deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round5.rotate21 {
   -webkit-transform: rotate(252deg);
   -moz-transform: rotate(252deg);
@@ -1625,7 +1654,7 @@ body, p, div, a, span {
   transform: rotate(252deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round5.rotate22 {
   -webkit-transform: rotate(264deg);
   -moz-transform: rotate(264deg);
@@ -1634,7 +1663,7 @@ body, p, div, a, span {
   transform: rotate(264deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round5.rotate23 {
   -webkit-transform: rotate(276deg);
   -moz-transform: rotate(276deg);
@@ -1643,7 +1672,7 @@ body, p, div, a, span {
   transform: rotate(276deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round5.rotate24 {
   -webkit-transform: rotate(288deg);
   -moz-transform: rotate(288deg);
@@ -1652,7 +1681,7 @@ body, p, div, a, span {
   transform: rotate(288deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round5.rotate25 {
   -webkit-transform: rotate(300deg);
   -moz-transform: rotate(300deg);
@@ -1661,7 +1690,7 @@ body, p, div, a, span {
   transform: rotate(300deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round5.rotate26 {
   -webkit-transform: rotate(312deg);
   -moz-transform: rotate(312deg);
@@ -1670,7 +1699,7 @@ body, p, div, a, span {
   transform: rotate(312deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round5.rotate27 {
   -webkit-transform: rotate(324deg);
   -moz-transform: rotate(324deg);
@@ -1679,7 +1708,7 @@ body, p, div, a, span {
   transform: rotate(324deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round5.rotate28 {
   -webkit-transform: rotate(336deg);
   -moz-transform: rotate(336deg);
@@ -1688,7 +1717,7 @@ body, p, div, a, span {
   transform: rotate(336deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round5.rotate29 {
   -webkit-transform: rotate(348deg);
   -moz-transform: rotate(348deg);
@@ -1697,7 +1726,7 @@ body, p, div, a, span {
   transform: rotate(348deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round5.rotate30 {
   -webkit-transform: rotate(360deg);
   -moz-transform: rotate(360deg);
@@ -1706,14 +1735,14 @@ body, p, div, a, span {
   transform: rotate(360deg);
 }
 
-/* line 261, sass/styles.scss */
+/* line 284, sass/styles.scss */
 .logo-block-round4 {
   -webkit-animation: load-level-4 2s ease-in;
   animation: load-level-4 2s ease-in;
   height: 80px;
   position: absolute;
 }
-/* line 266, sass/styles.scss */
+/* line 289, sass/styles.scss */
 .logo-block-round4 .logo-points-box {
   height: inherit;
   top: 15px;
@@ -1721,7 +1750,7 @@ body, p, div, a, span {
   animation: load-pre-level-4 2s ease-in;
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round4.rotate1 {
   -webkit-transform: rotate(10deg);
   -moz-transform: rotate(10deg);
@@ -1730,7 +1759,7 @@ body, p, div, a, span {
   transform: rotate(10deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round4.rotate2 {
   -webkit-transform: rotate(20deg);
   -moz-transform: rotate(20deg);
@@ -1739,7 +1768,7 @@ body, p, div, a, span {
   transform: rotate(20deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round4.rotate3 {
   -webkit-transform: rotate(30deg);
   -moz-transform: rotate(30deg);
@@ -1748,7 +1777,7 @@ body, p, div, a, span {
   transform: rotate(30deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round4.rotate4 {
   -webkit-transform: rotate(40deg);
   -moz-transform: rotate(40deg);
@@ -1757,7 +1786,7 @@ body, p, div, a, span {
   transform: rotate(40deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round4.rotate5 {
   -webkit-transform: rotate(50deg);
   -moz-transform: rotate(50deg);
@@ -1766,7 +1795,7 @@ body, p, div, a, span {
   transform: rotate(50deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round4.rotate6 {
   -webkit-transform: rotate(60deg);
   -moz-transform: rotate(60deg);
@@ -1775,7 +1804,7 @@ body, p, div, a, span {
   transform: rotate(60deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round4.rotate7 {
   -webkit-transform: rotate(70deg);
   -moz-transform: rotate(70deg);
@@ -1784,7 +1813,7 @@ body, p, div, a, span {
   transform: rotate(70deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round4.rotate8 {
   -webkit-transform: rotate(80deg);
   -moz-transform: rotate(80deg);
@@ -1793,7 +1822,7 @@ body, p, div, a, span {
   transform: rotate(80deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round4.rotate9 {
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
@@ -1802,7 +1831,7 @@ body, p, div, a, span {
   transform: rotate(90deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round4.rotate10 {
   -webkit-transform: rotate(100deg);
   -moz-transform: rotate(100deg);
@@ -1811,7 +1840,7 @@ body, p, div, a, span {
   transform: rotate(100deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round4.rotate11 {
   -webkit-transform: rotate(110deg);
   -moz-transform: rotate(110deg);
@@ -1820,7 +1849,7 @@ body, p, div, a, span {
   transform: rotate(110deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round4.rotate12 {
   -webkit-transform: rotate(120deg);
   -moz-transform: rotate(120deg);
@@ -1829,7 +1858,7 @@ body, p, div, a, span {
   transform: rotate(120deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round4.rotate13 {
   -webkit-transform: rotate(130deg);
   -moz-transform: rotate(130deg);
@@ -1838,7 +1867,7 @@ body, p, div, a, span {
   transform: rotate(130deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round4.rotate14 {
   -webkit-transform: rotate(140deg);
   -moz-transform: rotate(140deg);
@@ -1847,7 +1876,7 @@ body, p, div, a, span {
   transform: rotate(140deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round4.rotate15 {
   -webkit-transform: rotate(150deg);
   -moz-transform: rotate(150deg);
@@ -1856,7 +1885,7 @@ body, p, div, a, span {
   transform: rotate(150deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round4.rotate16 {
   -webkit-transform: rotate(160deg);
   -moz-transform: rotate(160deg);
@@ -1865,7 +1894,7 @@ body, p, div, a, span {
   transform: rotate(160deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round4.rotate17 {
   -webkit-transform: rotate(170deg);
   -moz-transform: rotate(170deg);
@@ -1874,7 +1903,7 @@ body, p, div, a, span {
   transform: rotate(170deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round4.rotate18 {
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
@@ -1883,7 +1912,7 @@ body, p, div, a, span {
   transform: rotate(180deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round4.rotate19 {
   -webkit-transform: rotate(190deg);
   -moz-transform: rotate(190deg);
@@ -1892,7 +1921,7 @@ body, p, div, a, span {
   transform: rotate(190deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round4.rotate20 {
   -webkit-transform: rotate(200deg);
   -moz-transform: rotate(200deg);
@@ -1901,7 +1930,7 @@ body, p, div, a, span {
   transform: rotate(200deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round4.rotate21 {
   -webkit-transform: rotate(210deg);
   -moz-transform: rotate(210deg);
@@ -1910,7 +1939,7 @@ body, p, div, a, span {
   transform: rotate(210deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round4.rotate22 {
   -webkit-transform: rotate(220deg);
   -moz-transform: rotate(220deg);
@@ -1919,7 +1948,7 @@ body, p, div, a, span {
   transform: rotate(220deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round4.rotate23 {
   -webkit-transform: rotate(230deg);
   -moz-transform: rotate(230deg);
@@ -1928,7 +1957,7 @@ body, p, div, a, span {
   transform: rotate(230deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round4.rotate24 {
   -webkit-transform: rotate(240deg);
   -moz-transform: rotate(240deg);
@@ -1937,7 +1966,7 @@ body, p, div, a, span {
   transform: rotate(240deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round4.rotate25 {
   -webkit-transform: rotate(250deg);
   -moz-transform: rotate(250deg);
@@ -1946,7 +1975,7 @@ body, p, div, a, span {
   transform: rotate(250deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round4.rotate26 {
   -webkit-transform: rotate(260deg);
   -moz-transform: rotate(260deg);
@@ -1955,7 +1984,7 @@ body, p, div, a, span {
   transform: rotate(260deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round4.rotate27 {
   -webkit-transform: rotate(270deg);
   -moz-transform: rotate(270deg);
@@ -1964,7 +1993,7 @@ body, p, div, a, span {
   transform: rotate(270deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round4.rotate28 {
   -webkit-transform: rotate(280deg);
   -moz-transform: rotate(280deg);
@@ -1973,7 +2002,7 @@ body, p, div, a, span {
   transform: rotate(280deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round4.rotate29 {
   -webkit-transform: rotate(290deg);
   -moz-transform: rotate(290deg);
@@ -1982,7 +2011,7 @@ body, p, div, a, span {
   transform: rotate(290deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round4.rotate30 {
   -webkit-transform: rotate(300deg);
   -moz-transform: rotate(300deg);
@@ -1991,7 +2020,7 @@ body, p, div, a, span {
   transform: rotate(300deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round4.rotate31 {
   -webkit-transform: rotate(310deg);
   -moz-transform: rotate(310deg);
@@ -2000,7 +2029,7 @@ body, p, div, a, span {
   transform: rotate(310deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round4.rotate32 {
   -webkit-transform: rotate(320deg);
   -moz-transform: rotate(320deg);
@@ -2009,7 +2038,7 @@ body, p, div, a, span {
   transform: rotate(320deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round4.rotate33 {
   -webkit-transform: rotate(330deg);
   -moz-transform: rotate(330deg);
@@ -2018,7 +2047,7 @@ body, p, div, a, span {
   transform: rotate(330deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round4.rotate34 {
   -webkit-transform: rotate(340deg);
   -moz-transform: rotate(340deg);
@@ -2027,7 +2056,7 @@ body, p, div, a, span {
   transform: rotate(340deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round4.rotate35 {
   -webkit-transform: rotate(350deg);
   -moz-transform: rotate(350deg);
@@ -2036,7 +2065,7 @@ body, p, div, a, span {
   transform: rotate(350deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round4.rotate36 {
   -webkit-transform: rotate(360deg);
   -moz-transform: rotate(360deg);
@@ -2045,14 +2074,14 @@ body, p, div, a, span {
   transform: rotate(360deg);
 }
 
-/* line 261, sass/styles.scss */
+/* line 284, sass/styles.scss */
 .logo-block-round3 {
   -webkit-animation: load-level-3 2s ease-in;
   animation: load-level-3 2s ease-in;
   height: 90px;
   position: absolute;
 }
-/* line 266, sass/styles.scss */
+/* line 289, sass/styles.scss */
 .logo-block-round3 .logo-points-box {
   height: inherit;
   top: 10px;
@@ -2060,7 +2089,7 @@ body, p, div, a, span {
   animation: load-pre-level-3 2s ease-in;
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round3.rotate1 {
   -webkit-transform: rotate(8.57143deg);
   -moz-transform: rotate(8.57143deg);
@@ -2069,7 +2098,7 @@ body, p, div, a, span {
   transform: rotate(8.57143deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round3.rotate2 {
   -webkit-transform: rotate(17.14286deg);
   -moz-transform: rotate(17.14286deg);
@@ -2078,7 +2107,7 @@ body, p, div, a, span {
   transform: rotate(17.14286deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round3.rotate3 {
   -webkit-transform: rotate(25.71429deg);
   -moz-transform: rotate(25.71429deg);
@@ -2087,7 +2116,7 @@ body, p, div, a, span {
   transform: rotate(25.71429deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round3.rotate4 {
   -webkit-transform: rotate(34.28571deg);
   -moz-transform: rotate(34.28571deg);
@@ -2096,7 +2125,7 @@ body, p, div, a, span {
   transform: rotate(34.28571deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round3.rotate5 {
   -webkit-transform: rotate(42.85714deg);
   -moz-transform: rotate(42.85714deg);
@@ -2105,7 +2134,7 @@ body, p, div, a, span {
   transform: rotate(42.85714deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round3.rotate6 {
   -webkit-transform: rotate(51.42857deg);
   -moz-transform: rotate(51.42857deg);
@@ -2114,7 +2143,7 @@ body, p, div, a, span {
   transform: rotate(51.42857deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round3.rotate7 {
   -webkit-transform: rotate(60deg);
   -moz-transform: rotate(60deg);
@@ -2123,7 +2152,7 @@ body, p, div, a, span {
   transform: rotate(60deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round3.rotate8 {
   -webkit-transform: rotate(68.57143deg);
   -moz-transform: rotate(68.57143deg);
@@ -2132,7 +2161,7 @@ body, p, div, a, span {
   transform: rotate(68.57143deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round3.rotate9 {
   -webkit-transform: rotate(77.14286deg);
   -moz-transform: rotate(77.14286deg);
@@ -2141,7 +2170,7 @@ body, p, div, a, span {
   transform: rotate(77.14286deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round3.rotate10 {
   -webkit-transform: rotate(85.71429deg);
   -moz-transform: rotate(85.71429deg);
@@ -2150,7 +2179,7 @@ body, p, div, a, span {
   transform: rotate(85.71429deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round3.rotate11 {
   -webkit-transform: rotate(94.28571deg);
   -moz-transform: rotate(94.28571deg);
@@ -2159,7 +2188,7 @@ body, p, div, a, span {
   transform: rotate(94.28571deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round3.rotate12 {
   -webkit-transform: rotate(102.85714deg);
   -moz-transform: rotate(102.85714deg);
@@ -2168,7 +2197,7 @@ body, p, div, a, span {
   transform: rotate(102.85714deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round3.rotate13 {
   -webkit-transform: rotate(111.42857deg);
   -moz-transform: rotate(111.42857deg);
@@ -2177,7 +2206,7 @@ body, p, div, a, span {
   transform: rotate(111.42857deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round3.rotate14 {
   -webkit-transform: rotate(120deg);
   -moz-transform: rotate(120deg);
@@ -2186,7 +2215,7 @@ body, p, div, a, span {
   transform: rotate(120deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round3.rotate15 {
   -webkit-transform: rotate(128.57143deg);
   -moz-transform: rotate(128.57143deg);
@@ -2195,7 +2224,7 @@ body, p, div, a, span {
   transform: rotate(128.57143deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round3.rotate16 {
   -webkit-transform: rotate(137.14286deg);
   -moz-transform: rotate(137.14286deg);
@@ -2204,7 +2233,7 @@ body, p, div, a, span {
   transform: rotate(137.14286deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round3.rotate17 {
   -webkit-transform: rotate(145.71429deg);
   -moz-transform: rotate(145.71429deg);
@@ -2213,7 +2242,7 @@ body, p, div, a, span {
   transform: rotate(145.71429deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round3.rotate18 {
   -webkit-transform: rotate(154.28571deg);
   -moz-transform: rotate(154.28571deg);
@@ -2222,7 +2251,7 @@ body, p, div, a, span {
   transform: rotate(154.28571deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round3.rotate19 {
   -webkit-transform: rotate(162.85714deg);
   -moz-transform: rotate(162.85714deg);
@@ -2231,7 +2260,7 @@ body, p, div, a, span {
   transform: rotate(162.85714deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round3.rotate20 {
   -webkit-transform: rotate(171.42857deg);
   -moz-transform: rotate(171.42857deg);
@@ -2240,7 +2269,7 @@ body, p, div, a, span {
   transform: rotate(171.42857deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round3.rotate21 {
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
@@ -2249,7 +2278,7 @@ body, p, div, a, span {
   transform: rotate(180deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round3.rotate22 {
   -webkit-transform: rotate(188.57143deg);
   -moz-transform: rotate(188.57143deg);
@@ -2258,7 +2287,7 @@ body, p, div, a, span {
   transform: rotate(188.57143deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round3.rotate23 {
   -webkit-transform: rotate(197.14286deg);
   -moz-transform: rotate(197.14286deg);
@@ -2267,7 +2296,7 @@ body, p, div, a, span {
   transform: rotate(197.14286deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round3.rotate24 {
   -webkit-transform: rotate(205.71429deg);
   -moz-transform: rotate(205.71429deg);
@@ -2276,7 +2305,7 @@ body, p, div, a, span {
   transform: rotate(205.71429deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round3.rotate25 {
   -webkit-transform: rotate(214.28571deg);
   -moz-transform: rotate(214.28571deg);
@@ -2285,7 +2314,7 @@ body, p, div, a, span {
   transform: rotate(214.28571deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round3.rotate26 {
   -webkit-transform: rotate(222.85714deg);
   -moz-transform: rotate(222.85714deg);
@@ -2294,7 +2323,7 @@ body, p, div, a, span {
   transform: rotate(222.85714deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round3.rotate27 {
   -webkit-transform: rotate(231.42857deg);
   -moz-transform: rotate(231.42857deg);
@@ -2303,7 +2332,7 @@ body, p, div, a, span {
   transform: rotate(231.42857deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round3.rotate28 {
   -webkit-transform: rotate(240deg);
   -moz-transform: rotate(240deg);
@@ -2312,7 +2341,7 @@ body, p, div, a, span {
   transform: rotate(240deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round3.rotate29 {
   -webkit-transform: rotate(248.57143deg);
   -moz-transform: rotate(248.57143deg);
@@ -2321,7 +2350,7 @@ body, p, div, a, span {
   transform: rotate(248.57143deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round3.rotate30 {
   -webkit-transform: rotate(257.14286deg);
   -moz-transform: rotate(257.14286deg);
@@ -2330,7 +2359,7 @@ body, p, div, a, span {
   transform: rotate(257.14286deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round3.rotate31 {
   -webkit-transform: rotate(265.71429deg);
   -moz-transform: rotate(265.71429deg);
@@ -2339,7 +2368,7 @@ body, p, div, a, span {
   transform: rotate(265.71429deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round3.rotate32 {
   -webkit-transform: rotate(274.28571deg);
   -moz-transform: rotate(274.28571deg);
@@ -2348,7 +2377,7 @@ body, p, div, a, span {
   transform: rotate(274.28571deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round3.rotate33 {
   -webkit-transform: rotate(282.85714deg);
   -moz-transform: rotate(282.85714deg);
@@ -2357,7 +2386,7 @@ body, p, div, a, span {
   transform: rotate(282.85714deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round3.rotate34 {
   -webkit-transform: rotate(291.42857deg);
   -moz-transform: rotate(291.42857deg);
@@ -2366,7 +2395,7 @@ body, p, div, a, span {
   transform: rotate(291.42857deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round3.rotate35 {
   -webkit-transform: rotate(300deg);
   -moz-transform: rotate(300deg);
@@ -2375,7 +2404,7 @@ body, p, div, a, span {
   transform: rotate(300deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round3.rotate36 {
   -webkit-transform: rotate(308.57143deg);
   -moz-transform: rotate(308.57143deg);
@@ -2384,7 +2413,7 @@ body, p, div, a, span {
   transform: rotate(308.57143deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round3.rotate37 {
   -webkit-transform: rotate(317.14286deg);
   -moz-transform: rotate(317.14286deg);
@@ -2393,7 +2422,7 @@ body, p, div, a, span {
   transform: rotate(317.14286deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round3.rotate38 {
   -webkit-transform: rotate(325.71429deg);
   -moz-transform: rotate(325.71429deg);
@@ -2402,7 +2431,7 @@ body, p, div, a, span {
   transform: rotate(325.71429deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round3.rotate39 {
   -webkit-transform: rotate(334.28571deg);
   -moz-transform: rotate(334.28571deg);
@@ -2411,7 +2440,7 @@ body, p, div, a, span {
   transform: rotate(334.28571deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round3.rotate40 {
   -webkit-transform: rotate(342.85714deg);
   -moz-transform: rotate(342.85714deg);
@@ -2420,7 +2449,7 @@ body, p, div, a, span {
   transform: rotate(342.85714deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round3.rotate41 {
   -webkit-transform: rotate(351.42857deg);
   -moz-transform: rotate(351.42857deg);
@@ -2429,7 +2458,7 @@ body, p, div, a, span {
   transform: rotate(351.42857deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round3.rotate42 {
   -webkit-transform: rotate(360deg);
   -moz-transform: rotate(360deg);
@@ -2438,14 +2467,14 @@ body, p, div, a, span {
   transform: rotate(360deg);
 }
 
-/* line 261, sass/styles.scss */
+/* line 284, sass/styles.scss */
 .logo-block-round2 {
   -webkit-animation: load-level-2 2s ease-in;
   animation: load-level-2 2s ease-in;
   height: 100px;
   position: absolute;
 }
-/* line 266, sass/styles.scss */
+/* line 289, sass/styles.scss */
 .logo-block-round2 .logo-points-box {
   height: inherit;
   top: 5px;
@@ -2453,7 +2482,7 @@ body, p, div, a, span {
   animation: load-pre-level-2 2s ease-in;
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round2.rotate1 {
   -webkit-transform: rotate(7.5deg);
   -moz-transform: rotate(7.5deg);
@@ -2462,7 +2491,7 @@ body, p, div, a, span {
   transform: rotate(7.5deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round2.rotate2 {
   -webkit-transform: rotate(15deg);
   -moz-transform: rotate(15deg);
@@ -2471,7 +2500,7 @@ body, p, div, a, span {
   transform: rotate(15deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round2.rotate3 {
   -webkit-transform: rotate(22.5deg);
   -moz-transform: rotate(22.5deg);
@@ -2480,7 +2509,7 @@ body, p, div, a, span {
   transform: rotate(22.5deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round2.rotate4 {
   -webkit-transform: rotate(30deg);
   -moz-transform: rotate(30deg);
@@ -2489,7 +2518,7 @@ body, p, div, a, span {
   transform: rotate(30deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round2.rotate5 {
   -webkit-transform: rotate(37.5deg);
   -moz-transform: rotate(37.5deg);
@@ -2498,7 +2527,7 @@ body, p, div, a, span {
   transform: rotate(37.5deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round2.rotate6 {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -2507,7 +2536,7 @@ body, p, div, a, span {
   transform: rotate(45deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round2.rotate7 {
   -webkit-transform: rotate(52.5deg);
   -moz-transform: rotate(52.5deg);
@@ -2516,7 +2545,7 @@ body, p, div, a, span {
   transform: rotate(52.5deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round2.rotate8 {
   -webkit-transform: rotate(60deg);
   -moz-transform: rotate(60deg);
@@ -2525,7 +2554,7 @@ body, p, div, a, span {
   transform: rotate(60deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round2.rotate9 {
   -webkit-transform: rotate(67.5deg);
   -moz-transform: rotate(67.5deg);
@@ -2534,7 +2563,7 @@ body, p, div, a, span {
   transform: rotate(67.5deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round2.rotate10 {
   -webkit-transform: rotate(75deg);
   -moz-transform: rotate(75deg);
@@ -2543,7 +2572,7 @@ body, p, div, a, span {
   transform: rotate(75deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round2.rotate11 {
   -webkit-transform: rotate(82.5deg);
   -moz-transform: rotate(82.5deg);
@@ -2552,7 +2581,7 @@ body, p, div, a, span {
   transform: rotate(82.5deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round2.rotate12 {
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
@@ -2561,7 +2590,7 @@ body, p, div, a, span {
   transform: rotate(90deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round2.rotate13 {
   -webkit-transform: rotate(97.5deg);
   -moz-transform: rotate(97.5deg);
@@ -2570,7 +2599,7 @@ body, p, div, a, span {
   transform: rotate(97.5deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round2.rotate14 {
   -webkit-transform: rotate(105deg);
   -moz-transform: rotate(105deg);
@@ -2579,7 +2608,7 @@ body, p, div, a, span {
   transform: rotate(105deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round2.rotate15 {
   -webkit-transform: rotate(112.5deg);
   -moz-transform: rotate(112.5deg);
@@ -2588,7 +2617,7 @@ body, p, div, a, span {
   transform: rotate(112.5deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round2.rotate16 {
   -webkit-transform: rotate(120deg);
   -moz-transform: rotate(120deg);
@@ -2597,7 +2626,7 @@ body, p, div, a, span {
   transform: rotate(120deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round2.rotate17 {
   -webkit-transform: rotate(127.5deg);
   -moz-transform: rotate(127.5deg);
@@ -2606,7 +2635,7 @@ body, p, div, a, span {
   transform: rotate(127.5deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round2.rotate18 {
   -webkit-transform: rotate(135deg);
   -moz-transform: rotate(135deg);
@@ -2615,7 +2644,7 @@ body, p, div, a, span {
   transform: rotate(135deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round2.rotate19 {
   -webkit-transform: rotate(142.5deg);
   -moz-transform: rotate(142.5deg);
@@ -2624,7 +2653,7 @@ body, p, div, a, span {
   transform: rotate(142.5deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round2.rotate20 {
   -webkit-transform: rotate(150deg);
   -moz-transform: rotate(150deg);
@@ -2633,7 +2662,7 @@ body, p, div, a, span {
   transform: rotate(150deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round2.rotate21 {
   -webkit-transform: rotate(157.5deg);
   -moz-transform: rotate(157.5deg);
@@ -2642,7 +2671,7 @@ body, p, div, a, span {
   transform: rotate(157.5deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round2.rotate22 {
   -webkit-transform: rotate(165deg);
   -moz-transform: rotate(165deg);
@@ -2651,7 +2680,7 @@ body, p, div, a, span {
   transform: rotate(165deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round2.rotate23 {
   -webkit-transform: rotate(172.5deg);
   -moz-transform: rotate(172.5deg);
@@ -2660,7 +2689,7 @@ body, p, div, a, span {
   transform: rotate(172.5deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round2.rotate24 {
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
@@ -2669,7 +2698,7 @@ body, p, div, a, span {
   transform: rotate(180deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round2.rotate25 {
   -webkit-transform: rotate(187.5deg);
   -moz-transform: rotate(187.5deg);
@@ -2678,7 +2707,7 @@ body, p, div, a, span {
   transform: rotate(187.5deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round2.rotate26 {
   -webkit-transform: rotate(195deg);
   -moz-transform: rotate(195deg);
@@ -2687,7 +2716,7 @@ body, p, div, a, span {
   transform: rotate(195deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round2.rotate27 {
   -webkit-transform: rotate(202.5deg);
   -moz-transform: rotate(202.5deg);
@@ -2696,7 +2725,7 @@ body, p, div, a, span {
   transform: rotate(202.5deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round2.rotate28 {
   -webkit-transform: rotate(210deg);
   -moz-transform: rotate(210deg);
@@ -2705,7 +2734,7 @@ body, p, div, a, span {
   transform: rotate(210deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round2.rotate29 {
   -webkit-transform: rotate(217.5deg);
   -moz-transform: rotate(217.5deg);
@@ -2714,7 +2743,7 @@ body, p, div, a, span {
   transform: rotate(217.5deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round2.rotate30 {
   -webkit-transform: rotate(225deg);
   -moz-transform: rotate(225deg);
@@ -2723,7 +2752,7 @@ body, p, div, a, span {
   transform: rotate(225deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round2.rotate31 {
   -webkit-transform: rotate(232.5deg);
   -moz-transform: rotate(232.5deg);
@@ -2732,7 +2761,7 @@ body, p, div, a, span {
   transform: rotate(232.5deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round2.rotate32 {
   -webkit-transform: rotate(240deg);
   -moz-transform: rotate(240deg);
@@ -2741,7 +2770,7 @@ body, p, div, a, span {
   transform: rotate(240deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round2.rotate33 {
   -webkit-transform: rotate(247.5deg);
   -moz-transform: rotate(247.5deg);
@@ -2750,7 +2779,7 @@ body, p, div, a, span {
   transform: rotate(247.5deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round2.rotate34 {
   -webkit-transform: rotate(255deg);
   -moz-transform: rotate(255deg);
@@ -2759,7 +2788,7 @@ body, p, div, a, span {
   transform: rotate(255deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round2.rotate35 {
   -webkit-transform: rotate(262.5deg);
   -moz-transform: rotate(262.5deg);
@@ -2768,7 +2797,7 @@ body, p, div, a, span {
   transform: rotate(262.5deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round2.rotate36 {
   -webkit-transform: rotate(270deg);
   -moz-transform: rotate(270deg);
@@ -2777,7 +2806,7 @@ body, p, div, a, span {
   transform: rotate(270deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round2.rotate37 {
   -webkit-transform: rotate(277.5deg);
   -moz-transform: rotate(277.5deg);
@@ -2786,7 +2815,7 @@ body, p, div, a, span {
   transform: rotate(277.5deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round2.rotate38 {
   -webkit-transform: rotate(285deg);
   -moz-transform: rotate(285deg);
@@ -2795,7 +2824,7 @@ body, p, div, a, span {
   transform: rotate(285deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round2.rotate39 {
   -webkit-transform: rotate(292.5deg);
   -moz-transform: rotate(292.5deg);
@@ -2804,7 +2833,7 @@ body, p, div, a, span {
   transform: rotate(292.5deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round2.rotate40 {
   -webkit-transform: rotate(300deg);
   -moz-transform: rotate(300deg);
@@ -2813,7 +2842,7 @@ body, p, div, a, span {
   transform: rotate(300deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round2.rotate41 {
   -webkit-transform: rotate(307.5deg);
   -moz-transform: rotate(307.5deg);
@@ -2822,7 +2851,7 @@ body, p, div, a, span {
   transform: rotate(307.5deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round2.rotate42 {
   -webkit-transform: rotate(315deg);
   -moz-transform: rotate(315deg);
@@ -2831,7 +2860,7 @@ body, p, div, a, span {
   transform: rotate(315deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round2.rotate43 {
   -webkit-transform: rotate(322.5deg);
   -moz-transform: rotate(322.5deg);
@@ -2840,7 +2869,7 @@ body, p, div, a, span {
   transform: rotate(322.5deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round2.rotate44 {
   -webkit-transform: rotate(330deg);
   -moz-transform: rotate(330deg);
@@ -2849,7 +2878,7 @@ body, p, div, a, span {
   transform: rotate(330deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round2.rotate45 {
   -webkit-transform: rotate(337.5deg);
   -moz-transform: rotate(337.5deg);
@@ -2858,7 +2887,7 @@ body, p, div, a, span {
   transform: rotate(337.5deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round2.rotate46 {
   -webkit-transform: rotate(345deg);
   -moz-transform: rotate(345deg);
@@ -2867,7 +2896,7 @@ body, p, div, a, span {
   transform: rotate(345deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round2.rotate47 {
   -webkit-transform: rotate(352.5deg);
   -moz-transform: rotate(352.5deg);
@@ -2876,7 +2905,7 @@ body, p, div, a, span {
   transform: rotate(352.5deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round2.rotate48 {
   -webkit-transform: rotate(360deg);
   -moz-transform: rotate(360deg);
@@ -2885,14 +2914,14 @@ body, p, div, a, span {
   transform: rotate(360deg);
 }
 
-/* line 261, sass/styles.scss */
+/* line 284, sass/styles.scss */
 .logo-block-round1 {
   -webkit-animation: load-level-1 2s ease-in;
   animation: load-level-1 2s ease-in;
   height: 110px;
   position: absolute;
 }
-/* line 266, sass/styles.scss */
+/* line 289, sass/styles.scss */
 .logo-block-round1 .logo-points-box {
   height: inherit;
   top: 0px;
@@ -2900,7 +2929,7 @@ body, p, div, a, span {
   animation: load-pre-level-1 2s ease-in;
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round1.rotate1 {
   -webkit-transform: rotate(6.66667deg);
   -moz-transform: rotate(6.66667deg);
@@ -2909,7 +2938,7 @@ body, p, div, a, span {
   transform: rotate(6.66667deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round1.rotate2 {
   -webkit-transform: rotate(13.33333deg);
   -moz-transform: rotate(13.33333deg);
@@ -2918,7 +2947,7 @@ body, p, div, a, span {
   transform: rotate(13.33333deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round1.rotate3 {
   -webkit-transform: rotate(20deg);
   -moz-transform: rotate(20deg);
@@ -2927,7 +2956,7 @@ body, p, div, a, span {
   transform: rotate(20deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round1.rotate4 {
   -webkit-transform: rotate(26.66667deg);
   -moz-transform: rotate(26.66667deg);
@@ -2936,7 +2965,7 @@ body, p, div, a, span {
   transform: rotate(26.66667deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round1.rotate5 {
   -webkit-transform: rotate(33.33333deg);
   -moz-transform: rotate(33.33333deg);
@@ -2945,7 +2974,7 @@ body, p, div, a, span {
   transform: rotate(33.33333deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round1.rotate6 {
   -webkit-transform: rotate(40deg);
   -moz-transform: rotate(40deg);
@@ -2954,7 +2983,7 @@ body, p, div, a, span {
   transform: rotate(40deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round1.rotate7 {
   -webkit-transform: rotate(46.66667deg);
   -moz-transform: rotate(46.66667deg);
@@ -2963,7 +2992,7 @@ body, p, div, a, span {
   transform: rotate(46.66667deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round1.rotate8 {
   -webkit-transform: rotate(53.33333deg);
   -moz-transform: rotate(53.33333deg);
@@ -2972,7 +3001,7 @@ body, p, div, a, span {
   transform: rotate(53.33333deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round1.rotate9 {
   -webkit-transform: rotate(60deg);
   -moz-transform: rotate(60deg);
@@ -2981,7 +3010,7 @@ body, p, div, a, span {
   transform: rotate(60deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round1.rotate10 {
   -webkit-transform: rotate(66.66667deg);
   -moz-transform: rotate(66.66667deg);
@@ -2990,7 +3019,7 @@ body, p, div, a, span {
   transform: rotate(66.66667deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round1.rotate11 {
   -webkit-transform: rotate(73.33333deg);
   -moz-transform: rotate(73.33333deg);
@@ -2999,7 +3028,7 @@ body, p, div, a, span {
   transform: rotate(73.33333deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round1.rotate12 {
   -webkit-transform: rotate(80deg);
   -moz-transform: rotate(80deg);
@@ -3008,7 +3037,7 @@ body, p, div, a, span {
   transform: rotate(80deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round1.rotate13 {
   -webkit-transform: rotate(86.66667deg);
   -moz-transform: rotate(86.66667deg);
@@ -3017,7 +3046,7 @@ body, p, div, a, span {
   transform: rotate(86.66667deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round1.rotate14 {
   -webkit-transform: rotate(93.33333deg);
   -moz-transform: rotate(93.33333deg);
@@ -3026,7 +3055,7 @@ body, p, div, a, span {
   transform: rotate(93.33333deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round1.rotate15 {
   -webkit-transform: rotate(100deg);
   -moz-transform: rotate(100deg);
@@ -3035,7 +3064,7 @@ body, p, div, a, span {
   transform: rotate(100deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round1.rotate16 {
   -webkit-transform: rotate(106.66667deg);
   -moz-transform: rotate(106.66667deg);
@@ -3044,7 +3073,7 @@ body, p, div, a, span {
   transform: rotate(106.66667deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round1.rotate17 {
   -webkit-transform: rotate(113.33333deg);
   -moz-transform: rotate(113.33333deg);
@@ -3053,7 +3082,7 @@ body, p, div, a, span {
   transform: rotate(113.33333deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round1.rotate18 {
   -webkit-transform: rotate(120deg);
   -moz-transform: rotate(120deg);
@@ -3062,7 +3091,7 @@ body, p, div, a, span {
   transform: rotate(120deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round1.rotate19 {
   -webkit-transform: rotate(126.66667deg);
   -moz-transform: rotate(126.66667deg);
@@ -3071,7 +3100,7 @@ body, p, div, a, span {
   transform: rotate(126.66667deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round1.rotate20 {
   -webkit-transform: rotate(133.33333deg);
   -moz-transform: rotate(133.33333deg);
@@ -3080,7 +3109,7 @@ body, p, div, a, span {
   transform: rotate(133.33333deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round1.rotate21 {
   -webkit-transform: rotate(140deg);
   -moz-transform: rotate(140deg);
@@ -3089,7 +3118,7 @@ body, p, div, a, span {
   transform: rotate(140deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round1.rotate22 {
   -webkit-transform: rotate(146.66667deg);
   -moz-transform: rotate(146.66667deg);
@@ -3098,7 +3127,7 @@ body, p, div, a, span {
   transform: rotate(146.66667deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round1.rotate23 {
   -webkit-transform: rotate(153.33333deg);
   -moz-transform: rotate(153.33333deg);
@@ -3107,7 +3136,7 @@ body, p, div, a, span {
   transform: rotate(153.33333deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round1.rotate24 {
   -webkit-transform: rotate(160deg);
   -moz-transform: rotate(160deg);
@@ -3116,7 +3145,7 @@ body, p, div, a, span {
   transform: rotate(160deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round1.rotate25 {
   -webkit-transform: rotate(166.66667deg);
   -moz-transform: rotate(166.66667deg);
@@ -3125,7 +3154,7 @@ body, p, div, a, span {
   transform: rotate(166.66667deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round1.rotate26 {
   -webkit-transform: rotate(173.33333deg);
   -moz-transform: rotate(173.33333deg);
@@ -3134,7 +3163,7 @@ body, p, div, a, span {
   transform: rotate(173.33333deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round1.rotate27 {
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
@@ -3143,7 +3172,7 @@ body, p, div, a, span {
   transform: rotate(180deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round1.rotate28 {
   -webkit-transform: rotate(186.66667deg);
   -moz-transform: rotate(186.66667deg);
@@ -3152,7 +3181,7 @@ body, p, div, a, span {
   transform: rotate(186.66667deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round1.rotate29 {
   -webkit-transform: rotate(193.33333deg);
   -moz-transform: rotate(193.33333deg);
@@ -3161,7 +3190,7 @@ body, p, div, a, span {
   transform: rotate(193.33333deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round1.rotate30 {
   -webkit-transform: rotate(200deg);
   -moz-transform: rotate(200deg);
@@ -3170,7 +3199,7 @@ body, p, div, a, span {
   transform: rotate(200deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round1.rotate31 {
   -webkit-transform: rotate(206.66667deg);
   -moz-transform: rotate(206.66667deg);
@@ -3179,7 +3208,7 @@ body, p, div, a, span {
   transform: rotate(206.66667deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round1.rotate32 {
   -webkit-transform: rotate(213.33333deg);
   -moz-transform: rotate(213.33333deg);
@@ -3188,7 +3217,7 @@ body, p, div, a, span {
   transform: rotate(213.33333deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round1.rotate33 {
   -webkit-transform: rotate(220deg);
   -moz-transform: rotate(220deg);
@@ -3197,7 +3226,7 @@ body, p, div, a, span {
   transform: rotate(220deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round1.rotate34 {
   -webkit-transform: rotate(226.66667deg);
   -moz-transform: rotate(226.66667deg);
@@ -3206,7 +3235,7 @@ body, p, div, a, span {
   transform: rotate(226.66667deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round1.rotate35 {
   -webkit-transform: rotate(233.33333deg);
   -moz-transform: rotate(233.33333deg);
@@ -3215,7 +3244,7 @@ body, p, div, a, span {
   transform: rotate(233.33333deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round1.rotate36 {
   -webkit-transform: rotate(240deg);
   -moz-transform: rotate(240deg);
@@ -3224,7 +3253,7 @@ body, p, div, a, span {
   transform: rotate(240deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round1.rotate37 {
   -webkit-transform: rotate(246.66667deg);
   -moz-transform: rotate(246.66667deg);
@@ -3233,7 +3262,7 @@ body, p, div, a, span {
   transform: rotate(246.66667deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round1.rotate38 {
   -webkit-transform: rotate(253.33333deg);
   -moz-transform: rotate(253.33333deg);
@@ -3242,7 +3271,7 @@ body, p, div, a, span {
   transform: rotate(253.33333deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round1.rotate39 {
   -webkit-transform: rotate(260deg);
   -moz-transform: rotate(260deg);
@@ -3251,7 +3280,7 @@ body, p, div, a, span {
   transform: rotate(260deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round1.rotate40 {
   -webkit-transform: rotate(266.66667deg);
   -moz-transform: rotate(266.66667deg);
@@ -3260,7 +3289,7 @@ body, p, div, a, span {
   transform: rotate(266.66667deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round1.rotate41 {
   -webkit-transform: rotate(273.33333deg);
   -moz-transform: rotate(273.33333deg);
@@ -3269,7 +3298,7 @@ body, p, div, a, span {
   transform: rotate(273.33333deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round1.rotate42 {
   -webkit-transform: rotate(280deg);
   -moz-transform: rotate(280deg);
@@ -3278,7 +3307,7 @@ body, p, div, a, span {
   transform: rotate(280deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round1.rotate43 {
   -webkit-transform: rotate(286.66667deg);
   -moz-transform: rotate(286.66667deg);
@@ -3287,7 +3316,7 @@ body, p, div, a, span {
   transform: rotate(286.66667deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round1.rotate44 {
   -webkit-transform: rotate(293.33333deg);
   -moz-transform: rotate(293.33333deg);
@@ -3296,7 +3325,7 @@ body, p, div, a, span {
   transform: rotate(293.33333deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round1.rotate45 {
   -webkit-transform: rotate(300deg);
   -moz-transform: rotate(300deg);
@@ -3305,7 +3334,7 @@ body, p, div, a, span {
   transform: rotate(300deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round1.rotate46 {
   -webkit-transform: rotate(306.66667deg);
   -moz-transform: rotate(306.66667deg);
@@ -3314,7 +3343,7 @@ body, p, div, a, span {
   transform: rotate(306.66667deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round1.rotate47 {
   -webkit-transform: rotate(313.33333deg);
   -moz-transform: rotate(313.33333deg);
@@ -3323,7 +3352,7 @@ body, p, div, a, span {
   transform: rotate(313.33333deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round1.rotate48 {
   -webkit-transform: rotate(320deg);
   -moz-transform: rotate(320deg);
@@ -3332,7 +3361,7 @@ body, p, div, a, span {
   transform: rotate(320deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round1.rotate49 {
   -webkit-transform: rotate(326.66667deg);
   -moz-transform: rotate(326.66667deg);
@@ -3341,7 +3370,7 @@ body, p, div, a, span {
   transform: rotate(326.66667deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round1.rotate50 {
   -webkit-transform: rotate(333.33333deg);
   -moz-transform: rotate(333.33333deg);
@@ -3350,7 +3379,7 @@ body, p, div, a, span {
   transform: rotate(333.33333deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round1.rotate51 {
   -webkit-transform: rotate(340deg);
   -moz-transform: rotate(340deg);
@@ -3359,7 +3388,7 @@ body, p, div, a, span {
   transform: rotate(340deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round1.rotate52 {
   -webkit-transform: rotate(346.66667deg);
   -moz-transform: rotate(346.66667deg);
@@ -3368,7 +3397,7 @@ body, p, div, a, span {
   transform: rotate(346.66667deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round1.rotate53 {
   -webkit-transform: rotate(353.33333deg);
   -moz-transform: rotate(353.33333deg);
@@ -3377,7 +3406,7 @@ body, p, div, a, span {
   transform: rotate(353.33333deg);
 }
 
-/* line 276, sass/styles.scss */
+/* line 299, sass/styles.scss */
 .logo-round1.rotate54 {
   -webkit-transform: rotate(360deg);
   -moz-transform: rotate(360deg);
@@ -3394,7 +3423,7 @@ body, p, div, a, span {
         	First content bg area begin
 ----------------------------------------------*/
 @-webkit-keyframes moving {
-  /* line 298, sass/styles.scss */
+  /* line 321, sass/styles.scss */
   0%, 100% {
     -webkit-transform: translate(0, 0);
     -moz-transform: translate(0, 0);
@@ -3403,7 +3432,7 @@ body, p, div, a, span {
     transform: translate(0, 0);
   }
 
-  /* line 301, sass/styles.scss */
+  /* line 324, sass/styles.scss */
   50% {
     -webkit-transform: translate(-5%, 5%);
     -moz-transform: translate(-5%, 5%);
@@ -3414,7 +3443,7 @@ body, p, div, a, span {
 }
 
 @keyframes moving {
-  /* line 298, sass/styles.scss */
+  /* line 321, sass/styles.scss */
   0%, 100% {
     -webkit-transform: translate(0, 0);
     -moz-transform: translate(0, 0);
@@ -3423,7 +3452,7 @@ body, p, div, a, span {
     transform: translate(0, 0);
   }
 
-  /* line 301, sass/styles.scss */
+  /* line 324, sass/styles.scss */
   50% {
     -webkit-transform: translate(-5%, 5%);
     -moz-transform: translate(-5%, 5%);
@@ -3433,7 +3462,7 @@ body, p, div, a, span {
   }
 }
 
-/* line 308, sass/styles.scss */
+/* line 331, sass/styles.scss */
 .background {
   position: absolute;
   top: 0;
@@ -3447,17 +3476,17 @@ body, p, div, a, span {
   -webkit-animation: moving 20s ease-in infinite;
   animation: moving 20s ease-in infinite;
 }
-/* line 321, sass/styles.scss */
+/* line 344, sass/styles.scss */
 .background.image {
   width: 100%;
   height: 100%;
 }
 
-/* line 328, sass/styles.scss */
+/* line 351, sass/styles.scss */
 body.one {
   overflow: hidden;
 }
-/* line 331, sass/styles.scss */
+/* line 354, sass/styles.scss */
 body.download {
   overflow: hidden;
 }
@@ -3468,13 +3497,13 @@ body.download {
 /*===============================================================================
         	First content begin
 ----------------------------------------------*/
-/* line 345, sass/styles.scss */
+/* line 368, sass/styles.scss */
 .in940 {
   width: 940px;
   margin: 0 auto;
 }
 
-/* line 350, sass/styles.scss */
+/* line 373, sass/styles.scss */
 .content.one {
   background: rgba(0, 0, 0, 0.6);
   width: 100%;
@@ -3483,32 +3512,33 @@ body.download {
   z-index: 120;
 }
 
-/* line 363, sass/styles.scss */
+/* line 386, sass/styles.scss */
 .header {
   margin-top: 30px;
   height: 120px;
 }
-/* line 366, sass/styles.scss */
+/* line 389, sass/styles.scss */
 .header .logo {
   width: 190px;
   height: 100px;
   display: inline-block;
   background: url(../img/logo.png);
 }
-/* line 371, sass/styles.scss */
+/* line 394, sass/styles.scss */
 .header .logo:hover {
   background: url(../img/logo_active.png);
 }
-/* line 375, sass/styles.scss */
-.header .busket {
+
+/* line 399, sass/styles.scss */
+.busket {
   float: right;
   font-family: GillSansProCyrillicMedium;
   font-size: 20px;
   text-align: center;
   color: black;
 }
-/* line 379, sass/styles.scss */
-.header .busket .add-to-busket {
+/* line 403, sass/styles.scss */
+.busket .add-to-busket {
   display: inline-block;
   width: 190px;
   height: 30px;
@@ -3525,40 +3555,40 @@ body.download {
   color: inherit;
   cursor: pointer;
 }
-/* line 391, sass/styles.scss */
-.header .busket .add-to-busket:hover {
+/* line 415, sass/styles.scss */
+.busket .add-to-busket:hover {
   background: #ff794c;
 }
-/* line 392, sass/styles.scss */
-.header .busket .add-to-busket:active {
+/* line 416, sass/styles.scss */
+.busket .add-to-busket:active {
   background: #4d2417;
   color: white;
 }
-/* line 394, sass/styles.scss */
-.header .busket .price {
+/* line 418, sass/styles.scss */
+.busket .price {
   display: inline-block;
   font-family: inherit;
   font-size: inherit;
   padding-right: 20px;
   color: #83c0d7;
 }
-/* line 401, sass/styles.scss */
-.header .busket .price:after {
+/* line 425, sass/styles.scss */
+.busket .price:after {
   content: ' грн';
 }
 
-/* line 407, sass/styles.scss */
+/* line 430, sass/styles.scss */
 .lection-titles {
   color: white;
 }
-/* line 409, sass/styles.scss */
+/* line 432, sass/styles.scss */
 .lection-titles .titles-date {
   font-family: GillSansProCyrillicMedium;
   font-size: 20px;
   text-align: center;
   padding-top: 50px;
 }
-/* line 413, sass/styles.scss */
+/* line 436, sass/styles.scss */
 .lection-titles .titles-title {
   font-family: GillSansProCyrillicLight;
   font-size: 50px;
@@ -3566,16 +3596,16 @@ body.download {
   padding-top: 40px;
 }
 
-/* line 420, sass/styles.scss */
+/* line 443, sass/styles.scss */
 .center {
   text-align: center;
 }
 
-/* line 432, sass/styles.scss */
+/* line 455, sass/styles.scss */
 .t-left {
   text-align: left;
 }
-/* line 434, sass/styles.scss */
+/* line 457, sass/styles.scss */
 .t-left.lection {
   padding-left: 30px;
   padding-right: 20px;
@@ -3584,23 +3614,23 @@ body.download {
   vertical-align: top;
 }
 
-/* line 442, sass/styles.scss */
+/* line 465, sass/styles.scss */
 .block33 {
   width: 33.333333333333%;
   display: inline-block;
   vertical-align: top;
 }
-/* line 446, sass/styles.scss */
+/* line 469, sass/styles.scss */
 .block33.lection {
   padding-top: 40px;
   color: white;
   text-align: left;
 }
-/* line 450, sass/styles.scss */
+/* line 473, sass/styles.scss */
 .block33.lection:nth-child(1) {
   text-align: right;
 }
-/* line 452, sass/styles.scss */
+/* line 475, sass/styles.scss */
 .block33.lection:nth-child(1):after {
   content: '';
   display: inline-block;
@@ -3608,15 +3638,15 @@ body.download {
   width: 5px;
   height: 53px;
 }
-/* line 457, sass/styles.scss */
+/* line 480, sass/styles.scss */
 .block33.lection:nth-child(2) {
   text-align: center;
 }
-/* line 460, sass/styles.scss */
+/* line 483, sass/styles.scss */
 .block33.lection:nth-child(3) {
   text-align: left;
 }
-/* line 462, sass/styles.scss */
+/* line 485, sass/styles.scss */
 .block33.lection:nth-child(3):before {
   content: '';
   display: inline-block;
@@ -3625,7 +3655,7 @@ body.download {
   height: 53px;
 }
 
-/* line 469, sass/styles.scss */
+/* line 492, sass/styles.scss */
 .text-block-modificator {
   display: inline-block;
   vertical-align: top;
@@ -3633,20 +3663,20 @@ body.download {
   padding-left: 20px;
 }
 
-/* line 476, sass/styles.scss */
+/* line 499, sass/styles.scss */
 .caption.one {
   font-size: 20px;
   font-family: GillSansProCyrillicLight;
   display: block;
 }
 
-/* line 483, sass/styles.scss */
+/* line 506, sass/styles.scss */
 .action.one {
   padding-top: 5px;
   display: block;
 }
 
-/* line 494, sass/styles.scss */
+/* line 512, sass/styles.scss */
 .more.one {
   position: fixed;
   width: 100%;
@@ -3664,26 +3694,168 @@ body.download {
 /*===============================================================================
         	Second content begin
 ----------------------------------------------*/
-/* line 527, sass/styles.scss */
+/* line 550, sass/styles.scss */
 .two-blocks-parent:after {
   display: block;
   content: '';
   clear: both;
 }
-/* line 533, sass/styles.scss */
+/* line 554, sass/styles.scss */
 .two-blocks-parent .two-blocks:first-child {
   width: 620px;
   margin-right: 100px;
   margin-top: 80px;
   display: inline-block;
+  padding-bottom: 165px;
 }
-/* line 539, sass/styles.scss */
+/* line 561, sass/styles.scss */
 .two-blocks-parent .two-blocks:last-child {
   display: inline-block;
   margin-top: 160px;
+  padding-bottom: 40px;
   width: 220px;
   position: fixed;
   z-index: 1;
+}
+/* line 568, sass/styles.scss */
+.two-blocks-parent .two-blocks:last-child.state {
+  position: inherit;
+  vertical-align: bottom;
+}
+
+/* line 575, sass/styles.scss */
+.top-image {
+  display: block;
+  margin: 0 -20px;
+  margin-bottom: 45px;
+}
+
+/* line 580, sass/styles.scss */
+.description {
+  padding-top: 25px;
+}
+
+/* line 583, sass/styles.scss */
+.chunk {
+  padding: 35px 20px;
+  background: #f7f8fa;
+}
+
+/* line 588, sass/styles.scss */
+.lector-photo.mini {
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  -ms-border-radius: 24px;
+  -o-border-radius: 24px;
+  border-radius: 24px;
+}
+/* line 591, sass/styles.scss */
+.lector-photo.large {
+  -webkit-border-radius: 68px;
+  -moz-border-radius: 68px;
+  -ms-border-radius: 68px;
+  -o-border-radius: 68px;
+  border-radius: 68px;
+  margin-right: 30px;
+  vertical-align: middle;
+}
+
+/* line 602, sass/styles.scss */
+.lector-title {
+  display: inline-block;
+  width: 400px;
+  font-family: GillSansProCyrillicLight;
+  color: #73acbf;
+  font-size: 25px;
+  padding-bottom: 10px;
+}
+
+/* line 608, sass/styles.scss */
+.lector-text {
+  display: inline-block;
+  width: 400px;
+  font-family: GillSansProCyrillicLight;
+  color: #555555;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+/* line 614, sass/styles.scss */
+.ib {
+  display: inline-block;
+}
+/* line 616, sass/styles.scss */
+.ib.lector {
+  width: 400px;
+  vertical-align: top;
+}
+
+/* line 622, sass/styles.scss */
+.busket .to-enroll {
+  display: inline-block;
+  width: 138px;
+  height: 30px;
+  font-family: inherit;
+  font-size: inherit;
+  text-align: center;
+  background: #73acbf;
+  border: 0;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  border-radius: 15px;
+  cursor: pointer;
+  color: white;
+}
+/* line 634, sass/styles.scss */
+.busket .to-enroll:hover {
+  background: #ff794c;
+}
+/* line 635, sass/styles.scss */
+.busket .to-enroll:active {
+  background: #4d2417;
+}
+
+/* line 639, sass/styles.scss */
+.gallery {
+  padding-top: 35px;
+}
+
+/* line 645, sass/styles.scss */
+.free-places-group:after {
+  display: block;
+  content: '';
+  clear: both;
+}
+
+/* line 649, sass/styles.scss */
+.free-places-label {
+  font-family: GillSansProCyrillicLight;
+  font-size: 25px;
+}
+
+/* line 653, sass/styles.scss */
+.follow {
+  border: 2px solid #73acbf;
+  padding: 27px 58px 46px 58px;
+}
+/* line 656, sass/styles.scss */
+.follow .follow-title {
+  font-size: 30px;
+  font-family: GillSansProCyrillicMedium;
+  text-align: center;
+}
+/* line 662, sass/styles.scss */
+.follow .fb-api {
+  display: block;
+}
+/* line 665, sass/styles.scss */
+.follow .fb-face {
+  width: 50px;
+  height: 50px;
+  padding-top: 5px;
+  padding-right: 5px;
 }
 
 /*----------------------------------------------
@@ -3692,20 +3864,20 @@ body.download {
 /*===============================================================================
         	footer begin
 ----------------------------------------------*/
-/* line 557, sass/styles.scss */
+/* line 682, sass/styles.scss */
 .related-lections {
   width: 100%;
   height: 440px;
   background: #f0f2f5;
 }
-/* line 561, sass/styles.scss */
+/* line 686, sass/styles.scss */
 .related-lections .related-title {
   text-align: center;
   font-size: 30px;
   padding: 50px 0 20px 0;
 }
 
-/* line 567, sass/styles.scss */
+/* line 692, sass/styles.scss */
 .rounded {
   -webkit-border-radius: 100px;
   -moz-border-radius: 100px;
@@ -3714,12 +3886,12 @@ body.download {
   border-radius: 100px;
 }
 
-/* line 571, sass/styles.scss */
+/* line 696, sass/styles.scss */
 .block33.related {
   text-align: center;
 }
 
-/* line 575, sass/styles.scss */
+/* line 700, sass/styles.scss */
 .date.related {
   font-size: 16px;
   color: #555555;
@@ -3728,7 +3900,7 @@ body.download {
   font-family: GillSansProCyrillicLight;
 }
 
-/* line 582, sass/styles.scss */
+/* line 707, sass/styles.scss */
 .title.related {
   display: block;
 }

@@ -1,8 +1,10 @@
 $point: 	#83C0D7;
 $grey:  	#F0F2F5;
+$chunk:		#F7F8FA;
 $w: 		#ffffff;
 $b: 		#000000;
 $liteText:	#555555;
+$titleBlue: #73acbf;
 
 $default: 	#83C0D7;
 $hover:  	#FF794C;
@@ -71,6 +73,27 @@ a:hover, a:active {color: $hover; 	text-decoration: none; padding:0px; font-size
 body, p, div, a, span{
 	font-family: GillSansProCyrillicMedium;
 	font-size: 20px;
+}
+h1 {
+	font-family: GillSansProCyrillicLight;
+	font-size: 40px;
+}
+h2 {
+	font-family: GillSansProCyrillicMedium;
+	font-size: 30px;
+	padding-top: 80px;
+	padding-bottom: 30px;
+}
+h3 {
+	font-family: GillSansProCyrillicMedium;
+	font-size: 25px;
+	line-height: 1.4;
+}
+p {
+	font-family: HeuristicaRegular;
+	color: $liteText;
+	font-size: 16px;
+	line-height: 1.5625;
 }
 
 /*----------------------------------------------
@@ -372,35 +395,35 @@ $s : 0;
 			background: url(../img/logo_active.png);
 		}
 	}
-	.busket{
-		float: right;
-		@include text-style;
-		color: $b;
-		.add-to-busket{
-			display: inline-block;
-			width: 190px;
-			height: 30px;
-			font-family: inherit;
-			font-size: inherit;
-			text-align: center;
-			background: $default;
-			border: 0;
-			@include border-radius(15px);
-			color: inherit;
-			cursor: pointer;
-			&:hover  {background: $hover;}
-			&:active {background: $active; color: $w;}
-		}
-		.price{
-			display: inline-block;
-			font-family: inherit;
-			font-size: inherit;
-			padding-right: 20px;
-			// WARNING padding-top
-			color: $default;
-			&:after {
-				content: ' грн';
-			}
+}
+.busket{
+	float: right;
+	@include text-style;
+	color: $b;
+	.add-to-busket{
+		display: inline-block;
+		width: 190px;
+		height: 30px;
+		font-family: inherit;
+		font-size: inherit;
+		text-align: center;
+		background: $default;
+		border: 0;
+		@include border-radius(15px);
+		color: inherit;
+		cursor: pointer;
+		&:hover  {background: $hover;}
+		&:active {background: $active; color: $w;}
+	}
+	.price{
+		display: inline-block;
+		font-family: inherit;
+		font-size: inherit;
+		padding-right: 20px;
+		// WARNING padding-top
+		color: $default;
+		&:after {
+			content: ' грн';
 		}
 	}
 }
@@ -485,11 +508,6 @@ $s : 0;
 		display: block;
 	}
 }
-.lector-photo{
-	&.mini{
-
-	}
-}
 .more{
 	&.one {
 		position: fixed;
@@ -523,11 +541,14 @@ $s : 0;
 /*===============================================================================
         	Second content begin
 ----------------------------------------------*/
+@mixin clear {
+	display: block;
+	content: '';
+	clear: both;
+}
 .two-blocks-parent{
 	&:after{
-		display: block;
-		content: '';
-		clear: both;
+		@include clear;
 	}
 	.two-blocks {
 		&:first-child {
@@ -535,16 +556,120 @@ $s : 0;
 			margin-right: 100px;
 			margin-top: 80px;
 			display: inline-block;
+			padding-bottom: 165px;
 		}
 		&:last-child {
 			display: inline-block;
 			margin-top: 160px;
+			padding-bottom: 40px;
 			width: 220px;
 			position: fixed;
 			z-index: 1;
+			&.state{
+				position: inherit;
+				vertical-align: bottom;
+			}
 		}
 	}
 }
+.top-image{
+	display: block;
+	margin: 0 -20px;
+	margin-bottom: 45px;
+}
+.description{
+	padding-top: 25px;
+}
+.chunk {
+	padding: 35px 20px;
+	background: $chunk;
+}
+.lector-photo{
+	&.mini{
+		@include border-radius(24px);
+	}
+	&.large{
+		@include border-radius(68px);
+		margin-right: 30px;
+		vertical-align: middle;
+	}
+}
+@mixin chunk-lector {
+	display: inline-block;
+	width: 400px;
+	font-family: GillSansProCyrillicLight;
+}
+.lector-title{
+	@include chunk-lector;
+	color: $titleBlue;
+	font-size: 25px;
+	padding-bottom: 10px;
+}
+.lector-text{
+	@include chunk-lector;
+	color: $liteText;
+	font-size: 16px;
+	line-height: 1.4;
+}
+.ib{
+	display: inline-block;
+	&.lector{
+		width: 400px;
+		vertical-align: top;
+	}
+}
+.busket{
+	.to-enroll{
+		display: inline-block;
+		width: 138px;
+		height: 30px;
+		font-family: inherit;
+		font-size: inherit;
+		text-align: center;
+		background: $titleBlue;
+		border: 0;
+		@include border-radius(15px);
+		cursor: pointer;
+		color: $w;
+		&:hover  {background: $hover;}
+		&:active {background: $active;}
+	}
+}
+
+.gallery{
+	padding-top: 35px;
+}
+
+.free-places-count{}
+.free-places-group{
+	&:after{
+		@include clear;
+	}
+}
+.free-places-label{
+	font-family: GillSansProCyrillicLight;
+	font-size: 25px;
+}
+.follow{
+	border: 2px solid $titleBlue;
+	padding: 27px 58px 46px 58px;
+	.follow-title {
+		font-size: 30px;
+		font-family: GillSansProCyrillicMedium;
+		//line-height: 1.167;
+		text-align: center;
+	}
+	.fb-api{
+		display: block;
+	}
+	.fb-face{
+		width: 50px;
+		height: 50px;
+		padding-top: 5px;
+		padding-right: 5px;
+	}
+}
+
 /*----------------------------------------------
         	Second content end
 ===============================================================================*/
