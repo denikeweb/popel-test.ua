@@ -52,10 +52,22 @@ $F = {
 
 		allDescriptionShow : function () {
 			This = $F.loading;
-			/*var one = $('.content.one'),
-				two = $('.content.two');
-			one.hide (2000);
-			two.show (2000);*/
+			var one = $('.content.one, .background'),
+				two = $('.content.two, .header-little.two'),
+				body = $('body');
+			body.removeClass('one');
+			///one.slideUp (2000);
+			one.addClass ('hideSlider');
+			two.show (2000);
+		},
+
+		turn : function (direction) {
+			This = $(this);
+			if (direction == 1) {
+
+			} else {
+
+			}
 		},
 
 		onWindowScroll : function () {
@@ -74,9 +86,9 @@ $F = {
 
 		debugClear : function (){
 			this.loadingAction ();
-			$('.content.one, .background').hide();
-			$('.content.two').show();
-			$('body').removeClass('one');
+			//$('.content.one, .background').hide();
+			//$('.content.two').show();
+			//$('body').removeClass('one');
 		}
 	},
 	initializeLections : undefined,
@@ -137,13 +149,17 @@ $F = {
 //jQuery code
 $(function(){
 	$F.loading.pageIsLoad ();
-	//$F.loading.debugClear ();
+	$F.loading.debugClear ();
 	//console.log ('Страница загружена: ' + $F.loading.loadingStatus);
 
 	var readMore = $('.more.one'),
-			navs = $('.navigator-item');
+			navs = $('.navigator-item'),
+			  tr = $('.turn-right'),
+			  tl = $('.turn-left');
 
-	readMore.on('click', $F.loading.allDescriptionShow ());
+	readMore.on('click', function () {$F.loading.allDescriptionShow ();});
+	tr.on('click', function () {$F.loading.turn (1);});
+	tl.on('click', function () {$F.loading.turn (0);});
 
 	navs.on('click', function () {
 		var         This = $(this),
@@ -156,6 +172,7 @@ $(function(){
 
 		return false;
 	});
+
 });
 
 // Vanille JS code
