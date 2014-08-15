@@ -52,15 +52,19 @@ $F = {
 
 		allDescriptionShow : function () {
 			This = $F.loading;
-
+			/*var one = $('.content.one'),
+				two = $('.content.two');
+			one.hide (2000);
+			two.show (2000);*/
 		},
 
 		onWindowScroll : function () {
 			This = $F.loading;
 			if (This.isBigSlider () === true) {
-				This.allDescriptionShow ();
+				//This.allDescriptionShow ();
 			} else {
 				$F.sideBars.checkRightSidebar ();
+				$F.sideBars.checkLeftNav ();
 			}
 		},
 
@@ -71,12 +75,14 @@ $F = {
 		debugClear : function (){
 			this.loadingAction ();
 			$('.content.one, .background').hide();
+			$('.content.two').show();
 			$('body').removeClass('one');
 		}
 	},
 	initializeLections : undefined,
 	sideBars : {
 		checkRightSidebar : function (){
+			if ($F.loading.isBigSlider ()) return false;
 			var   element = $('.rightSideBar');
 			var	  related = $('.related-lections');
 			var     elementTopMargin = 180,
@@ -85,7 +91,7 @@ $F = {
 					   elementParams = element.offset ().top + element.height () + elementBottomMargin,
 					   relatedParams = related.offset ().top;
 
-			console.log (elementParams + ' ' + relatedParams + '_' + elementTop);
+			//console.log (elementParams + ' ' + relatedParams + '_' + elementTop);
 
 			if (elementParams > relatedParams && !element.hasClass ('state')) {
 				element.addClass ('state');
@@ -94,6 +100,31 @@ $F = {
 					element.removeClass ('state');
 				}
 			}
+		},
+		checkLeftNav : function () {
+			if ($F.loading.isBigSlider ()) return false;
+			var navs = $('.navigator-item'),
+				top = $(window).scrollTop (),
+				thisTop = top + 3000,
+				thisObj = $(window),
+				active = $('.navigator-item.active');
+
+			navs.each(function () {
+				var This = $($(this).attr('href'));
+				//console.log (This.offset ().top + ' ' + thisTop + ' ' + top);
+				var submit = Math.abs(This.offset ().top - top);
+				if (submit < thisTop) {
+					thisTop = submit;
+					thisObj = $(this);
+				}
+			});
+			console.log (thisObj);
+			if (!thisObj.hasClass('active')){
+				active.removeClass('active');
+				thisObj.addClass('active');
+				console.log (12);
+			}
+			//console.log (thisTop);
 		},
 		navigatorClick : function () {
 
@@ -106,16 +137,23 @@ $F = {
 //jQuery code
 $(function(){
 	$F.loading.pageIsLoad ();
-	$F.loading.debugClear ();
+	//$F.loading.debugClear ();
 	//console.log ('Страница загружена: ' + $F.loading.loadingStatus);
 
 	var readMore = $('.more.one'),
 			navs = $('.navigator-item');
 
 	readMore.on('click', $F.loading.allDescriptionShow ());
+
 	navs.on('click', function () {
-		var className = $(this).attr('href');
+		var         This = $(this),
+			   className = This.attr('href'),
+				  active = $('.navigator-item.active');
+
+		active.removeClass('active');
+		This.addClass('active');
 		$('html, body').animate({scrollTop: $(className).offset().top}, 300);
+
 		return false;
 	});
 });

@@ -389,6 +389,9 @@ $s : 0;
 		position: absolute;
 		z-index: 120;
 	}
+	&.two {
+		display: none;
+	}
 }
 @mixin text-style{
 	font-family: GillSansProCyrillicMedium;
@@ -444,6 +447,7 @@ $s : 0;
 	.titles-date {
 		@include text-style;
 		padding-top: 50px;
+		display: block;
 	}
 	.titles-title {
 		font-family: GillSansProCyrillicLight;
