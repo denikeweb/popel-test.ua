@@ -12,6 +12,9 @@ $default: 	#83C0D7;
 $hover:  	#FF794C;
 $active: 	#4D2417;
 
+$nav:		#CDCDCD;
+$navActive: #86B1BF;
+
 $grid1: 30px;
 
 @import "compass";
@@ -817,6 +820,64 @@ $s : 0;
 }
 /*----------------------------------------------
         	right data end
+===============================================================================*/
+
+
+
+/*===============================================================================
+        	navigator begin
+----------------------------------------------*/
+@mixin items ($size) {
+	content: '';
+	display: inline-block;
+	vertical-align: -5px;
+	width: $size;
+	height: $size;
+	margin-right: 15px;
+	margin-top: 15px;
+	@include border-radius ($size);
+}
+.navigator{
+	padding: 15px 30px 30px 40px;
+	position: fixed;
+	left: 0;
+	top: 50%;
+	margin-top: -110px;
+	.navigator-item {
+		vertical-align: middle;
+		font-size: 20px;
+		font-family: GillSansProCyrillicLight;
+		color: $w;
+		background: none;
+		.navigator-item-span{
+			display: none;
+		}
+		&:before{
+			@include items (16px);
+			border: 2px solid $nav;
+		}
+		&.active, &:hover {
+			&:before{
+				width: 20px;
+				height: 20px;
+				background: $navActive;
+				border: 0;
+			}
+		}
+	}
+	&:hover {
+		background: rgba(0,0,0,0.8);
+		min-width: 230px;
+		.navigator-item {
+			.navigator-item-span{
+				display: inline-block;
+
+			}
+		}
+	}
+}
+/*----------------------------------------------
+        	navigator end
 ===============================================================================*/
 
 

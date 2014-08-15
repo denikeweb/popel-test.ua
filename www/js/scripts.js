@@ -60,7 +60,7 @@ $F = {
 			if (This.isBigSlider () === true) {
 				This.allDescriptionShow ();
 			} else {
-				$F.rightSidebar.check ();
+				$F.sideBars.checkRightSidebar ();
 			}
 		},
 
@@ -75,13 +75,13 @@ $F = {
 		}
 	},
 	initializeLections : undefined,
-	rightSidebar : {
-		check : function (){
+	sideBars : {
+		checkRightSidebar : function (){
 			var   element = $('.rightSideBar');
 			var	  related = $('.related-lections');
 			var     elementTopMargin = 180,
 				 elementBottomMargin = 40,
-						  elementTop = element.offset().top - $(window).scrollTop (),
+						  elementTop = element.offset ().top - $(window).scrollTop (),
 					   elementParams = element.offset ().top + element.height () + elementBottomMargin,
 					   relatedParams = related.offset ().top;
 
@@ -94,6 +94,9 @@ $F = {
 					element.removeClass ('state');
 				}
 			}
+		},
+		navigatorClick : function () {
+
 		}
 	}
 
@@ -106,12 +109,18 @@ $(function(){
 	$F.loading.debugClear ();
 	//console.log ('Страница загружена: ' + $F.loading.loadingStatus);
 
-	var readMore = $('.more.one');
+	var readMore = $('.more.one'),
+			navs = $('.navigator-item');
+
 	readMore.on('click', $F.loading.allDescriptionShow ());
+	navs.on('click', function () {
+		var className = $(this).attr('href');
+		$('html, body').animate({scrollTop: $(className).offset().top}, 300);
+		return false;
+	});
 });
 
 // Vanille JS code
-
 $F.loading.logoLoadingControll (); // set Timer
 
 window.onresize = $F.loading.onWindowResize;
