@@ -4,7 +4,9 @@ $chunk:		#F7F8FA;
 $w: 		#ffffff;
 $b: 		#000000;
 $liteText:	#555555;
+$liteText2:	#b2b2b2;
 $titleBlue: #73acbf;
+$liteBorder:#F0F6F9;
 
 $default: 	#83C0D7;
 $hover:  	#FF794C;
@@ -89,11 +91,18 @@ h3 {
 	font-size: 25px;
 	line-height: 1.4;
 }
+h4 {}
+h5 {}
+h6 {}
+ul{li{}}
 p {
 	font-family: HeuristicaRegular;
 	color: $liteText;
 	font-size: 16px;
 	line-height: 1.5625;
+}
+em {
+	font-family: HeuristicaItalic;
 }
 
 /*----------------------------------------------
@@ -586,6 +595,9 @@ $s : 0;
 .chunk {
 	padding: 35px 20px;
 	background: $chunk;
+	&.lector {
+		margin: 0 -20px;
+	}
 }
 .lector-photo{
 	&.mini{
@@ -599,7 +611,7 @@ $s : 0;
 }
 @mixin chunk-lector {
 	display: inline-block;
-	width: 400px;
+	width: 440px;
 	font-family: GillSansProCyrillicLight;
 }
 .lector-title{
@@ -626,11 +638,22 @@ $s : 0;
 .storage-item {
 	width: 290px;
 	padding-bottom: 30px;
+	font-size: 16px;
+	line-height: 1.5;
+	vertical-align: top;
 	&:first-child{
 		padding-right: 40px;
 	}
+	.storage-item-text{
+		line-height: inherit;
+		font-size: inherit;
+		display: block;
+	}
 	.storage-get{
-		
+		display: inline-block;
+		color: $titleBlue;
+		font-size: inherit;
+		border-bottom: 1px solid $titleBlue;
 	}
 }
 
@@ -690,6 +713,62 @@ $s : 0;
 
 /*----------------------------------------------
         	Second content end
+===============================================================================*/
+
+
+
+/*===============================================================================
+        	right data begin
+----------------------------------------------*/
+.right-date{
+	font-size: 30px;
+	line-height: 0.8333;
+	display: block;
+}
+.right-time{
+	font-size: 20px;
+	line-height: 1.25;
+	color: $liteText2;
+	display: block;
+	padding-bottom: 35px;
+}
+.info-item {
+	font-size: 16px;
+	line-height: 1.25;
+	padding-top: 25px;
+	letter-spacing: -0.025em;
+	.info-item-title {
+		font-size: inherit;
+		line-height: inherit;
+		letter-spacing: inherit;
+	}
+	.info-item-link {
+		font-size: inherit;
+		line-height: inherit;
+		letter-spacing: inherit;
+		display: block;
+	}
+}
+.concepts{
+	margin-left: -10px;
+	.concepts-item {
+		padding: 1px 8px 2px 8px;
+		border: 2px solid $liteBorder;
+		font-size: 16px;
+		display: inline-block;
+		margin-bottom: 5px;
+		@include border-radius(20px);
+	}
+}
+.bonuses{
+	margin-top: 50px;
+	.bonuses-item{
+		font-family: GillSansProCyrillicLight;
+		font-size: 16px;
+	}
+}
+/*----------------------------------------------
+        	right data end
 ===============================================================================*/
 
 
