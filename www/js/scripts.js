@@ -46,40 +46,73 @@ $F = {
 			return true;
 		},
 
+		isBigSlider : function () {
+			return $('body').hasClass('one');
+		},
+
+		allDescriptionShow : function () {
+			This = $F.loading;
+
+		},
+
+		onWindowScroll : function () {
+			This = $F.loading;
+			if (This.isBigSlider () === true) {
+				This.allDescriptionShow ();
+			} else {
+				$F.rightSidebar.check ();
+			}
+		},
+
+		onWindowResize : function () {
+			//console.log('_resize');
+		},
+
 		debugClear : function (){
 			this.loadingAction ();
 			$('.content.one, .background').hide();
 			$('body').removeClass('one');
-		},
-
-		onWindowResize : function () {
-			console.log('_resize');
 		}
 	},
-	initializeLections : {
-		lections : {
-			lection1 : {
-				price : 75,
-				inBusket: false,
-				title: 'Стародавня Греція. Боги. Мармур. Емоції.',
-				date: '6 жовтня 2014 о 14:00',
-				lector: ''
+	initializeLections : undefined,
+	rightSidebar : {
+		check : function (){
+			var   element = $('.rightSideBar');
+			var	  related = $('.related-lections');
+			var     elementTopMargin = 180,
+				 elementBottomMargin = 40,
+						  elementTop = element.offset().top - $(window).scrollTop (),
+					   elementParams = element.offset ().top + element.height () + elementBottomMargin,
+					   relatedParams = related.offset ().top;
+
+			console.log (elementParams + ' ' + relatedParams + '_' + elementTop);
+
+			if (elementParams > relatedParams && !element.hasClass ('state')) {
+				element.addClass ('state');
+			} else {
+				if (elementTop > elementTopMargin) {
+					element.removeClass ('state');
+				}
 			}
 		}
 	}
+
 };
 
-$F.loading.logoLoadingControll ();
-// задаем таймер
 
+//jQuery code
 $(function(){
 	$F.loading.pageIsLoad ();
 	$F.loading.debugClear ();
 	//console.log ('Страница загружена: ' + $F.loading.loadingStatus);
-	var readMore = $('.more.one');
-	readMore.on('click', function () {
 
-	});
+	var readMore = $('.more.one');
+	readMore.on('click', $F.loading.allDescriptionShow ());
 });
 
+// Vanille JS code
+
+$F.loading.logoLoadingControll (); // set Timer
+
 window.onresize = $F.loading.onWindowResize;
+window.onscroll = $F.loading.onWindowScroll;
