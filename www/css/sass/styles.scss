@@ -1002,6 +1002,19 @@ $s : 0;
 
 	}
 }
+.header-little.two{
+	display: none;
+	height: 55px;
+	padding-top: 25px;
+	background: rgba(0,0,0,0.8);
+	position: fixed;
+	width: 100%;
+	.header-little-title{
+		color: $w;
+		float: left;
+		font-size: 25px;
+	}
+}
 /*----------------------------------------------
         	hideSlider end
 ===============================================================================*/

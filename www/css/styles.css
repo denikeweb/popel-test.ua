@@ -4259,6 +4259,22 @@ body.download {
   display: none;
 }
 
+/* line 1005, sass/styles.scss */
+.header-little.two {
+  display: none;
+  height: 55px;
+  padding-top: 25px;
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  width: 100%;
+}
+/* line 1012, sass/styles.scss */
+.header-little.two .header-little-title {
+  color: white;
+  float: left;
+  font-size: 25px;
+}
+
 /*----------------------------------------------
         	hideSlider end
 ===============================================================================*/

@@ -53,18 +53,20 @@ $F = {
 		allDescriptionShow : function () {
 			This = $F.loading;
 			var one = $('.content.one, .background'),
-				two = $('.content.two, .header-little.two'),
-				body = $('body');
+				two = $('.content.two'),
+			 header = $('.header-little.two');
+			   body = $('body');
 			body.removeClass('one');
 			///one.slideUp (2000);
 			one.addClass ('hideSlider');
 			two.show (2000);
+			header.show ();
 		},
 
 		turn : function (direction) {
 			This = $(this);
 			if (direction == 1) {
-
+				This.parent ().
 			} else {
 
 			}
@@ -168,7 +170,7 @@ $(function(){
 
 		active.removeClass('active');
 		This.addClass('active');
-		$('html, body').animate({scrollTop: $(className).offset().top}, 300);
+		$('html, body').animate({scrollTop: $(className).offset().top - 100}, 300);
 
 		return false;
 	});
