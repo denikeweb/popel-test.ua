@@ -50,8 +50,8 @@ $F = {
 			return $('body').hasClass('one');
 		},
 
-		allDescriptionShow : function () {
-			This = $F.loading;
+		allDescriptionShow : function (This) {
+			//var This = $F.loading;
 			var one = $('.content.one, .background'),
 				two = $('.content.two'),
 			 header = $('.header-little.two');
@@ -63,17 +63,28 @@ $F = {
 			header.show ();
 		},
 
-		turn : function (direction) {
-			This = $(this);
+		turn : function (direction, This) {
+			//var This = $(this);
+			var time = 0;
 			if (direction == 1) {
-				This.parent ().
+				var thisSlide = This.parent ().parent (),
+				nextSlide = thisSlide.next('.slides');
+				console.log ('+' + This.text());
+				thisSlide.slideUp(time);
+				nextSlide.slideDown(time);
+				console.log (thisSlide + ' ' + nextSlide);
 			} else {
-
+				var thisSlide = This.parent ().parent (),
+					prevSlide = thisSlide.prev('.slides');
+				console.log ('+' + This.text());
+				thisSlide.hide(time);
+				prevSlide.show(time);
+				console.log (thisSlide + ' ' + nextSlide);
 			}
 		},
 
 		onWindowScroll : function () {
-			This = $F.loading;
+			var This = $F.loading;
 			if (This.isBigSlider () === true) {
 				//This.allDescriptionShow ();
 			} else {
@@ -159,9 +170,9 @@ $(function(){
 			  tr = $('.turn-right'),
 			  tl = $('.turn-left');
 
-	readMore.on('click', function () {$F.loading.allDescriptionShow ();});
-	tr.on('click', function () {$F.loading.turn (1);});
-	tl.on('click', function () {$F.loading.turn (0);});
+	readMore.on('click', function () {$F.loading.allDescriptionShow ($(this));});
+	tr.on('click', function () {$F.loading.turn (1, $(this));});
+	tl.on('click', function () {$F.loading.turn (0, $(this));});
 
 	navs.on('click', function () {
 		var         This = $(this),
